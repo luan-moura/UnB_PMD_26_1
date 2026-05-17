@@ -1,0 +1,189 @@
+:root {
+    --primary-green: #107c41;
+    --bg-dark-accessible: #0a331a;
+    --bg-light: #f4f9f5;
+    --text-main: #111111;
+    --text-muted: #555555;
+    --disabled-gray: #767676;
+    --disabled-bg: #e0e0e0;
+    --white: #ffffff;
+    --focus-outline: #005a9c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Layout Base Flexbox */
+.container-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Botão Menu Hambúrguer Acessível */
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2.5rem;
+    height: 2rem;
+    background: var(--primary-green);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+.menu-toggle .bar {
+    width: 1.7rem;
+    height: 3px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+/* Estilização da Sidebar Retrátil */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Escondido por padrão */
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    border-right: 3px solid var(--primary-green);
+    padding: 4.5rem 1.5rem 2rem 1.5rem;
+    overflow-y: auto;
+    z-index: 999;
+    transition: left 0.3s ease;
+}
+
+.sidebar.open {
+    left: 0; /* Desliza para dentro da tela */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 0.5rem;
+}
+
+#navigation-menu {
+    list-style: none;
+}
+
+#navigation-menu li {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.menu-item-accessible {
+    color: var(--primary-green);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu-item-accessible:hover {
+    background-color: #e8f5e9;
+}
+
+.menu-item-disabled {
+    color: var(--disabled-gray);
+    background-color: var(--disabled-bg);
+    cursor: not-allowed;
+}
+
+/* Área de Conteúdo Flexbox de Alta Performance */
+#app {
+    flex: 1;
+    padding: 5rem 2rem 2rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Tratamento Dinâmico para Textos Pequenos (Centralização Vertical) */
+#app.texto-curto {
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: var(--bg-dark-accessible);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.story-text {
+    margin-bottom: auto; /* Empurra o grupo de botões estritamente para o rodapé */
+    font-size: 1.3rem;
+}
+
+/* Container de Botões Justificados */
+.btn-group {
+    margin-top: 2.5rem;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* Alinhamentos conforme quantidade de botões */
+.btn-group.botoes-1 { justify-content: flex-end; }
+.btn-group.botoes-2 { justify-content: space-between; }
+.btn-group.botoes-3 { justify-content: space-between; }
+
+button.story-btn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem;
+    border: 2px solid var(--primary-green);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:focus { outline: 4px solid var(--focus-outline); }
+.btn-primary { background-color: var(--primary-green); color: var(--white); }
+.btn-primary:hover { background-color: var(--bg-dark-accessible); }
+.btn-secondary { background-color: var(--white); color: var(--primary-green); }
+.btn-secondary:hover { background-color: #e8f5e9; }
+
+/* Responsividade - Celulares e Tablets em Modo Retrato */
+@media (max-width: 768px) {
+    body { font-size: 1.15rem; }
+    #app { padding: 4.5rem 1.2rem 1.5rem 1.2rem; }
+    h1 { font-size: 1.8rem; }
+    
+    .btn-group {
+        flex-direction: column-reverse; /* Inverte para o botão principal ficar no topo no celular */
+        gap: 0.75rem;
+    }
+    
+    button.story-btn {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
