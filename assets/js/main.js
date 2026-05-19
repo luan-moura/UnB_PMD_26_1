@@ -1,7 +1,7 @@
 let gameState = {
     currentKey: "capa",
-    maxEtapaAlcancada: 0,
-    ultimasTelasPorEtapa: { 0: "capa" }
+    maxEtapaAlcancada: 1,
+    ultimasTelasPorEtapa: { 1: "capa" }
 };
 
 const LOCAL_STORAGE_KEY = "sec_didatica_planilhas_v2";

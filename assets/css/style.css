@@ -122,32 +122,32 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
-/* Tratamento Dinâmico para Textos Pequenos (Centralização Vertical) */
-#app.texto-curto {
-    justify-content: center;
-    padding-top: 2rem;
-}
-
+/* Título Espacialmente Fixo */
 h1 {
     font-size: 2.25rem;
     color: var(--bg-dark-accessible);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Distância fixa e idêntica entre o título e o texto em TODAS as telas */
     text-align: left;
+    min-height: auto; /* Permite que títulos longos quebrem linha naturalmente sem empurrar o layout */
 }
 
+/* Bloco de Texto Estável */
 .story-text {
-    margin-bottom: auto; /* Empurra o grupo de botões estritamente para o rodapé */
+    margin-bottom: auto; /* Garante que os botões sejam empurrados estritamente para o rodapé */
     font-size: 1.3rem;
+    display: block; /* Remove qualquer comportamento flexível de centralização */
 }
 
-/* Container de Botões Justificados */
+/* O contêiner de botões permanece firme no rodapé */
 .btn-group {
     margin-top: 2.5rem;
     display: flex;
     width: 100%;
     gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* Alinhamentos conforme quantidade de botões */
