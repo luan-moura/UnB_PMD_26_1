@@ -170,6 +170,73 @@ button:focus { outline: 4px solid var(--focus-outline); }
 .btn-secondary { background-color: var(--white); color: var(--primary-green); }
 .btn-secondary:hover { background-color: #e8f5e9; }
 
+/* --- Ajustes de Layout e Alinhamento de Cores --- */
+
+.tabela-ferramentas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.linha-ferramenta {
+    display: flex;
+    background-color: var(--white);
+    border: 1px solid var(--disabled-bg);
+    border-radius: 6px;
+    padding: 1rem;
+    gap: 1.2rem;
+    align-items: center; /* Centraliza o logo verticalmente com o parágrafo */
+}
+
+.col-logo {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none !important; /* Remove qualquer fundo residual */
+    border: none !important;     /* Remove qualquer borda residual */
+}
+
+.col-conteudo {
+    flex: 1;
+}
+
+.texto-unico-app {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* Nova Caixa "Você Sabia?" integrada à paleta verde (Estilo Excel) */
+.caixa-voce-sabia.verde-excel {
+    background-color: #f1f8e9; /* Verde bem claro e suave de fundo */
+    border-left: 4px solid #2e7d32; /* Barra lateral verde escura */
+    padding: 1.25rem;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+.caixa-voce-sabia.verde-excel h4 {
+    color: #1b5e20; /* Título verde escuro */
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.caixa-voce-sabia.verde-excel p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #212121;
+}
+
+.pergunta-direcionada {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+}
+
 /* Responsividade - Celulares e Tablets em Modo Retrato */
 @media (max-width: 768px) {
     body { font-size: 1.15rem; }
@@ -185,5 +252,14 @@ button:focus { outline: 4px solid var(--focus-outline); }
         width: 100%;
         text-align: center;
         padding: 1rem;
+    }
+
+    .linha-ferramenta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+    .col-logo {
+        align-self: center;
     }
 }

@@ -120,7 +120,7 @@ function renderMenu() {
 
 function goToNode(nodeKey) {
     // Tratamento especial para o botão de reset na tela final
-    if(nodeKey === "capa" && gameState.currentKey === "e11_conclusao") {
+    if(nodeKey === "capa" && gameState.currentKey === "conclusao") {
         gameState = { currentKey: "capa", maxEtapaAlcancada: 0, ultimasTelasPorEtapa: { 0: "capa" } };
     } else {
         gameState.currentKey = nodeKey;

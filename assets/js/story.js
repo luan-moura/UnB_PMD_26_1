@@ -45,71 +45,182 @@ const storyData = {
         ]
     },
 
-    // === ETAPA 3: Diferentes Ferramentas ===
+// === ETAPA 3: Diferentes Ferramentas ===
     ferramentas: {
         etapa: 3, 
-        titulo: "Diferentes Ferramentas para Criar Planilhas",
-        texto: "Temos ferramentas instaladas (Excel, LibreOffice Calc) e em nuvem (Google Planilhas, ONLYOFFICE). A escolha depende crucialmente da sua conectividade e privacidade de dados.",
+        titulo: "3. Diferentes Ferramentas para Criar Planilhas",
+        texto: `
+            Para começar a criar nossas tabelas, precisamos escolher nossa ferramenta de trabalho. Hoje, o mundo da tecnologia se divide em dois caminhos principais:<br><br>
+            <b>1º. Editores em Nuvem (Online):</b> Como o Google Planilhas e o Microsoft Excel Web. Eles funcionam no próprio navegador e salvam as alterações automaticamente. São excelentes para trabalhos em grupo, mas exigem conexão constante com a internet.<br><br>
+            <b>2º. Editores Locais (Instalados):</b> Como o Microsoft Excel clássico, o LibreOffice Calc e o OnlyOffice. Eles funcionam em aplicação instalada no computador, sem a necessidade de conexão com a internet, mas precisam da nossa atenção para salvar todas as alterações feitas no arquivo.<br><br>
+            Algumas dessas aplicações também estão disponíveis para celulares e tablets. Porém, saiba que elas são versões diferentes daquelas do computador, possuindo telas modificadas e funcionalidades mais limitadas.<br><br>
+            A seguir, conhecemos um pouco mais sobre cada uma das ferramentas citadas:<br><br>
+            
+            <div class="tabela-ferramentas">
+                <div class="linha-ferramenta">
+                    <div class="col-logo">
+                        <img src="assets/img/google_sheets_icon.png" alt="Ícone do Google Planilhas" style="width: 100%; height: auto; max-width: 50px;">
+                    </div>
+                    <div class="col-conteudo">
+                        <p class="texto-unico-app"><b>Google Planilhas:</b> É um editor online e gratuito disponível para as contas criadas na Google. A ferramenta está integrada ao Google Drive. Sua grande vantagem é o salvamento automático instantâneo, a facilidade para compartilhar o arquivo e permitir que outras pessoas editem a planilha ao mesmo tempo. Como ponto negativo, ele depende necessariamente de internet e seus recursos para avançados para automações são mais limitados que as versões instaladas.</p>
+                    </div>
+                </div>
+
+                <div class="linha-ferramenta">
+                    <div class="col-logo">
+                        <img src="assets/img/microsoft_office_Excel_icon.png" alt="Ícone do Microsoft Excel Web" style="width: 100%; height: auto; max-width: 50px;">
+                    </div>
+                    <div class="col-conteudo">
+                        <p class="texto-unico-app"><b>Microsoft Excel 365:</b> É uma versão online do Microsoft Excel Desktop que funciona em qualquer navegador, desde que tenha conexão de internet. É uma ferramenta paga, cuja assinatura também inclui outras ferramentas de escritório. De forma gratuita, a Microsoft permite a visualização de arquivos e edições básicas. Como trata-se de uma versão web, algumas ferramentas avançadas não conseguem ser aplicadas.</p>
+                    </div>
+                </div>
+
+                <div class="linha-ferramenta">
+                    <div class="col-logo">
+                        <img src="assets/img/microsoft_office_Excel_icon.png" alt="Ícone do Microsoft Excel Desktop" style="width: 100%; height: auto; max-width: 50px;">
+                    </div>
+                    <div class="col-conteudo">
+                        <p class="texto-unico-app"><b>Microsoft Excel Desktop:</b> É o editor instalado mais famoso e utilizado no mercado profissional mundial. É uma ferramenta extremamente completa para a manipulação de planilhas do básico ao avançado, capaz de processar milhões de dados e gráficos complexos sem travamentos. O principal ponto negativo é que se trata de um software comercial pago, exigindo a compra de uma licença ou assinatura ativa.</p>
+                    </div>
+                </div>
+
+                <div class="linha-ferramenta">
+                    <div class="col-logo">
+                        <img src="assets/img/libreoffice_icon.png" alt="Ícone do LibreOffice Calc" style="width: 100%; height: auto; max-width: 50px;">
+                    </div>
+                    <div class="col-conteudo">
+                        <p class="texto-unico-app"><b>LibreOffice Calc:</b> É um editor de planilhas instalado no computador, totalmente gratuito e de código aberto (Software Livre). Funciona perfeitamente sem internet e consome pouca memória do computador, sendo ideal para máquinas antigas. Como desvantagem, sua interface visual tem uma aparência mais antiga, e ele pode desconfigurar pequenos detalhes visuais ao abrir arquivos criados originalmente no Excel. Em atualizações recentes é possível configurar algumas formas de visualização, mas ainda assim o visual é o menos intuitivo.</p>
+                    </div>
+                </div>
+
+                <div class="linha-ferramenta">
+                    <div class="col-logo">
+                        <img src="assets/img/onlyoffice_icon.png" alt="Ícone do OnlyOffice" style="width: 100%; height: auto; max-width: 50px;">
+                    </div>
+                    <div class="col-conteudo">
+                        <p class="texto-unico-app"><b>OnlyOffice:</b> É um aplicativo gratuito disponível tanto para computadores quanto para celulares e tablets. No computador, ele se destaca por sua interface moderna em abas (muito parecida com as versões recentes do Excel) e por sua altíssima compatibilidade com arquivos do tipo .xlsx. Já nos celulares, sua tela é totalmente simplificada e adaptada para comandos de toque, possuindo recursos mais limitados que a versão de PC e possibilitando acessar arquivos de planilhas em nuvens como Google Drive, OneDrive ou Dropbox.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caixa-voce-sabia verde-excel">
+                <h4>Você Sabia?</h4>
+                <p>No Brasil, a falta de conectividade estável à internet ainda afeta milhões de estudantes, principalmente nas periferias e zonas rurais. Pesquisas de órgãos como o https://cgi.br/ apontam que muitas famílias de baixa renda acessam a internet exclusivamente pelo celular, com planos de dados limitados que bloqueiam o acesso após o consumo da franquia. Para evitar a dependência da internet, é recomendado o uso de softwares instalados, como o LibreOffice ou OnlyOffice.</p>
+            </div>
+
+            Considerando as explicações sobre as principais ferramentas de edição de planilhas eletrônicas, qual delas você gostaria de aprender?</p>
+        `,
         botoes: [
-            { 
-                texto: "Retornar", 
-                destino: "cotidiano" 
-            }, 
-            { 
-                texto: "Continuar", 
-                destino: "interface" 
-            }
+            { texto: "Voltar", destino: "cotidiano" },
+            { texto: "Excel", destino: "ambiente_excel" },
+            { texto: "Google Planilhas", destino: "ambiente_google" },
+            { texto: "OnlyOffice", destino: "ambiente_onlyoffice" }
         ]
     },
 
-    // === ETAPA 4: Interface da Ferramenta ===
-    interface: {
-        etapa: 4, 
-        titulo: "Interface e Elementos Essenciais",
-        texto: "A área de trabalho é composta por Linhas, Colunas e Células. Você quer aprender o uso comum pelo mouse ou prefere abrir uma trilha extra focada em atalhos de teclado para aumentar sua produtividade e acessibilidade?",
+    // ================= RAMIFICAÇÕES DA ETAPA 3 (AMBIENTES VISUAIS) =================
+
+    ambiente_excel: {
+        etapa: 3,
+        titulo: "Conhecendo a Tela do Microsoft Excel",
+        texto: `
+            Você escolheu o <b>Microsoft Excel</b>. Antes de começarmos a digitar, observe atentamente a imagem do programa abaixo e localize cada um dos seus elementos principais:<br><br>
+            
+            <div class="container-print-tela">
+                <div class="placeholder-print"><img src="assets/img/excel_screen.png" alt="Imagem da área de trabalho do Excel" style="width: 100%; height: auto;"></div>
+            </div><br>
+
+            <ul class="lista-componentes">
+                <li><b>Barra de Ferramentas de Acesso Rápido:</b> Fica no topo esquerdo. Serve para salvar, desfazer e refazer ações com um único clique.</li>
+                <li><b>Guias de Menus (Faixa de Opções):</b> Localizada logo abaixo do topo (Página Inicial, Inserir, Fórmulas...). Cada guia abre um conjunto diferente de blocos de botões.</li>
+                <li><b>Barra de Fórmulas:</b> A linha horizontal comprida logo acima da grade. Ela exibe o conteúdo real ou o cálculo que está escondido dentro da célula selecionada.</li>
+                <li><b>Área de Trabalho (Grade de Células):</b> O espaço principal composto pelo cruzamento de Linhas (números) e Colunas (letras).</li>
+                <li><b>Barra de Status:</b> Fica no rodapé da janela. Exibe mensagens do sistema e atalhos rápidos de Zoom para aumentar ou diminuir o tamanho da tela.</li>
+            </ul>
+        `,
         botoes: [
-            { 
-                texto: "Usar Interface Convencional (Mouse)", 
-                destino: "escolha_ods" 
-            }, 
-            { 
-                texto: "Trilha Extra: Atalhos de Teclado", 
-                destino: "atalhos_teclado" 
-            }
+            { texto: "Voltar", destino: "ferramentas" },
+            { texto: "Continuar", destino: "interface_excel" }
         ]
     },
-    atalhos_teclado: {
-        etapa: 4, 
-        titulo: "Trilha de Atalhos Avançados",
-        texto: "Navegar usando as setas direcionais, pressionar 'Ctrl + Espaço' para selecionar colunas ou 'Shift + Espaço' para linhas poupa tempo e contorna barreiras motoras. Memorize esses comandos!",
+
+    ambiente_google: {
+        etapa: 3,
+        titulo: "Conhecendo a Tela do Google Planilhas",
+        texto: `
+            Você escolheu o <b>Google Planilhas</b>. Como ele roda direto no seu navegador de internet, a disposição visual de algumas ferramentas muda um pouco. Observe os componentes básicos na imagem abaixo:<br><br>
+            
+            <div class="container-print-tela">
+                <div class="placeholder-print"><img src="assets/img/google_sheets_screen.png" alt="Imagem da área de trabalho do Google Planilhas" style="width: 100%; height: auto;"></div>
+            </div>
+
+            <ul class="lista-componentes">
+                <li><b>Menu de Linha de Texto:</b> Diferente do Excel, ele usa menus tradicionais em formato de lista (Arquivo, Editar, Ver, Inserir...) que abrem para baixo ao clicar.</li>
+                <li><b>Barra de Atalhos Ícones:</b> Fica logo abaixo do menu. Traz os botões mais usados, como formatação de texto, moedas e inserção de links.</li>
+                <li><b>Indicador de Salvamento (Nuvem):</b> Um pequeno ícone de nuvem perto do nome do arquivo que mostra se as alterações já foram salvas na internet de forma segura.</li>
+                <li><b>Área de Trabalho:</b> A grade onde você criará as tabelas, identificando as células pelo encontro das letras das colunas com os números das linhas.</li>
+                <li><b>Barra Inferior de Planilhas:</b> Local onde você pode criar novas páginas (abas) dentro do mesmo arquivo de forma rápida.</li>
+            </ul>
+        `,
         botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "interface" 
-            }, 
-            { 
-                texto: "Prosseguir para Escolha Temática", 
-                destino: "escolha_ods" 
-            }
+            { texto: "Voltar", destino: "ferramentas" },
+            { texto: "Continuar", destino: "interface_google" }
         ]
     },
-    escolha_ods: {
-        etapa: 4, 
-        titulo: "Escolha sua Missão (ODS)",
-        texto: "A partir de agora (Etapa 5 à 11), os conceitos técnicos de planilhas serão ensinados com dados reais baseados em metas globais. Escolha qual tema você deseja investigar:",
+
+    ambiente_onlyoffice: {
+        etapa: 3,
+        titulo: "Conhecendo a Tela do OnlyOffice Desktop",
+        texto: `
+            Você escolheu o <b>OnlyOffice Desktop</b>. Ele utiliza uma interface moderna muito parecida com o Excel clássico, o que facilita bastante a transição entre sistemas. Identifique seus elementos na imagem abaixo:<br><br>
+            
+            <div class="container-print-tela">
+                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen.png" alt="Imagem da área de trabalho do OnlyOffice Planilha" style="width: 100%; height: auto;"></div>
+            </div>
+
+            <ul class="lista-componentes">
+                <li><b>Menus em Abas:</b> Segue o estilo moderno de Faixa de Opções, agrupando as ferramentas por funções lógicas (Arquivo, Inserir, Layout, Fórmulas).</li>
+                <li><b>Barra Lateral de Configurações (Painel Direito):</b> Uma exclusividade muito útil do OnlyOffice. Permite mudar fontes, bordas e alinhamentos rapidamente sem precisar abrir janelas extras.</li>
+                <li><b>Barra de Fórmulas:</b> Posicionada acima da grade, indispensável para visualizar as funções matemáticas inseridas.</li>
+                <li><b>Área de Trabalho Principal:</b> A matriz quadriculada de linhas e colunas pronta para receber seus dados textuais e numéricos.</li>
+                <li><b>Barra de Status Inferior:</b> Informa o status de edição do arquivo e oferece o controle deslizante de Zoom para melhor acessibilidade visual.</li>
+            </ul>
+        `,
         botoes: [
-            { 
-                texto: "ODS 3: Saúde e Bem-Estar", 
-                destino: "saude_dados" 
-            }, 
-            { 
-                texto: "ODS 6: Água e Saneamento", 
-                destino: "agua_dados" 
-            }, 
-            { 
-                texto: "ODS 13: Mudança Climática", 
-                destino: "clima_dados" 
-            }
+            { texto: "Voltar", destino: "ferramentas" },
+            { texto: "Continuar", destino: "interface_onlyoffice" }
+        ]
+    },
+
+    // ================= ETAPA 4: INTERFACES (RAMIFICADAS POR APLICATIVO) =================
+
+    interface_excel: {
+        etapa: 4,
+        titulo: "4. Estruturas e Conceitos no Excel",
+        texto: "",
+        botoes: [
+            { texto: "Voltar", destino: "ambiente_excel" },
+            { texto: "Avançar", destino: "escolha_ods" }
+        ]
+    },
+
+    interface_google: {
+        etapa: 4,
+        titulo: "4. Estruturas e Conceitos no Google Planilhas",
+        texto: "",
+        botoes: [
+            { texto: "Voltar", destino: "ambiente_google" },
+            { texto: "Avançar", destino: "escolha_ods" }
+        ]
+    },
+
+    interface_onlyoffice: {
+        etapa: 4,
+        titulo: "4. Estrutura e Conceitos no OnlyOffice",
+        texto: "",
+        botoes: [
+            { texto: "Voltar", destino: "ambiente_onlyoffice" },
+            { texto: "Avançar", destino: "escolha_ods" }
         ]
     },
 
