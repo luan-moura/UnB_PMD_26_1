@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-145.7209 -116.5398 10.435 13" width="10.435px" height="13px"><defs><style>
+    g, symbol { 
+        display: inline !important; 
+        float: left; 
+        width: 60px !important; 
+        height: 60px !important; 
+        position: relative !important; 
+        border: 1px solid #e2e8f0;
+        margin: 5px;
+        background: #ffffff;
+    }
+    path { 
+        fill: #333333 !important;
+    }
+</style></defs><g id="btn-formula" viewBox="0 0 20 20" transform="matrix(1, 0, 0, 1, -150.28591918945312, -120.53984069824219)"><path fill-rule="evenodd" d="M4.565 4H15v3h-1V5H6.434l3.667 5.5L6.434 16H14v-2h1v3H4.565L8.9 10.5z" clip-rule="evenodd"/></g></svg>

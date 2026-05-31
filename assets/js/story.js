@@ -55,7 +55,7 @@ const storyData = {
             <div class="tabela-ferramentas">
                 <div class="linha-ferramenta">
                     <div class="col-logo">
-                        <img src="assets/img/google_sheets_icon.png" alt="Ícone do Google Planilhas" style="width: 100%; height: auto; max-width: 50px;">
+                        <img src="assets/img/icons/google_sheets_icon.png" alt="Ícone do Google Planilhas" style="width: 100%; height: auto; max-width: 50px;">
                     </div>
                     <div class="col-conteudo">
                         <p class="texto-unico-app"><b>Google Planilhas:</b> É um editor online e gratuito disponível para as contas criadas na Google. A ferramenta está integrada ao Google Drive. Sua grande vantagem é o salvamento automático instantâneo, a facilidade para compartilhar o arquivo e permitir que outras pessoas editem a planilha ao mesmo tempo. Como ponto negativo, ele depende necessariamente de internet e seus recursos para avançados para automações são mais limitados que as versões instaladas.</p>
@@ -64,7 +64,7 @@ const storyData = {
 
                 <div class="linha-ferramenta">
                     <div class="col-logo">
-                        <img src="assets/img/microsoft_office_Excel_icon.png" alt="Ícone do Microsoft Excel Web" style="width: 100%; height: auto; max-width: 50px;">
+                        <img src="assets/img/icons/microsoft_office_Excel_icon.png" alt="Ícone do Microsoft Excel Web" style="width: 100%; height: auto; max-width: 50px;">
                     </div>
                     <div class="col-conteudo">
                         <p class="texto-unico-app"><b>Microsoft Excel 365:</b> É uma versão online do Microsoft Excel Desktop que funciona em qualquer navegador, desde que tenha conexão de internet. É uma ferramenta paga, cuja assinatura também inclui outras ferramentas de escritório. De forma gratuita, a Microsoft permite a visualização de arquivos e edições básicas. Como trata-se de uma versão web, algumas ferramentas avançadas não conseguem ser aplicadas.</p>
@@ -73,7 +73,7 @@ const storyData = {
 
                 <div class="linha-ferramenta">
                     <div class="col-logo">
-                        <img src="assets/img/microsoft_office_Excel_icon.png" alt="Ícone do Microsoft Excel Desktop" style="width: 100%; height: auto; max-width: 50px;">
+                        <img src="assets/img/icons/microsoft_office_Excel_icon.png" alt="Ícone do Microsoft Excel Desktop" style="width: 100%; height: auto; max-width: 50px;">
                     </div>
                     <div class="col-conteudo">
                         <p class="texto-unico-app"><b>Microsoft Excel Desktop:</b> É o editor instalado mais famoso e utilizado no mercado profissional mundial. É uma ferramenta extremamente completa para a manipulação de planilhas do básico ao avançado, capaz de processar milhões de dados e gráficos complexos sem travamentos. O principal ponto negativo é que se trata de um software comercial pago, exigindo a compra de uma licença ou assinatura ativa.</p>
@@ -82,7 +82,7 @@ const storyData = {
 
                 <div class="linha-ferramenta">
                     <div class="col-logo">
-                        <img src="assets/img/libreoffice_icon.png" alt="Ícone do LibreOffice Calc" style="width: 100%; height: auto; max-width: 50px;">
+                        <img src="assets/img/icons/libreoffice_icon.png" alt="Ícone do LibreOffice Calc" style="width: 100%; height: auto; max-width: 50px;">
                     </div>
                     <div class="col-conteudo">
                         <p class="texto-unico-app"><b>LibreOffice Calc:</b> É um editor de planilhas instalado no computador, totalmente gratuito e de código aberto (Software Livre). Funciona perfeitamente sem internet e consome pouca memória do computador, sendo ideal para máquinas antigas. Como desvantagem, sua interface visual tem uma aparência mais antiga, e ele pode desconfigurar pequenos detalhes visuais ao abrir arquivos criados originalmente no Excel. Em atualizações recentes é possível configurar algumas formas de visualização, mas ainda assim o visual é o menos intuitivo.</p>
@@ -91,7 +91,7 @@ const storyData = {
 
                 <div class="linha-ferramenta">
                     <div class="col-logo">
-                        <img src="assets/img/onlyoffice_icon.png" alt="Ícone do OnlyOffice" style="width: 100%; height: auto; max-width: 50px;">
+                        <img src="assets/img/icons/onlyoffice_icon.png" alt="Ícone do OnlyOffice" style="width: 100%; height: auto; max-width: 50px;">
                     </div>
                     <div class="col-conteudo">
                         <p class="texto-unico-app"><b>OnlyOffice:</b> É um aplicativo gratuito disponível tanto para computadores quanto para celulares e tablets. No computador, ele se destaca por sua interface moderna em abas (muito parecida com as versões recentes do Excel) e por sua altíssima compatibilidade com arquivos do tipo .xlsx. Já nos celulares, sua tela é totalmente simplificada e adaptada para comandos de toque, possuindo recursos mais limitados que a versão de PC e possibilitando acessar arquivos de planilhas em nuvens como Google Drive, OneDrive ou Dropbox.</p>
@@ -114,7 +114,7 @@ const storyData = {
         ]
     },
 
-// ================= RAMIFICAÇÃO: MICROSOFT EXCEL =================
+// ================= RAMIFICAÇÃO MICROSOFT EXCEL =================
 
     ambiente_excel: {
         etapa: 3,
@@ -125,49 +125,49 @@ const storyData = {
             Veja abaixo a interface padrão do Excel assim que abrimos um arquivo novo:<br><br>
 
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen.png" alt="Imagem da tela do Excel" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen.png" alt="Imagem da tela do Excel" style="width: 100%; height: auto;"></div>
             </div>
 
             <p>A partir da imagem acima, vamos compreender a função de cada uma das suas partes principais:</p><br>
 
             <p><b>1. Barra de Ferramentas de Acesso Rápido:</b> Fica no topo esquerdo da janela. É um espaço reservado para botões que você usa a todo momento, como Salvar (Disquete), Desfazer e Refazer ações. Você pode personalizar essa barra para incluir seus comandos favoritos.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_ar.png" alt="Imagem da barra de ferramentas de acesso rápido" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_ar.png" alt="Imagem da barra de ferramentas de acesso rápido" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>2. Guias de Menus:</b> São as palavras localizadas logo abaixo do topo (Página Inicial, Inserir, Layout da Página, Fórmulas...). Cada palavra funciona como uma "aba" diferente. Quando você clica em uma guia, toda a barra de botões abaixo dela muda.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_gm.png" alt="Imagem da Guias de Menus" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_gm.png" alt="Imagem da Guias de Menus" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>3. Faixa de Opções:</b> É a grande faixa retangular horizontal que cruza o topo da tela. Ela abriga todas as ferramentas visuais do Excel e muda seu conteúdo dependendo da Guia de Menu que estiver selecionada.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_fo.png" alt="Imagem da Faixa de Opções" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_fo.png" alt="Imagem da Faixa de Opções" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>4. Grupos:</b> Dentro da Faixa de Opções, repare que os botões são separados por pequenas linhas verticais organizadas por assunto. Esses quadradinhos são chamados de Grupos (ex: dentro da guia Página Inicial, temos o grupo "Fonte" para organizar textos e o grupo "Alinhamento").</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_gr.png" alt="Imagem dos Grupos" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_gr.png" alt="Imagem dos Grupos" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>5. Barra de Fórmulas:</b> É a linha branca horizontal comprida localizada logo acima da grade de células. Ela funciona como uma "janela de raio-X": quando você clica em uma célula, essa barra mostra o texto real ou a fórmula matemática que está escondida ali dentro.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>6. Área de Trabalho:</b> É o corpo principal do programa. Uma imensa grade quadriculada formada pelo cruzamento de linhas e colunas onde nós de fato construímos nossas tabelas e inserimos nossos dados.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>7. Guias de Planilhas:</b> Ficam localizadas no canto inferior esquerdo, logo abaixo da área de trabalho. Elas mostram as páginas (abas) do seu arquivo. Um único arquivo de Excel pode ter várias planilhas separadas por ali (Planilha1, Planilha2, etc.).</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_gp.png" alt="Imagem da Guias de Planilhas" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_gp.png" alt="Imagem da Guias de Planilhas" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>8. Barra de Status:</b> É a última faixa no rodapé do programa. Ela exibe informações úteis (como se o sistema está pronto ou calculando algo) e traz, no canto direito, o controle de <b>Zoom</b> para você aumentar ou diminuir o tamanho visual da grade.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/excel_screen_bs.png" alt="Imagem da Barra de Status" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_bs.png" alt="Imagem da Barra de Status" style="width: 100%; height: auto;"></div>
             </div><br>
         `,
         botoes: [
@@ -185,79 +185,69 @@ const storyData = {
             <b>Como abrir o Excel usando apenas o teclado:</b><br><br>
             Se você estiver na Área de Trabalho do Windows, siga estes passos:<br>
 
-            1. Pressione a tecla <b>Windows</b> <span style="display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;"><img src="assets/img/windows_icon.png" alt="Ícone do Windows" style="width: auto; height: 1em;"></span> para abrir o menu iniciar.<br>
+            1. Pressione a tecla <b>Windows</b> <span class="tecla""><img src="assets/img/icons/windows.svg" alt="Ícone do Windows" style="width: auto; height: 1em;"></span> para abrir o menu iniciar.<br>
             2. Digite imediatamente a palavra <code>excel</code>.<br>
-            3. Pressione a tecla <b>Enter</b> <span style="display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;"><img src="assets/img/enter_icon.png" alt="Ícone da tecla Enter" style="width: auto; height: 1em;"></span>. O programa irá abrir na tela imediatamente.<br><br>
+            3. Pressione a tecla <span class="tecla">enter</span>. O programa irá abrir na tela imediatamente.<br><br>
 
             <div class="caixa-atalhos-teclado">
                 <h4>Atalhos de acesso às barras de ferramentas</h4><br>
                 <p>Uma vez com o Excel aberto, você pode ativar e navegar por todas as seções que estudamos na tela anterior sem usar o mouse. Experimente testar os comandos a seguir:</p><br>
                 
                 <ul class="lista-teclado">
-                    <li><b>Tecla ALT:</b> Pressione e solte a tecla <code>alt</code>. Repare que pequenas letras pretas vão aparecer em cima de cada <b>Guia de Menu</b> e números em cima da <b>Barra de Acesso Rápido</b>. Se você apertar a letra correspondente no teclado, aquela guia se abrirá.</li>
-                    <li><b>Teclas de Setas:</b> Permitem que você navegue botão por botão dentro dos <b>Grupos</b> da <b>Faixa de Opções</b> após ativar o menu pela tecla <code>alt</code>, ou mude de célula na <b>Área de Trabalho</b>.</li>
-                    <li><b>Tecla F2:</b> Ao pressionar <code>F2</code>, o cursor vai direto para dentro da <b>Barra de Fórmulas</b> da célula selecionada, permitindo editar o texto sem precisar dar dois cliques com o mouse.</li>
-                    <li><b>Tecla TAB:</b> Dentro da Faixa de Opções ou de janelas de configuração, o <code>tab</code> pula para o próximo botão ou campo de texto.</li>
-                    <li><b>Tecla ESC:</b> Caso você entre em uma guia sem querer ou queira cancelar a ativação do teclado, aperte <code>esc</code> para voltar ao modo normal de edição.</li>
-                    <li><b>Teclas CTRL + PAGE DOWN / PAGE UP:</b> Segure a tecla <code>ctrl</code> e aperte <code>PgDn</code> ou <code>PgUp</code> para alternar entre as <b>Guias de Planilhas</b> (mudar de aba) no rodapé do arquivo.</li>
+                    <li><b>Tecla <span class="tecla">alt</span>:</b> Pressione e solte a tecla <code>alt</code>. Repare que pequenas letras pretas vão aparecer em cima de cada <b>Guia de Menu</b> e números em cima da <b>Barra de Acesso Rápido</b>. Se você apertar a letra correspondente no teclado, aquela guia se abrirá.</li><br>
+                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Permitem que você navegue botão por botão dentro dos <b>Grupos</b> da <b>Faixa de Opções</b> após ativar o menu pela tecla <code>alt</code>, ou mude de célula na <b>Área de Trabalho</b>.</li><br>
+                    <li><b>Tecla <span class="tecla">F2</span>:</b> Ao pressionar <code>F2</code>, o cursor vai direto para dentro da <b>Barra de Fórmulas</b> da célula selecionada, permitindo editar o texto sem precisar dar dois cliques com o mouse.</li><br>
+                    <li><b>Tecla <span class="tecla">tab</span>:</b> Dentro da Faixa de Opções ou de janelas de configuração, o <code>tab</code> pula para o próximo botão ou campo de texto.</li><br>
+                    <li><b>Tecla <span class="tecla">esc</span>:</b> Caso você entre em uma guia sem querer ou queira cancelar a ativação do teclado, aperte <code>esc</code> para voltar ao modo normal de edição.</li><br>
+                    <li><b>Teclas <span class="tecla">ctrl</span>+<span class="tecla">pg up</span> e <span class="tecla">ctrl</span>+<span class="tecla">pg dw</span>:</b> Segure a tecla <code>ctrl</code> e aperte <code>PgDn</code> ou <code>PgUp</code> para alternar entre as <b>Guias de Planilhas</b> (mudar de aba) no rodapé do arquivo.</li><br>
                 </ul>
             </div>
         `,
         botoes: [
             { texto: "Voltar", destino: "ambiente_excel" },
-            { texto: "Avançar", destino: "interface_excel" }
+            { texto: "Avançar", destino: "interface" }
         ]
     },
 
-// ================= RAMIFICAÇÃO: GOOGLE PLANILHAS =================
+// ================= RAMIFICAÇÃO GOOGLE PLANILHAS =================
 
     ambiente_google: {
         etapa: 3,
         titulo: "Conhecendo a tela do Google Planilhas",
         texto: `
-            Você selecionou o <b>Google Planilhas (Online)</b>. Como ele funciona diretamente no seu navegador de internet, sua interface é um pouco mais limpa, mas ainda possui todas as ferramentas essenciais organizadas de forma inteligente.<br><br>
+            Você selecionou o <b>Google Planilhas</b>. Como ele funciona diretamente no seu navegador de internet, sua interface é mais limpa, mas possui todas as ferramentas essenciais organizadas em barras de fácil acesso.<br><br>
             
             Veja abaixo a interface padrão do Google Planilhas assim que abrimos um arquivo novo:<br><br>
 
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_sheets_screen.png" alt="Imagem da tela do Google Planilhas" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen.png" alt="Imagem da tela do Google Planilhas" style="width: 100%; height: auto;"></div>
             </div>
 
             <p>A partir da imagem acima, vamos compreender a função de cada uma das suas partes principais:</p><br>
 
-            <p><b>1. Menu de Linha de Texto (Menus Tradicionais):</b> Fica logo abaixo do título do arquivo (Arquivo, Editar, Ver, Inserir, Formatar...). Ao clicar em qualquer uma dessas palavras, um menu em lista se abre para baixo, mostrando as opções disponíveis.</p>
+            <p><b>1. Barra de Menus:</b> Fica logo abaixo do título do arquivo (Arquivo, Editar, Ver, Inserir, Formatar...). Ao clicar em qualquer uma dessas palavras, um menu em lista se abre para baixo, mostrando as opções disponíveis.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_screen_mt.png" alt="Imagem do Menu de Linha de Texto" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_mt.png" alt="Imagem do Menu de Linha de Texto" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>2. Barra de Atalhos (Barra de Ferramentas):</b> É a linha cheia de ícones logo abaixo dos menus. Ela traz botões rápidos para as funções que mais usamos no dia a dia, como desfazer, imprimir, formatar como moeda, mudar a cor do texto e aplicar bordas.</p>
+            <p><b>2. Barra de Atalhos ou Barra de Ferramentas:</b> É a linha cheia de ícones logo abaixo dos menus. Ela traz botões rápidos para as funções que mais usamos no dia a dia, como desfazer, imprimir, formatar como moeda, mudar a cor do texto e aplicar bordas.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_screen_ba.png" alt="Imagem da Barra de Atalhos" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_ba.png" alt="Imagem da Barra de Atalhos" style="width: 100%; height: auto;"></div>
+            </div><br>
+                        
+            <p><b>3. Barra de Fórmulas:</b> É o espaço em branco comprido que fica ao lado da Caixa de Nome. Quando você clica em uma célula que possui um cálculo ou uma palavra, é aqui que o Google Planilhas te mostra o que foi digitado de verdade ali dentro.</p>
+            <div class="container-print-tela">
+                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>3. Caixa de Nome (Indicador de Célula):</b> Localizada no canto esquerdo, logo acima da grade. Ela mostra exatamente qual célula está selecionada no momento (por exemplo, A1) e serve para você se localizar rapidamente na planilha.</p>
+            <p><b>4. Área de Trabalho:</b> O corpo central da tela. Uma grande malha quadriculada onde as colunas são organizadas por letras (A, B, C...) e as linhas por números (1, 2, 3...). É aqui que mágina acontece e onde montamos nossas tabelas.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_screen_cn.png" alt="Imagem da Caixa de Nome" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>4. Barra de Fórmulas:</b> É o espaço em branco comprido que fica ao lado da Caixa de Nome. Quando você clica em uma célula que possui um cálculo ou uma palavra, é aqui que o Google Planilhas te mostra o que foi digitado de verdade ali dentro.</p>
+            <p><b>5. Guias de Planilhas:</b> Ficam no canto inferior esquerdo do navegador. Permitem que você crie várias páginas diferentes dentro de um mesmo arquivo de planilha, clicando no botão de mais (+).</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
-            </div><br>
-            
-            <p><b>5. Área de Trabalho:</b> O corpo central da tela. Uma grande malha quadriculada onde as colunas são organizadas por letras (A, B, C...) e as linhas por números (1, 2, 3...). É aqui que mágina acontece e onde montamos nossas tabelas.</p>
-            <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
-            </div><br>
-            
-            <p><b>6. Guias de Planilhas (Abas Inferiores):</b> Ficam no canto inferior esquerdo do navegador. Permitem que você crie várias páginas diferentes dentro de um mesmo arquivo de planilha, clicando no botão de mais (+).</p>
-            <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_screen_gp.png" alt="Imagem das Guias de Planilhas" style="width: 100%; height: auto;"></div>
-            </div><br>
-            
-            <p><b>7. Indicador de Salvamento Automático:</b> Um pequeno ícone de nuvem que fica perto do menu superior. Como o Google Planilhas funciona na internet, ele avisa se todas as alterações que você fez já foram guardadas na nuvem com segurança.</p>
-            <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/google_screen_is.png" alt="Imagem do Indicador de Salvamento" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_gp.png" alt="Imagem das Guias de Planilhas" style="width: 100%; height: auto;"></div>
             </div><br>
         `,
         botoes: [
@@ -274,78 +264,68 @@ const storyData = {
             
             <b>Como abrir o Google Planilhas usando apenas o teclado:</b><br><br>
             Se você estiver na Área de Trabalho do Windows, siga estes passos:<br>
-            1. Pressione a tecla <b>Windows</b> <span style="display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;"><img src="assets/img/windows_icon.png" alt="Ícone do Windows" style="width: auto; height: 1em;"></span> para abrir o menu iniciar.<br>
-            2. Digite o nome do seu navegador de internet (ex: <code>chrome</code> ou <code>edge</code>) e aperte <b>Enter</b> <span style="display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;"><img src="assets/img/enter_icon.png" alt="Ícone da tecla Enter" style="width: auto; height: 1em;"></span>.<br>
-            3. Na barra de endereços que se abrir, digite: <code>sheets.new</code> e pressione <b>Enter</b> <span style="display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;"><img src="assets/img/enter_icon.png" alt="Ícone da tecla Enter" style="width: auto; height: 1em;"></span>. Uma planilha novinha em folha surgirá na tela de forma instantânea!<br><br>
+            1. Pressione a tecla <b>Windows</b> <span class="tecla"><img src="assets/img/icons/windows.svg" alt="Ícone do Windows" style="width: auto; height: 1em;"></span> para abrir o menu iniciar.<br>
+            2. Digite o nome do seu navegador de internet (ex: <code>chrome</code> ou <code>edge</code>) e pressione <span class="tecla">enter</span>.<br>
+            3. Na barra de endereços que se abrir, digite: <code>sheets.new</code> e pressione <span class="tecla">enter</span>. Uma planilha novinha em folha surgirá na tela de forma instantânea!<br><br>
 
             <div class="caixa-atalhos-teclado">
                 <h4>Atalhos de acesso às barras de ferramentas</h4><br>
                 <p>No ambiente web, os navegadores às vezes disputam os atalhos com as páginas. Por isso, os comandos do Google Planilhas usam combinações específicas. Teste os comandos a seguir:</p><br>
                 
                 <ul class="lista-teclado">
-                    <li><b>Atalhos de Menus (Alt + Letra):</b> Para abrir os menus superiores sem mouse no Windows, segure <code>alt</code> junto com a tecla Shift e aperte a letra inicial do menu (ex: <code>alt</code> + <code>shift</code> + <code>A</code> abre o menu Arquivo; <code>alt</code> + <code>shift</code> + <code>I</code> abre o menu Inserir).</li>
-                    <li><b>Teclas de Setas:</b> Permitem movimentar a seleção quadradinho por quadradinho pelas linhas e colunas da <b>Área de Trabalho</b> de forma precisa.</li>
-                    <li><b>Tecla ENTER:</b> Entra no modo de edição da célula selecionada, posicionando o cursor para você digitar ou alterar os dados.</li>
-                    <li><b>Tecla ESC:</b> Cancela a edição atual na célula ou fecha qualquer menu suspenso que tenha sido aberto por engano, devolvendo o foco para a grade.</li>
-                    <li><b>Teclas ALT + SETA PARA BAIXO / SETA PARA CIMA:</b> Quando estiver com uma das <b>Guias de Planilhas</b> (abas inferiores) selecionada, use essa combinação para abrir o menu de opções daquela aba ou alternar entre as páginas.</li>
+                    <li><b>Tecla <span class="tecla">alt</span>:</b> Para abrir os menus superiores sem mouse no Windows, pressione <code>alt</code>. Observe que cada opção da barra de menus terá uma das letras sublinhadas. Pressione a letra sublinha para navegar entre as opções.</li><br>
+                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Permitem que você navegue dentro das opções da <b>Barra de menus</b> após ativá-lo pela tecla <code>alt</code>, ou mude de célula dentro da <b>Área de Trabalho</b>.</li><br>
+                    <li><b>Tecla <span class="tecla">enter</span>:</b> Entra no modo de edição da célula selecionada, posicionando o cursor para você digitar ou alterar os dados.</li><br>
+                    <li><b>Tecla <span class="tecla">esc</span>:</b> Cancela a edição atual na célula ou fecha qualquer menu suspenso que tenha sido aberto por engano, devolvendo o foco para a grade.</li><br>
+                    <li><b>Teclas <span class="tecla">alt</span>+<span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span> e <span class="tecla">alt</span>+<span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>:</b> Quando estiver com uma das <b>Guias de Planilhas</b> (abas inferiores) selecionada, use essa combinação para abrir o menu de opções daquela aba ou alternar entre as páginas.</li><br>
                 </ul>
             </div>
         `,
         botoes: [
             { texto: "Voltar", destino: "ambiente_google" },
-            { texto: "Avançar", destino: "interface_google" }
+            { texto: "Avançar", destino: "interface" }
         ]
     },
 
-    // ================= RAMIFICAÇÃO: ONLYOFFICE =================
+    // ================= RAMIFICAÇÃO ONLYOFFICE =================
 
     ambiente_onlyoffice: {
         etapa: 3,
         titulo: "Conhecendo a Tela do OnlyOffice Desktop",
         texto: `
-            Você selecionou o <b>OnlyOffice Desktop</b>. Ele traz o melhor dos dois mundos: funciona de forma local e offline no computador, mas utiliza o design moderno baseado em abas idêntico ao Excel profissional.<br><br>
+            Você selecionou o <b>OnlyOffice Desktop</b>. Ele traz o melhor dos dois mundos: funciona de forma local e offline no computador, mas utiliza o design moderno baseado em abas parecidas com o Microsoft Excel Desktop.<br><br>
             
             Veja abaixo a interface padrão do OnlyOffice assim que abrimos um arquivo novo:<br><br>
 
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen.png" alt="Imagem da tela do OnlyOffice" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen.png" alt="Imagem da tela do OnlyOffice" style="width: 100%; height: auto;"></div>
             </div>
 
             <p>A partir da imagem acima, vamos compreender a função de cada uma das suas partes principais:</p><br>
 
-            <p><b>1. Guias de Menus em Abas:</b> Localizadas no topo da tela (Arquivo, Página Inicial, Inserir, Layout, Fórmulas...). Clicar nelas altera dinamicamente todo o conjunto de ferramentas exibido logo abaixo.</p>
+            <p><b>1. Guias de Menus:</b> Localizadas no topo da tela (Arquivo, Página Inicial, Inserir, Layout, Fórmulas, Dados, Colaboração, Proteção, Visualizar, Plug-ins e AI). Clicar nelas altera dinamicamente todo o conjunto de ferramentas exibido logo abaixo.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen_gm.png" alt="Imagem das Guias de Menus" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_gm.png" alt="Imagem das Guias de Menus" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>2. Faixa de Opções (Painel Superior):</b> É a grande régua de ferramentas que abriga todos os comandos visuais do programa. Ela se transforma conforme a Guia de Menu escolhida para agilizar o seu trabalho.</p>
+            <p><b>2. Faixa de Opções:</b> É a régua de ferramentas que abriga todos os comandos visuais do programa. Ela se modifica conforme a Guia de Menu selecionada.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen_fo.png" alt="Imagem da Faixa de Opções" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_fo.png" alt="Imagem da Faixa de Opções" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>3. Barra de Fórmulas:</b> A linha horizontal comprida posicionada logo acima da grade de células. Indispensável para visualizar e auditar as funções matemáticas e os textos inseridos nas células.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>4. Área de Trabalho:</b> A grande matriz quadriculada de linhas e colunas. É neste espaço central que você insere os dados numéricos e textuais para construir seus relatórios.</p>
+            <p><b>4. Área de Trabalho:</b> A grande matriz quadriculada de linhas e colunas. É neste espaço central que você insere os dados numéricos e textuais para construir tabelas e relatórios.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>5. Painel Lateral de Configurações (Barra Direita):</b> Uma exclusividade muito prática do OnlyOffice. Esse painel inteligente exibe opções rápidas de texto, bordas e gráficos de acordo com o que você clicou, evitando que janelas extras fiquem surgindo na frente da tabela.</p>
+            <p><b>5. Guias de Planilhas:</b> Abas localizadas na parte inferior esquerda. Permitem gerenciar diferentes planilhas e organizar o seu documento em páginas separadas.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen_pl.png" alt="Imagem do Painel Lateral" style="width: 100%; height: auto;"></div>
-            </div><br>
-            
-            <p><b>6. Guias de Planilhas:</b> Abas localizadas na parte inferior esquerda. Permitem gerenciar diferentes planilhas e organizar o seu documento em páginas separadas (Ex: Gastos de Janeiro, Gastos de Fevereiro).</p>
-            <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen_gp.png" alt="Imagem das Guias de Planilhas" style="width: 100%; height: auto;"></div>
-            </div><br>
-            
-            <p><b>7. Barra de Status:</b> A faixa escura no rodapé do programa. Ela mostra o status do arquivo e oferece, no canto direito, os botões de controle de Zoom para ajustar o tamanho da tela para o seu conforto visual.</p>
-            <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/onlyoffice_screen_bs.png" alt="Imagem da Barra de Status" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_gp.png" alt="Imagem das Guias de Planilhas" style="width: 100%; height: auto;"></div>
             </div><br>
         `,
         botoes: [
@@ -362,90 +342,98 @@ const storyData = {
             
             <b>Como abrir o OnlyOffice usando apenas o teclado:</b><br><br>
             Se você estiver na Área de Trabalho do Windows, siga estes passos:<br>
-            1. Pressione a tecla <b>Windows</b> <span style="display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;"><img src="assets/img/windows_icon.png" alt="Ícone do Windows" style="width: auto; height: 1em;"></span> para abrir o menu iniciar.<br>
+            1. Pressione a tecla <b>Windows</b> <span class="tecla"><img src="assets/img/icons/windows.svg" alt="Ícone do Windows" style="width: auto; height: 1em;"></span> para abrir o menu iniciar.<br>
             2. Digite a palavra <code>onlyoffice</code>.<br>
-            3. Pressione a tecla <b>Enter</b> <span style="display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;"><img src="assets/img/enter_icon.png" alt="Ícone da tecla Enter" style="width: auto; height: 1em;"></span>. O painel central do programa será aberto imediatamente.<br><br>
+            3. Pressione a tecla <span class="tecla">enter</span>. O painel central do programa será aberto imediatamente.<br><br>
 
             <div class="caixa-atalhos-teclado">
                 <h4>Atalhos de acesso às barras de ferramentas</h4><br>
-                <p>O OnlyOffice respeita a mesma engenharia de atalhos consagrada nos melhores pacotes de escritório do mercado. Pratique os comandos abaixo:</p><br>
+                <p>O OnlyOffice respeita a mesma regras de atalhos consagrada nos principais pacotes de escritório do mercado. Pratique os comandos abaixo:</p><br>
                 
                 <ul class="lista-teclado">
-                    <li><b>Tecla ALT:</b> Pressione e solte a tecla <code>alt</code>. O sistema exibirá pequenas letras-guia sobre cada aba do menu superior. Pressione a letra indicada no teclado para saltar direto para aquela seção de ferramentas.</li>
-                    <li><b>Teclas de Setas:</b> Movem o cursor célula por célula na <b>Área de Trabalho</b> ou navegam entre as ferramentas superiores após o acionamento dos menus.</li>
-                    <li><b>Tecla F2:</b> Abre instantaneamente a edição interna da célula ativa, jogando o foco do teclado para a <b>Barra de Fórmulas</b>.</li>
-                    <li><b>Tecla TAB:</b> Pula para a próxima opção ou campo em menus de configuração e avança uma célula para o lado direito na grade principal.</li>
-                    <li><b>Tecla ESC:</b> Cancela ações, limpa seleções indesejadas de menus e fecha painéis suspensos voltando para a segurança da grade de dados.</li>
-                    <li><b>Teclas CTRL + PAGE DOWN / PAGE UP:</b> Permitem transitar rapidamente entre as diferentes <b>Guias de Planilhas</b> criadas na parte de baixo do arquivo.</li>
+                    <li><b>Tecla <span class="tecla">alt</span>:</b> Pressione e solte a tecla <code>alt</code>. O sistema exibirá pequenas letras sobre cada seção de ferramentas disponível. Pressione no teclado a letra indicada na tela para saltar direto para aquela seção de ferramentas.</li><br>
+                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Movem o cursor célula por célula na <b>Área de Trabalho</b> ou navegam entre as ferramentas superiores após o acionamento dos menus.</li><br>
+                    <li><b>Tecla <span class="tecla">F2</span>:</b> Abre instantaneamente a edição interna da célula ativa, jogando o foco do teclado para a <b>Barra de Fórmulas</b>.</li><br>
+                    <li><b>Tecla <span class="tecla">tab</span>:</b> Avança uma célula para o lado direito na grade principal.</li><br>
+                    <li><b>Tecla <span class="tecla">esc</span>:</b> Cancela ações, limpa seleções indesejadas de menus e fecha painéis suspensos voltando para a grade da área de trabalho.</li><br>
+                    <li><b>Teclas <span class="tecla">ctrl</span>+<span class="tecla">pg up</span> e <span class="tecla">ctrl</span>+<span class="tecla">pg dw</span>:</b> Permitem transitar rapidamente entre as diferentes planilhas criadas na <b>Guias de Planilhas</b>, na parte inferior da tela.</li><br>
                 </ul>
             </div>
         `,
         botoes: [
             { texto: "Voltar", destino: "ambiente_onlyoffice" },
-            { texto: "Avançar", destino: "interface_onlyoffice" }
+            { texto: "Avançar", destino: "interface" }
         ]
     },
 
-// 
+    // ================= ETAPA 4: Interfaces =================
 
-    interface_excel: {
+    interface: {
         etapa: 4,
-        titulo: "4. Estrutura e Conceitos no Excel",
+        titulo: "4. Interface da área de trabalho",
         texto: `
-            Agora que você já sabe como se mover pela tela, vamos compreender os conceitos essenciais que dão vida à grade de uma planilha eletrônica.<br><br>
+            Independentemente da ferramenta que você escolha (Excel, Google Planilhas ou OnlyOffice), a área de trabalho de uma planilha é sempre a mesma: uma enorme grade organizada por letras e números, onde cada retângulo possui uma referência exclusiva e serve para guardar uma informação. <br><br>
             
+            Observe atentamente cada uma das partes que compõem a área de trabalho da imagem a seguir:<br>
+
             <div class="container-print-tela">
-                <div class="placeholder-print">[PRINT DETALHADO: Linhas, Colunas, Células e Cursor do Mouse no Excel]</div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_grid_map.png" alt="Imagem da área de trabalho do OnlyOffice. Na imagem, a linha 3 está pintada de azul, a coluna B está pintada de amarelo, a célula B3 está pintada de verde e 3 intervalos diferentes estão pintados de laranja" style="width: 100%; height: auto;"></div>
             </div>
 
-            <ul class="lista-conceitos">
-                <li><b>Linhas e Colunas:</b> As <b>Colunas</b> são verticais e identificadas por letras (A, B, C...). As <b>Linhas</b> são horizontais e identificadas por números (1, 2, 3...).</li>
-                <li><b>Célula:</b> É o quadradinho gerado pelo cruzamento de uma linha com uma coluna. O nome dela (endereço) combina a letra e o número. Se você clicar na primeira célula da planilha, você estará na célula <b>A1</b>.</li>
-                <li><b>Pasta de Trabalho e Planilha:</b> O arquivo que você salva no computador é chamado de <b>Pasta de Trabalho</b>, porque ele pode conter várias folhas (<b>Planilhas</b>) separadas por abas no rodapé. O formato de arquivo padrão do Excel é o <b>.xlsx</b>.</li>
-                <li><b>O Segredo do Cursor do Mouse:</b> Caso precise usar o mouse, fique atento! Dependendo de onde você o posiciona na célula, a seta muda de desenho e de função:
-                    <ul>
-                        <li><b>Cruz Branca Gorda:</b> Aparece no meio da célula. Serve para <i>selecionar</i> elementos.</li>
-                        <li><b>Cruz Fina Preta (no canto inferior direito):</b> É a Alça de Preenchimento. Serve para <i>arrastar e copiar</i> fórmulas ou sequências de dados rapidamente.</li>
-                        <li><b>Seta de Quatro Pontas (nas bordas):</b> Serve para <i>mover</i> o conteúdo da célula para outro lugar.</li>
-                    </ul>
-                </li>
-            </ul>
+            <p>Vamos entender cada umas dessas partes?</p><br>
+
+            <p><b>1. Colunas:</b> São as divisões verticais da grade, identificadas sempre por <b>letras</b> (A, B, C...) posicionadas na parte superior da área de trabalho. Na imagem, a coluna B foi pintada de Amarelo.</p><br>
+
+            <p><b>2. Linhas:</b> São as divisões horizontais, identificadas por <b>números</b> (1, 2, 3...) posicionados na lateral esquerda da área de trabalho. Na imagem, a Linha 3 foi pintada de azul.</p><br>
+
+            <p><b>3. Célula:</b> É o retângulo gerado pelo cruzamento de uma linha com uma coluna. O nome ou endereço da célula é a combinação da letra com o número. Na imagem, o cruzamento da coluna B com a linha 3 gera a Célula B3, pintada  na cor Verde.</p><br>
+
+            <p><b>4. Intervalo:</b> É um conjunto de células selecionadas juntas. Sempre que nos referimos a um intervalo da planilha, indicamos o início desse intervalo pelo endereço da célula localizada no canto superior esquerdo (por exemplo, F6) e o final do intervalo pelo endereço da célula no canto inferior direito (por exemplo, H10). Na linguagem das planilhas, nós escrevemos um intervalo usando o sinal de dois pontos (:) para separar os endereços de início e final (por exemplo, F6:H10). Sempre que você vê os dois pontos (:) entenda como se fosse a palavra "até". Na imagem, estão pintados de laranja os intervalos D5:F5, D7:D10 e F6:H10.</p><br>
+
+            <div class="caixa-voce-sabia verde-excel">
+                <h4>Você Sabia?</h4>
+                <p>Uma planilha eletrônica parece infinita, mas ela tem limites! No OnlyOffice e no Excel, o tamanho máximo que uma única página pode ter é de exatamente <b>1.048.576 linhas</b> e <b>16.384 colunas</b>.</p><br>
+
+                <p><b>Mas atenção</b>, só porque esse espaço existe, não significa que devemos tentar lotar a planilha até o final. Se você colocar informações demais (como o cadastro de todos os habitantes de uma grande cidade), o computador vai travar ou ficar muito lento ao fazer contas simples. O arquivo também corre um sério risco de <b>corromper</b> (dar um erro que o impede de abrir normalmente), fazendo você perder todos os seus dados.</p><br>
+
+                <p>Quando uma empresa precisa mexer com essa quantidade gigantesca de dados, o correto não é usar planilhas, mas sim um <b>Banco de Dados</b> (sistemas especiais criados apenas para guardar e processar milhões de informações com total segurança, rapidez e sem risco de travamentos).</p>
+            </div><br>
         `,
         botoes: [
-            { texto: "Voltar", destino: "teclado_excel" },
-            { texto: "Avançar", destino: "escolha_ods" }
+            { texto: "Voltar", destino: "voltar_tela" },
+            { texto: "Avançar", destino: "teclado_interface" }
         ]
     },
 
-    // ================= ETAPA 4: INTERFACES (RAMIFICADAS POR APLICATIVO) =================
-
-    interface_excel: {
+    teclado_interface: {
         etapa: 4,
-        titulo: "4. Estruturas e Conceitos no Excel",
-        texto: "",
-        botoes: [
-            { texto: "Voltar", destino: "ambiente_excel" },
-            { texto: "Avançar", destino: "escolha_ods" }
-        ]
-    },
+        titulo:"Dominando a área de trabalho pelo teclado",
+        texto:`
+            <div class="caixa-atalhos-teclado">
+                <h4>Seleção Avançada Usando Apenas o Teclado</h4>
+                <p>Para ganhar velocidade e trabalhar como um profissional, você pode selecionar linhas, colunas e intervalos inteiros sem tocar no mouse. Pratique estas combinações de comando:</p><br>
+                
+                <ul class="lista-teclado">
+                    <li><b>Selecionar um Intervalo:</b> Segure a tecla <span class="tecla">shift</span> e vá apertando as <b>Teclas de Setas</b>. O sistema vai esticando a seleção quadradinho por quadradinho.</li><br>
+                    <li><b>Selecionar uma Linha Inteira:</b> Clique em qualquer célula da linha desejada, segure <span class="tecla">shift</span> e pressione a barra de <span class="tecla">espaço</span>.</li><br>
+                    <li><b>Selecionar uma Coluna Inteira:</b> Clique em qualquer célula da coluna desejada, segure <span class="tecla">ctrl</span> e pressione a barra de <span class="tecla">espaço</span>.</li><br>
+                    <li><b>Selecionar a Planilha Toda:</b> Para pintar ou formatar a grade inteira de uma vez só, segure <span class="tecla">ctrl</span> e pressione a letra <span class="tecla">A</span> (ou <span class="tecla">shift</span> + <span class="tecla">ctrl</span> + <span class="tecla">espaço</span> no Excel).</li>
+                </ul>
+            </div><br>
 
-    interface_google: {
-        etapa: 4,
-        titulo: "4. Estruturas e Conceitos no Google Planilhas",
-        texto: "",
+            <p><b>Os Segredos do Cursor do Mouse:</b> Caso você use o mouse para navegar, repare bem que a seta muda de formato dependendo de onde está posicionada na célula ativa, mudando completamente o que o comando faz:</p><br>
+            
+            <ul class="lista-teclado" style="list-style-type: none; padding-left: 0;">
+                <li><span class="tecla"><img src="assets/img/icons/cursor-seta.svg" alt="Ícone de seta padrão" style="width: auto; height: 1em;"></span> <b>Cruz Branca Gorda (ou Seta):</b> Fica no meio da célula. Serve pura e simplesmente para <b>selecionar</b>.</li><br>
+                <li><span class="tecla"><img src="assets/img/icons/cursor-mao.svg" alt="Ícone de mãozinha ou quatro pontas" style="width: auto; height: 1em;"></span> <b>Mãozinha (Nas Bordas):</b> Fica em cima da linha limite da célula. Se você clicar e arrastar, você irá <b>mover</b> o dado para outro lugar.</li><br>
+                <li><span class="tecla"><img src="assets/img/icons/cursor-mira.svg" alt="Ícone de cruz fina" style="width: auto; height: 1em;"></span> <b>Cruz Fina Preta (Canto Inferior Direito):</b> É a Alça de Preenchimento. Fica em cima do pontinho quadrado no canto da célula. Serve para <b>arrastar e copiar</b> sequências ou fórmulas para as células vizinhas.</li>
+            </ul>
+            
+            <p class="pergunta-direcionada">Agora que dominamos a estrutura do nosso ambiente de trabalho, estamos prontos para aplicar esses conhecimentos em um problema real!</p>
+        `,
         botoes: [
-            { texto: "Voltar", destino: "ambiente_google" },
-            { texto: "Avançar", destino: "escolha_ods" }
-        ]
-    },
-
-    interface_onlyoffice: {
-        etapa: 4,
-        titulo: "4. Estrutura e Conceitos no OnlyOffice",
-        texto: "",
-        botoes: [
-            { texto: "Voltar", destino: "ambiente_onlyoffice" },
-            { texto: "Avançar", destino: "escolha_ods" }
+            { texto: "Voltar", destino: "interface" },
+            { texto: "Avançar", destino: "mouse_interface" }
         ]
     },
 

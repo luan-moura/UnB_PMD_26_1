@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6.2373 197.9045 16 16" width="16px" height="16px"><defs><style>
+    g, symbol { 
+        display: inline !important; 
+        float: left; 
+        width: 60px !important; 
+        height: 60px !important; 
+        position: relative !important; 
+        border: 1px solid #e2e8f0;
+        margin: 5px;
+        background: #ffffff;
+    }
+    path { 
+        fill: #333333 !important;
+    }
+</style></defs><g id="btn-chartcategory-combo-bar-line" viewBox="0 0 20 20" transform="matrix(1, 0, 0, 1, -8.237348556518555, 195.90447998046875)"><path d="M11 5h3v12h-3zm-1 2H7v10h3zm-4 6H3v4h3zm12-2h-3v6h3z" opacity=".4"/><path d="M3 2H2v16h16v-1H3v-3.76l4.463-3.57 4.037 4.037 6.353-6.353-.707-.708-5.646 5.647L7.537 8.33 3 11.96z"/></g></svg>

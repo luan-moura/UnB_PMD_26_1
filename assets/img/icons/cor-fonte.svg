@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="83.8875 160.2999 10 13.393" width="10px" height="13.393px"><defs><style>
+    g, symbol { 
+        display: inline !important; 
+        float: left; 
+        width: 60px !important; 
+        height: 60px !important; 
+        position: relative !important; 
+        border: 1px solid #e2e8f0;
+        margin: 5px;
+        background: #ffffff;
+    }
+    path { 
+        fill: #333333 !important;
+    }
+</style></defs><g transform="matrix(1, 0, 0, 1, -0.3904706537723541, -9.093130111694336)" id="object-0"><path d="M 92.92 179.393 L 91.516 176.225 L 86.994 176.225 L 85.605 179.393 L 84.278 179.393 L 88.738 169.393 L 89.841 169.393 L 94.278 179.393 L 92.92 179.393 Z M 91.107 175.183 L 89.795 172.097 C 89.596 171.627 89.42 171.148 89.27 170.66 C 89.138 171.149 88.976 171.629 88.784 172.097 L 87.458 175.183 L 91.107 175.183 Z" style="stroke-width: 1px;"/><path d="M 94.278 180.752 L 94.278 182.786 L 84.278 182.786 L 84.278 180.752 L 94.278 180.752 Z" style="stroke-width: 1.517px;"/></g></svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-124.5559 54.4389 13 13" width="13px" height="13px"><defs><style>
+    g, symbol { 
+        display: inline !important; 
+        float: left; 
+        width: 60px !important; 
+        height: 60px !important; 
+        position: relative !important; 
+        border: 1px solid #e2e8f0;
+        margin: 5px;
+        background: #ffffff;
+    }
+    path { 
+        fill: #333333 !important;
+    }
+</style></defs><g id="btn-border-no" viewBox="0 0 20 20" transform="matrix(1, 0, 0, 1, -128.55593872070312, 50.43894577026367)"><path fill-rule="evenodd" d="M5 5H4V4h1zm0 2H4V6h1zM4 9h1V8H4zm1 2H4v-1h1zm-1 2h1v-1H4zm1 2H4v-1h1zm5-8h1V6h-1zm1 2h-1V8h1zm-1 4h1v-1h-1zm1 2h-1v-1h1zm-7 2h1v-1H4zM17 5h-1V4h1zm-1 2h1V6h-1zm1 2h-1V8h1zm-1 2h1v-1h-1zm1 2h-1v-1h1zm-1 2h1v-1h-1zm1 2h-1v-1h1zM6 5h1V4H6zm3 0H8V4h1zm1 0h1V4h-1zm3 0h-1V4h1zm1 0h1V4h-1zM7 17H6v-1h1zm1 0h1v-1H8zm3 0h-1v-1h1zm1 0h1v-1h-1zm3 0h-1v-1h1zm-9-6h1v-1H6zm3 0H8v-1h1zm1 0h1v-1h-1zm3 0h-1v-1h1zm1 0h1v-1h-1z" clip-rule="evenodd" opacity=".4"/></g></svg>

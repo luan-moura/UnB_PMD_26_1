@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-177.6231 3.9718 13.207 13.153" width="13.207px" height="13.153px"><defs><style>
+    g, symbol { 
+        display: inline !important; 
+        float: left; 
+        width: 60px !important; 
+        height: 60px !important; 
+        position: relative !important; 
+        border: 1px solid #e2e8f0;
+        margin: 5px;
+        background: #ffffff;
+    }
+    path { 
+        fill: #333333 !important;
+    }
+</style></defs><g id="btn-redo" viewBox="0 0 20 20" transform="matrix(1, 0, 0, 1, -180.6231231689453, 1.1248183250427246)"><path d="m14.293 8-3.447 3.447.707.707L16.207 7.5l-4.654-4.653-.707.707L14.293 7H8c-1.5 0-2.76.353-3.65 1.128C3.446 8.914 3 10.067 3 11.5c0 1.434.447 2.587 1.35 3.372C5.24 15.648 6.5 16 8 16h2v-1H8c-1.36 0-2.35-.32-2.994-.882C4.373 13.568 4 12.72 4 11.5s.373-2.067 1.006-2.618C5.65 8.322 6.64 8 8 8z"/></g></svg>

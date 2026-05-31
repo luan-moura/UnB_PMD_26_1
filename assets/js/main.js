@@ -1,18 +1,27 @@
+// Estado global da aplicação, rastreando o progresso, telas visitadas e histórico de navegação
 let gameState = {
     currentKey: "capa",
     maxEtapaAlcancada: 1,
-    ultimasTelasPorEtapa: { 1: "capa" }
+    ultimasTelasPorEtapa: { 1: "capa" },
+    historico: [] // Pilha dinâmica para armazenar o rastro das telas visitadas (Permite a volta genérica)
 };
 
 const LOCAL_STORAGE_KEY = "sec_didatica_planilhas_v2";
 
+/**
+ * Função de inicialização do sistema. 
+ * Carrega o progresso salvo do usuário, ativa os ouvintes de eventos do menu e renderiza a tela inicial.
+ */
 function init() {
     loadProgress();
     setupMenuEvents();
     renderScreen();
 }
 
-// Configura os cliques do Ícone Hambúrguer
+/**
+ * Configura os eventos de clique e interações de acessibilidade do menu lateral (sidebar).
+ * Controla a abertura/fechamento do menu hambúrguer e o fechamento automático ao clicar fora dele.
+ */
 function setupMenuEvents() {
     const menuBtn = document.getElementById("menu-btn");
     const sidebar = document.getElementById("sidebar-menu");
@@ -23,7 +32,6 @@ function setupMenuEvents() {
         menuBtn.setAttribute("aria-expanded", isOpen);
     };
 
-    // Fecha o menu se clicar fora dele (comportamento Mobile profissional)
     document.onclick = (e) => {
         if (!sidebar.contains(e.target) && e.target !== menuBtn) {
             sidebar.classList.remove("open");
@@ -32,6 +40,10 @@ function setupMenuEvents() {
     };
 }
 
+/**
+ * Renderiza o conteúdo HTML da tela atual (título, texto e botões de decisão).
+ * Também gerencia o teto pedagógico das etapas, classes de estilização dinâmica e comportamento mobile do menu.
+ */
 function renderScreen() {
     const appContainer = document.getElementById("app");
     const currentData = storyData[gameState.currentKey];
@@ -87,6 +99,10 @@ function renderScreen() {
     renderMenu();
 }
 
+/**
+ * Monta e atualiza visualmente a lista de etapas no menu lateral.
+ * Libera o acesso com foco e teclado apenas para as etapas que o estudante já alcançou (teto pedagógico).
+ */
 function renderMenu() {
     const menuContainer = document.getElementById("navigation-menu");
     menuContainer.innerHTML = "";
@@ -102,7 +118,6 @@ function renderMenu() {
             li.onclick = () => {
                 let destinoTela = gameState.ultimasTelasPorEtapa[etapa.id];
                 
-                // Se o aluno nunca clicou na etapa ramificada por aquele menu, acha uma tela padrão condizente
                 if (!destinoTela) {
                     destinoTela = Object.keys(storyData).find(key => storyData[key].etapa === etapa.id);
                 }
@@ -118,22 +133,58 @@ function renderMenu() {
     });
 }
 
+/**
+ * Controla o fluxo de transição entre os nós da história.
+ * Processa o botão genérico de voltar através do histórico e gerencia o reset completo ao reiniciar a aplicação.
+ */
 function goToNode(nodeKey) {
-    // Tratamento especial para o botão de reset na tela final
-    if(nodeKey === "capa" && gameState.currentKey === "conclusao") {
-        gameState = { currentKey: "capa", maxEtapaAlcancada: 0, ultimasTelasPorEtapa: { 0: "capa" } };
-    } else {
+    // Caso o botão acionado seja o de voltar genérico
+    if (nodeKey === "voltar_tela") {
+        if (gameState.historico && gameState.historico.length > 0) {
+            gameState.currentKey = gameState.historico.pop(); // Remove e retorna o último elemento do histórico
+        } else {
+            gameState.currentKey = "capa"; // Fallback de segurança
+        }
+    } 
+    // Tratamento especial para o botão de reset na tela final (Conclusão -> Capa)
+    else if (nodeKey === "capa" && gameState.currentKey === "conclusao") {
+        gameState = { currentKey: "capa", maxEtapaAlcancada: 1, ultimasTelasPorEtapa: { 1: "capa" }, historico: [] };
+    } 
+    // Avanço normal de tela
+    else {
+        // Salva a tela atual no histórico de navegação antes de mudar (evita duplicar se clicar no mesmo link)
+        if (gameState.currentKey !== nodeKey) {
+            if (!gameState.historico) gameState.historico = [];
+            gameState.historico.push(gameState.currentKey);
+        }
         gameState.currentKey = nodeKey;
     }
     renderScreen();
 }
 
-function saveProgress() { localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(gameState)); }
+/**
+ * Converte o estado atual do jogo (gameState) em texto JSON e o salva no LocalStorage do navegador.
+ */
+function saveProgress() { 
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(gameState)); 
+}
+
+/**
+ * Recupera o progresso do usuário armazenado no LocalStorage.
+ * Caso os dados existam, reconstrói o estado do jogo e garante a inicialização correta da pilha de histórico.
+ */
 function loadProgress() {
     const savedData = localStorage.getItem(LOCAL_STORAGE_KEY);
     if (savedData) {
-        try { gameState = JSON.parse(savedData); } catch (e) { console.error(e); }
+        try { 
+            gameState = JSON.parse(savedData); 
+            // Garante que a propriedade de histórico exista mesmo se o usuário tiver um save antigo gravado
+            if (!gameState.historico) gameState.historico = []; 
+        } catch (e) { 
+            console.error("Erro ao carregar o progresso salvo:", e); 
+        }
     }
 }
 
+// Dispara a inicialização assim que toda a página e recursos forem totalmente carregados
 window.onload = init;

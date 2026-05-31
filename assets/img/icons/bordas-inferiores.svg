@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-142.5463 55.2489 13 13" width="13px" height="13px"><defs><style>
+    g, symbol { 
+        display: inline !important; 
+        float: left; 
+        width: 60px !important; 
+        height: 60px !important; 
+        position: relative !important; 
+        border: 1px solid #e2e8f0;
+        margin: 5px;
+        background: #ffffff;
+    }
+    path { 
+        fill: #333333 !important;
+    }
+</style></defs><g id="btn-border-bottom" viewBox="0 0 20 20" transform="matrix(1, 0, 0, 1, -146.5463409423828, 51.2489128112793)"><path d="M4 17v-1h13v1z"/><path fill-rule="evenodd" d="M4 5V4h1v1zm2-1v1h1V4zm2 1V4h1v1zm2-1v1h1V4zm2 1V4h1v1zm2-1v1h1V4zm2 0v1h1V4zm-2 7v-1h1v1zm-2-1v1h1v-1zm-4 1v-1h1v1zm-2-1v1h1v-1zm10-4v1h1V6zm0 3V8h1v1zm0 1v1h1v-1zm0 3v-1h1v1zm0 1v1h1v-1zM4 7V6h1v1zm0 1v1h1V8zm0 3v-1h1v1zm0 1v1h1v-1zm0 3v-1h1v1zm6-9v1h1V6zm0 3V8h1v1zm0 1v1h1v-1zm0 3v-1h1v1zm0 1v1h1v-1z" clip-rule="evenodd" opacity=".4"/></g></svg>

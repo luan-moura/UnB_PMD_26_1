@@ -237,6 +237,28 @@ button:focus { outline: 4px solid var(--focus-outline); }
     font-size: 1.25rem;
 }
 
+.tecla {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    
+    display: inline-block;
+    padding: 0.2rem 0.9rem;
+    margin: 0 0.2rem;
+    vertical-align: middle;
+    
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    
+    /* Sombra cinza embaixo que imita a profundidade da tecla plástica */
+    box-shadow: 0 3px 0 #b5b5b5, 0 3px 3px rgba(0, 0, 0, 0.1); 
+    
+    position: relative;
+    top: -2px;
+}
+
 /* Responsividade - Celulares e Tablets em Modo Retrato */
 @media (max-width: 768px) {
     body { font-size: 1.15rem; }
