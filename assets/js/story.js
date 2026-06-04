@@ -6,10 +6,7 @@ const storyData = {
         titulo: "Introdução a planilhas eletrônicas",
         texto: "Olá, seja bem-vindo à nossa sequência didática de Introdução a planilhas eletrônicas! Nosso objetivo será te apresentar ao universo das planilhas eletrônicas através de situações ou problemas cotidianos que qualquer pessoa pode enfrentar.<br><br>Ao final desta jornada, esperamos que você aprenda a manipular as planilhas para organizar dados, produzir informação, fazer análises e compartilhar conhecimento.<br><br>Você está preparado?",
         botoes: [
-            { 
-                texto: "Iniciar", 
-                destino: "jornada" 
-            }
+            { texto: "Iniciar", destino: "jornada" }
         ]
     },
     jornada: {
@@ -17,14 +14,8 @@ const storyData = {
         titulo: "Nossa sequência didática",
         texto: "Nossa jornada passará por: Interfaces, Tipos de dados, Formatação, Operadores, Funções Iniciais, Funções Condicionais, Gráficos e Configurações de Impressão.",
         botoes: [
-            { 
-                texto: "Retornar", 
-                destino: "capa" 
-            }, 
-            { 
-                texto: "Continuar", 
-                destino: "cotidiano" 
-            }
+            { texto: "Retornar", destino: "voltar_tela" }, 
+            { texto: "Continuar", destino: "cotidiano" }
         ]
     },
 
@@ -35,7 +26,7 @@ const storyData = {
         titulo: "As planilhas no cotidiano",
         texto: "Olhando ao seu redor, você já parou para pensar em como as informações chegam até nós todos os dias? Muitas vezes, sem perceber, nossos olhos observam o mundo e a nossa mente busca identificar comportamentos e padrões nos acontecimentos ao redor. A depender da situação, nosso olhar acha uma estrutura muito conhecida e poderosa: as tabelas.<br><br>Elas estão presentes na nossa vida em muito mais coisas do que a gente imagina. Quase tudo que exige organização, planejamento ou clareza é distribuído em linhas e colunas. Esse padrão de layout não existe por acaso; ele foi desenhado para facilitar a nossa mente na busca e na localização rápida de informações. Quer ver só?<br><br>Pense no calendário pendurado na parede ou na tela do seu celular. O que ele é, senão uma tabela clássica? Dias da semana nas colunas, semanas do mês nas linhas. E a grade horária das disciplinas escolares? Segunda, terça, quarta... cada matéria encaixada no seu quadrado, cruzando o dia com o horário exato. O mesmo acontece quando você pesquisa o horário de funcionamento de um posto de saúde ou de um supermercado nas redes sociais. A estrutura de grade está lá, simplificando sua vida.<br><br>Até nos momentos burocráticos da vida, as tabelas guiam nossas decisões. Quando você recebe um cupom fiscal no mercado, cada item comprado ocupa uma linha, dividida em colunas invisíveis de quantidade, valor unitário e preço total. E quando a conta de água ou de energia elétrica chega na sua casa, além do valor e do vencimento, o que mais chama a sua atenção? Provavelmente será aquele gráfico ou aquela tabela com o histórico de consumo dos últimos doze meses. Ali, olhando linha por linha, você descobre se gastou mais no verão ou no inverno e consegue planejar o orçamento do próximo mês.<br><br>Se quisermos, podemos estender essa organização de informações para uma infinidade de coisas. Por exemplo, quando você está nas redes sociais e vai rolando a tela, cada postagem é como se fosse uma linha de uma tabela infinita em uma única coluna, onde cada linha está organizada de um jeito que você sabe exatamente a localização da informação de quem postou, o que postou, quando postou e quantas curtidas, compartilhamentos ou comentários foram feitos.<br><br>E se você reparar bem, essa mesma lógica está por trás das grandes manchetes que vemos nos jornais da TV ou nas postagens da internet. Os repórteres traduzem tabelas o tempo todo para nos contar o que está acontecendo no mundo.<br><br>Quando a televisão faz um alerta preocupante sobre o aumento de casos de dengue no nosso estado ou mostra o resultado de um mutirão de vacinação, o que sustenta aquela notícia são informações que foram organizadas em uma imensa tabela. Alguém ou algum sistema, em um computador da Secretaria de Saúde, precisou analisar e somar as linhas com os registros de notificações de cada bairro para saber onde a situação é mais crítica.<br><br>O mesmo acontece quando vemos notícias sobre a crise climática e o meio ambiente. Seja ao falar do aumento do desmatamento na Amazônia ou ao anunciar que batemos o recorde do ano mais quente da história, os especialistas dependem das planilhas. Eles passam meses coletando milhares de dados científicos em tabelas com a ajuda de sistemas de monitoramento computadorizado para que, no final, o cruzamento de informações nos mostre com clareza o tamanho do impacto das ações humanas no planeta.<br><br>Até aquela notícia sobre os reservatórios de água da nossa região estarem operando no nível vermelho segue essa regra. A reportagem geralmente exibe na tela um histórico com as últimas medições, organizadas por datas e volumes em metros cúbicos. Olhando essa tabela disfarçada de notícia, a sociedade entende a necessidade de economizar água e os cientistas conseguem estimar o tempo que teremos até o abastecimento colapsar.<br><br>Percebe como as tabelas moldam nossa visão da realidade? Dominar as planilhas eletrônicas não serve só para aprender a digitar números em um computador para trabalhar em um escritório. É desenvolver autonomia. É aprender a ler o mundo através dos dados para poder agir no mundo com informação, tendo a capacidade de entender os problemas, refletir sobre soluções e propor transformações.<br><br>Você está prestes a dar os primeiros passos para dominar essa ferramenta e aprender a construir essas estruturas. Vamos continuar?",
         botoes: [
-            { texto: "Retornar", destino: "jornada" }, 
+            { texto: "Retornar", destino: "voltar_tela" }, 
             { texto: "Continuar", destino: "ferramentas" }
         ]
     },
@@ -44,7 +35,7 @@ const storyData = {
 
     ferramentas: {
         etapa: 3, 
-        titulo: "3. Diferentes ferramentas para criar planilhas",
+        titulo: "Diferentes ferramentas para criar planilhas",
         texto: `
             Para começar a criar nossas tabelas, precisamos escolher nossa ferramenta de trabalho. Hoje, o mundo da tecnologia se divide em dois caminhos principais:<br><br>
             <b>1º. Editores em Nuvem (Online):</b> Como o Google Planilhas e o Microsoft Excel 365. Eles funcionam no próprio navegador e salvam as alterações automaticamente. São excelentes para trabalhos em grupo, mas exigem conexão constante com a internet.<br><br>
@@ -107,7 +98,7 @@ const storyData = {
             Considerando as explicações sobre as principais ferramentas de edição de planilhas eletrônicas, qual delas você gostaria de aprender?</p>
         `,
         botoes: [
-            { texto: "Voltar", destino: "cotidiano" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Excel", destino: "ambiente_excel" },
             { texto: "Google Planilhas", destino: "ambiente_google" },
             { texto: "OnlyOffice", destino: "ambiente_onlyoffice" }
@@ -155,12 +146,12 @@ const storyData = {
                 <div class="placeholder-print"><img src="assets/img/screens/excel_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>6. Área de Trabalho:</b> É o corpo principal do programa. Uma imensa grade quadriculada formada pelo cruzamento de linhas e colunas onde nós de fato construímos nossas tabelas e inserimos nossos dados.</p>
+            <p><b>6. Área de Trabalho da Planilha:</b> É o corpo principal do programa. Uma imensa grade quadriculada formada pelo cruzamento de linhas e colunas onde nós de fato construímos nossas tabelas e inserimos nossos dados.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/excel_screen_at.png" alt="Imagem da Área de Trabalho da planilha" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>7. Guias de Planilhas:</b> Ficam localizadas no canto inferior esquerdo, logo abaixo da área de trabalho. Elas mostram as páginas (abas) do seu arquivo. Um único arquivo de Excel pode ter várias planilhas separadas por ali (Planilha1, Planilha2, etc.).</p>
+            <p><b>7. Guias de Planilhas:</b> Ficam localizadas no canto inferior esquerdo, logo abaixo da área de trabalho da planilha. Elas mostram as páginas (abas) do seu arquivo. Um único arquivo de Excel pode ter várias planilhas separadas por ali (Planilha1, Planilha2, etc.).</p>
             <div class="container-print-tela">
                 <div class="placeholder-print"><img src="assets/img/screens/excel_screen_gp.png" alt="Imagem da Guias de Planilhas" style="width: 100%; height: auto;"></div>
             </div><br>
@@ -171,16 +162,16 @@ const storyData = {
             </div><br>
         `,
         botoes: [
-            { texto: "Voltar", destino: "ferramentas" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "teclado_excel" }
         ]
     },
 
     teclado_excel: {
         etapa: 3,
-        titulo: "Dominando o Excel pelo teclado",
+        titulo: "Usando o teclado para navegar pela interface do Excel",
         texto: `
-            Aprender a utilizar o Excel pelo teclado poupa tempo e é fundamental para a acessibilidade. Aqui aprenderemos quais são os principais comandos de teclado para navegar pelas guias do Excel.<br><br>
+            Aprender a navegar pela interface do Excel usando apenas o teclado é uma habilidade excelente para aumentar a produtividade e garantir acessibilidade no uso do aplicativo sem a dependência do mouse.<br><br>
             
             <b>Como abrir o Excel usando apenas o teclado:</b><br><br>
             Se você estiver na Área de Trabalho do Windows, siga estes passos:<br>
@@ -195,7 +186,7 @@ const storyData = {
                 
                 <ul class="lista-teclado">
                     <li><b>Tecla <span class="tecla">alt</span>:</b> Pressione e solte a tecla <code>alt</code>. Repare que pequenas letras pretas vão aparecer em cima de cada <b>Guia de Menu</b> e números em cima da <b>Barra de Acesso Rápido</b>. Se você apertar a letra correspondente no teclado, aquela guia se abrirá.</li><br>
-                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Permitem que você navegue botão por botão dentro dos <b>Grupos</b> da <b>Faixa de Opções</b> após ativar o menu pela tecla <code>alt</code>, ou mude de célula na <b>Área de Trabalho</b>.</li><br>
+                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Permitem que você navegue botão por botão dentro dos <b>Grupos</b> da <b>Faixa de Opções</b> após ativar o menu pela tecla <code>alt</code>, ou mude de célula na <b>área de trabalho da planilha</b>.</li><br>
                     <li><b>Tecla <span class="tecla">F2</span>:</b> Ao pressionar <code>F2</code>, o cursor vai direto para dentro da <b>Barra de Fórmulas</b> da célula selecionada, permitindo editar o texto sem precisar dar dois cliques com o mouse.</li><br>
                     <li><b>Tecla <span class="tecla">tab</span>:</b> Dentro da Faixa de Opções ou de janelas de configuração, o <code>tab</code> pula para o próximo botão ou campo de texto.</li><br>
                     <li><b>Tecla <span class="tecla">esc</span>:</b> Caso você entre em uma guia sem querer ou queira cancelar a ativação do teclado, aperte <code>esc</code> para voltar ao modo normal de edição.</li><br>
@@ -204,7 +195,7 @@ const storyData = {
             </div>
         `,
         botoes: [
-            { texto: "Voltar", destino: "ambiente_excel" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "interface" }
         ]
     },
@@ -213,7 +204,7 @@ const storyData = {
 
     ambiente_google: {
         etapa: 3,
-        titulo: "Conhecendo a tela do Google Planilhas",
+        titulo: "Conhecendo a interface do Google Planilhas",
         texto: `
             Você selecionou o <b>Google Planilhas</b>. Como ele funciona diretamente no seu navegador de internet, sua interface é mais limpa, mas possui todas as ferramentas essenciais organizadas em barras de fácil acesso.<br><br>
             
@@ -240,9 +231,9 @@ const storyData = {
                 <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>4. Área de Trabalho:</b> O corpo central da tela. Uma grande malha quadriculada onde as colunas são organizadas por letras (A, B, C...) e as linhas por números (1, 2, 3...). É aqui que mágina acontece e onde montamos nossas tabelas.</p>
+            <p><b>4. Área de Trabalho da Planilha:</b> O corpo central da tela. Uma grande malha quadriculada onde as colunas são organizadas por letras (A, B, C...) e as linhas por números (1, 2, 3...). É aqui que mágina acontece e onde montamos nossas tabelas.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/google_sheets_screen_at.png" alt="Imagem da área de trabalho da planilha" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>5. Guias de Planilhas:</b> Ficam no canto inferior esquerdo do navegador. Permitem que você crie várias páginas diferentes dentro de um mesmo arquivo de planilha, clicando no botão de mais (+).</p>
@@ -251,16 +242,16 @@ const storyData = {
             </div><br>
         `,
         botoes: [
-            { texto: "Voltar", destino: "ferramentas" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "teclado_google" }
         ]
     },
 
     teclado_google: {
         etapa: 3,
-        titulo: "Dominando o Google Planilhas pelo teclado",
+        titulo: "Usando o teclado para navegar na interface do Google Planilhas",
         texto: `
-            Aprender a utilizar o Google Planilhas pelo teclado economiza tempo e melhora a usabilidade, especialmente por rodar direto no navegador de internet. Vamos aprender como comandá-lo sem o mouse.<br><br>
+            Aprender a navegar pela interface do Google Planilhas usando apenas o teclado é uma habilidade excelente para aumentar a produtividade e garantir acessibilidade no uso do aplicativo sem a dependência do mouse.<br><br>
             
             <b>Como abrir o Google Planilhas usando apenas o teclado:</b><br><br>
             Se você estiver na Área de Trabalho do Windows, siga estes passos:<br>
@@ -274,7 +265,7 @@ const storyData = {
                 
                 <ul class="lista-teclado">
                     <li><b>Tecla <span class="tecla">alt</span>:</b> Para abrir os menus superiores sem mouse no Windows, pressione <code>alt</code>. Observe que cada opção da barra de menus terá uma das letras sublinhadas. Pressione a letra sublinha para navegar entre as opções.</li><br>
-                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Permitem que você navegue dentro das opções da <b>Barra de menus</b> após ativá-lo pela tecla <code>alt</code>, ou mude de célula dentro da <b>Área de Trabalho</b>.</li><br>
+                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Permitem que você navegue dentro das opções da <b>Barra de menus</b> após ativá-lo pela tecla <code>alt</code>, ou mude de célula dentro da <b>área de trabalho da planilha</b>.</li><br>
                     <li><b>Tecla <span class="tecla">enter</span>:</b> Entra no modo de edição da célula selecionada, posicionando o cursor para você digitar ou alterar os dados.</li><br>
                     <li><b>Tecla <span class="tecla">esc</span>:</b> Cancela a edição atual na célula ou fecha qualquer menu suspenso que tenha sido aberto por engano, devolvendo o foco para a grade.</li><br>
                     <li><b>Teclas <span class="tecla">alt</span>+<span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span> e <span class="tecla">alt</span>+<span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>:</b> Quando estiver com uma das <b>Guias de Planilhas</b> (abas inferiores) selecionada, use essa combinação para abrir o menu de opções daquela aba ou alternar entre as páginas.</li><br>
@@ -282,7 +273,7 @@ const storyData = {
             </div>
         `,
         botoes: [
-            { texto: "Voltar", destino: "ambiente_google" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "interface" }
         ]
     },
@@ -318,9 +309,9 @@ const storyData = {
                 <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_bf.png" alt="Imagem da Barra de Fórmulas" style="width: 100%; height: auto;"></div>
             </div><br>
             
-            <p><b>4. Área de Trabalho:</b> A grande matriz quadriculada de linhas e colunas. É neste espaço central que você insere os dados numéricos e textuais para construir tabelas e relatórios.</p>
+            <p><b>4. Área de Trabalho da Planilha:</b> A grande matriz quadriculada de linhas e colunas. É neste espaço central que você insere os dados numéricos e textuais para construir tabelas e relatórios.</p>
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_at.png" alt="Imagem da Área de Trabalho" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_screen_at.png" alt="Imagem da área de trabalho da planilha" style="width: 100%; height: auto;"></div>
             </div><br>
             
             <p><b>5. Guias de Planilhas:</b> Abas localizadas na parte inferior esquerda. Permitem gerenciar diferentes planilhas e organizar o seu documento em páginas separadas.</p>
@@ -329,16 +320,16 @@ const storyData = {
             </div><br>
         `,
         botoes: [
-            { texto: "Voltar", destino: "ferramentas" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "teclado_onlyoffice" }
         ]
     },
 
     teclado_onlyoffice: {
         etapa: 3,
-        titulo: "Dominando o OnlyOffice pelo teclado",
+        titulo: "Usando o teclado para navegar na interface do OnlyOffice",
         texto: `
-            Aprender a controlar o OnlyOffice pelo teclado é uma habilidade excelente para aumentar a produtividade e garantir acessibilidade no uso do aplicativo local. Veja como operá-lo.<br><br>
+            Aprender a navegar pela interface do OnlyOffice usando apenas o teclado é uma habilidade excelente para aumentar a produtividade e garantir acessibilidade no uso do aplicativo sem a dependência do mouse.<br><br>
             
             <b>Como abrir o OnlyOffice usando apenas o teclado:</b><br><br>
             Se você estiver na Área de Trabalho do Windows, siga estes passos:<br>
@@ -352,16 +343,16 @@ const storyData = {
                 
                 <ul class="lista-teclado">
                     <li><b>Tecla <span class="tecla">alt</span>:</b> Pressione e solte a tecla <code>alt</code>. O sistema exibirá pequenas letras sobre cada seção de ferramentas disponível. Pressione no teclado a letra indicada na tela para saltar direto para aquela seção de ferramentas.</li><br>
-                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Movem o cursor célula por célula na <b>Área de Trabalho</b> ou navegam entre as ferramentas superiores após o acionamento dos menus.</li><br>
+                    <li><b>Teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> e <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span>:</b> Movem o cursor célula por célula na <b>área de trabalho da planilha</b> ou navegam entre as ferramentas superiores após o acionamento dos menus.</li><br>
                     <li><b>Tecla <span class="tecla">F2</span>:</b> Abre instantaneamente a edição interna da célula ativa, jogando o foco do teclado para a <b>Barra de Fórmulas</b>.</li><br>
                     <li><b>Tecla <span class="tecla">tab</span>:</b> Avança uma célula para o lado direito na grade principal.</li><br>
-                    <li><b>Tecla <span class="tecla">esc</span>:</b> Cancela ações, limpa seleções indesejadas de menus e fecha painéis suspensos voltando para a grade da área de trabalho.</li><br>
+                    <li><b>Tecla <span class="tecla">esc</span>:</b> Cancela ações, limpa seleções indesejadas de menus e fecha painéis suspensos voltando para a grade da área de trabalho da planilha.</li><br>
                     <li><b>Teclas <span class="tecla">ctrl</span>+<span class="tecla">pg up</span> e <span class="tecla">ctrl</span>+<span class="tecla">pg dw</span>:</b> Permitem transitar rapidamente entre as diferentes planilhas criadas na <b>Guias de Planilhas</b>, na parte inferior da tela.</li><br>
                 </ul>
             </div>
         `,
         botoes: [
-            { texto: "Voltar", destino: "ambiente_onlyoffice" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "interface" }
         ]
     },
@@ -370,21 +361,21 @@ const storyData = {
 
     interface: {
         etapa: 4,
-        titulo: "4. Interface da área de trabalho",
+        titulo: "Interface dos editores de planilha",
         texto: `
-            Independentemente da ferramenta que você escolha (Excel, Google Planilhas ou OnlyOffice), a área de trabalho de uma planilha é sempre a mesma: uma enorme grade organizada por letras e números, onde cada retângulo possui uma referência exclusiva e serve para guardar uma informação. <br><br>
+            Independentemente da ferramenta que você escolha (Excel, Google Planilhas ou OnlyOffice), a área de trabalho da planilha é sempre a mesma: uma enorme grade organizada por letras e números, onde cada retângulo possui uma referência exclusiva e serve para guardar uma informação. <br><br>
             
-            Observe atentamente cada uma das partes que compõem a área de trabalho da imagem a seguir:<br>
+            Observe atentamente cada uma das partes que compõem a interface na imagem a seguir:<br>
 
             <div class="container-print-tela">
-                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_grid_map.png" alt="Imagem da área de trabalho do OnlyOffice. Na imagem, a linha 3 está pintada de azul, a coluna B está pintada de amarelo, a célula B3 está pintada de verde e 3 intervalos diferentes estão pintados de laranja" style="width: 100%; height: auto;"></div>
+                <div class="placeholder-print"><img src="assets/img/screens/onlyoffice_grid_map.png" alt="Imagem da área de trabalho da planilha no OnlyOffice. Na imagem, a linha 3 está pintada de azul, a coluna B está pintada de amarelo, a célula B3 está pintada de verde e 3 intervalos diferentes estão pintados de laranja" style="width: 100%; height: auto;"></div>
             </div>
 
             <p>Vamos entender cada umas dessas partes?</p><br>
 
-            <p><b>1. Colunas:</b> São as divisões verticais da grade, identificadas sempre por <b>letras</b> (A, B, C...) posicionadas na parte superior da área de trabalho. Na imagem, a coluna B foi pintada de Amarelo.</p><br>
+            <p><b>1. Colunas:</b> São as divisões verticais da grade, identificadas sempre por <b>letras</b> (A, B, C...) posicionadas na parte superior da interface. Na imagem, a coluna B foi pintada de Amarelo.</p><br>
 
-            <p><b>2. Linhas:</b> São as divisões horizontais, identificadas por <b>números</b> (1, 2, 3...) posicionados na lateral esquerda da área de trabalho. Na imagem, a Linha 3 foi pintada de azul.</p><br>
+            <p><b>2. Linhas:</b> São as divisões horizontais, identificadas por <b>números</b> (1, 2, 3...) posicionados na lateral esquerda da interface. Na imagem, a Linha 3 foi pintada de azul.</p><br>
 
             <p><b>3. Célula:</b> É o retângulo gerado pelo cruzamento de uma linha com uma coluna. O nome ou endereço da célula é a combinação da letra com o número. Na imagem, o cruzamento da coluna B com a linha 3 gera a Célula B3, pintada  na cor Verde.</p><br>
 
@@ -400,61 +391,342 @@ const storyData = {
             </div><br>
         `,
         botoes: [
-            { texto: "Voltar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "teclado_interface" }
         ]
     },
 
     teclado_interface: {
         etapa: 4,
-        titulo:"Dominando a área de trabalho pelo teclado",
-        texto:`
-            <div class="caixa-atalhos-teclado">
-                <h4>Seleção Avançada Usando Apenas o Teclado</h4>
-                <p>Para ganhar velocidade e trabalhar como um profissional, você pode selecionar linhas, colunas e intervalos inteiros sem tocar no mouse. Pratique estas combinações de comando:</p><br>
-                
-                <ul class="lista-teclado">
-                    <li><b>Selecionar um Intervalo:</b> Segure a tecla <span class="tecla">shift</span> e vá apertando as <b>Teclas de Setas</b>. O sistema vai esticando a seleção quadradinho por quadradinho.</li><br>
-                    <li><b>Selecionar uma Linha Inteira:</b> Clique em qualquer célula da linha desejada, segure <span class="tecla">shift</span> e pressione a barra de <span class="tecla">espaço</span>.</li><br>
-                    <li><b>Selecionar uma Coluna Inteira:</b> Clique em qualquer célula da coluna desejada, segure <span class="tecla">ctrl</span> e pressione a barra de <span class="tecla">espaço</span>.</li><br>
-                    <li><b>Selecionar a Planilha Toda:</b> Para pintar ou formatar a grade inteira de uma vez só, segure <span class="tecla">ctrl</span> e pressione a letra <span class="tecla">A</span> (ou <span class="tecla">shift</span> + <span class="tecla">ctrl</span> + <span class="tecla">espaço</span> no Excel).</li>
-                </ul>
-            </div><br>
+        titulo: "Usando o teclado para selecionar intervalos",
+        texto: `
+            <div>
 
-            <p><b>Os Segredos do Cursor do Mouse:</b> Caso você use o mouse para navegar, repare bem que a seta muda de formato dependendo de onde está posicionada na célula ativa, mudando completamente o que o comando faz:</p><br>
-            
-            <ul class="lista-teclado" style="list-style-type: none; padding-left: 0;">
-                <li><span class="tecla"><img src="assets/img/icons/cursor-seta.svg" alt="Ícone de seta padrão" style="width: auto; height: 1em;"></span> <b>Cruz Branca Gorda (ou Seta):</b> Fica no meio da célula. Serve pura e simplesmente para <b>selecionar</b>.</li><br>
-                <li><span class="tecla"><img src="assets/img/icons/cursor-mao.svg" alt="Ícone de mãozinha ou quatro pontas" style="width: auto; height: 1em;"></span> <b>Mãozinha (Nas Bordas):</b> Fica em cima da linha limite da célula. Se você clicar e arrastar, você irá <b>mover</b> o dado para outro lugar.</li><br>
-                <li><span class="tecla"><img src="assets/img/icons/cursor-mira.svg" alt="Ícone de cruz fina" style="width: auto; height: 1em;"></span> <b>Cruz Fina Preta (Canto Inferior Direito):</b> É a Alça de Preenchimento. Fica em cima do pontinho quadrado no canto da célula. Serve para <b>arrastar e copiar</b> sequências ou fórmulas para as células vizinhas.</li>
-            </ul>
-            
-            <p class="pergunta-direcionada">Agora que dominamos a estrutura do nosso ambiente de trabalho, estamos prontos para aplicar esses conhecimentos em um problema real!</p>
+                <p>Você também pode selecionar linhas, colunas e intervalos sem precisar utilizar o mouse. Pratique as combinações de comando a seguir:</p><br>
+
+                <h4>Selecionar uma célula específica:</h4> 
+                <p>Pressione <span class="tecla">ctrl</span>+<span class="tecla">G</span> no Excel <img src="assets/img/icons/microsoft_office_excel_icon.png" alt="Ícone do Excel" class="icone"> ou <span class="tecla">ctrl</span>+<span class="tecla">J</span> no Google Planilha <img src="assets/img/icons/google_sheets_icon.png" alt="Ícone do Google Planilhas" class="icone">. Uma caixa se abrirá para digitar o endereço da célula ou do intervalo (por exemplo <code>B1</code> ou <code>C1:C15</code>).</p><br>
+
+                <h4>Selecionar um Intervalo à partir da célula atual:</h4> 
+                <p>Segure a tecla <span class="tecla">shift</span> e vá apertando as teclas <span class="tecla"><img src="assets/img/icons/seta-cima.svg" alt="Ícone de seta para cima" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-baixo.svg" alt="Ícone de seta para baixo" style="width: 100%; height: auto;"></span>, <span class="tecla"><img src="assets/img/icons/seta-esquerda.svg" alt="Ícone de seta para a esquerda" style="width: 100%; height: auto;"></span> ou <span class="tecla"><img src="assets/img/icons/seta-direita.svg" alt="Ícone de seta para a direita" style="width: 100%; height: auto;"></span> conforme sua necessidade. O sistema alterará a seleção entre as células.</p><br>
+
+                <h4>Selecionar uma Linha Inteira:</h4> 
+                <p>Com a célula da linha desejada já selecionada, pressione <span class="tecla">shift</span>+<span class="tecla">espaço</span>.</p><br>
+
+                <h4>Selecionar uma Coluna Inteira:</h4> 
+                <p>Com a célula da coluna desejada já selecionada, pressione <span class="tecla">ctrl</span>+<span class="tecla">espaço</span>.</p><br>
+
+                <h4>Selecionar a Planilha Toda:</h4> 
+                <p>Combine os dois comandos de atalho anteriores, pressione <span class="tecla">shift</span>+<span class="tecla">ctrl</span>+<span class="tecla">espaço</span>.</p><br>
+
+                <div class="caixa-voce-sabia verde-excel">
+                    <h4>Você Sabia?</h4>
+                    <p>As teclas de atalho podem variar de um programa para o outro. Se algum comando ensinado não funcionar em seu computador, não se preocupe: isso acontece porque ferramentas diferentes (ou até versões diferentes do mesmo programa) podem mudar as regras de atalhos.</p><br>
+                    <p>Sempre que você iniciar em uma nova ferramenta, teste os comandos de teclado que você mais utiliza e verifique se os resultados são aqueles esperados. Se algum atalho não funcionar como deveria, pesquise na internet quais são os atalhos da nova ferramenta.</p>
+                </div>
+
+            </div>
         `,
         botoes: [
-            { texto: "Voltar", destino: "interface" },
+            { texto: "Retornar", destino: "voltar_tela" },
             { texto: "Avançar", destino: "mouse_interface" }
         ]
     },
 
-    // ================= TRILHA A: ODS 3 (SAÚDE E BEM-ESTAR) =================
-    
-    // === ETAPA 5: Tipos de Dados ===
-    saude_dados: {
-        etapa: 5, 
-        titulo: "E5. Dados de Saúde",
-        texto: "Vamos inserir dados de cobertura vacinal. Aqui trabalhamos com os tipos de dados de Números Inteiros e Percentuais.",
+mouse_interface: {
+        etapa: 4,
+        titulo: "A funcionalidade de cada modelo de cursor do mouse",
+        texto: `
+            <div>
+                <p>Se você optar por utilizar o mouse para navegar pela sua planilha, perceberá que o modelo do ponteiro/cursor muda de formato a depender do que estiver embaixo dele. Cada formato de cursor indica uma funcionalidade completamente diferente e importante dentro da grade ou da interface:</p><br>
+
+                <div class="tabela-ferramentas">
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-selecao-celulas.svg" alt="Desenho de uma cruz branca larga" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Cruz Branca Larga:</b> Aparece quando o mouse está posicionado bem no meio de uma célula. O único objetivo desse formato de cursor é <b>selecionar</b>. Ao clicar e arrastar, você seleciona um conjunto de células (um intervalo) sem alterar o conteúdo delas.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-arrastar-celulas.svg" alt="Desenho de uma cruz preta e fina" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Cruz Preta e Fina:</b> Também conhecida como alça de preenchimento. Só aparece quando o mouse está posicionado exatamente em cima do quadradinho que fica no canto inferior direito da célula ativa. Serve para <b>arrastar, copiar e preencher fórmulas</b> ou sequências de dados automaticamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-mover-celulas.svg" alt="Desenho de quatro setas apontando para os lados" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Quatro Setas:</b> Aparece quando você posiciona o mouse exatamente em cima da linha limite da borda de uma célula selecionada. Esse formato serve para <b>mover</b> a informação daquela célula para outro lugar na tabela. Também funciona para mover intervalos.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-largura-colunas.svg" alt="Desenho de uma linha vertical com duas setas apontando para os lados" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Redimensionar Colunas ou Linhas:</b> Aparece quando você posiciona o mouse exatamente na linha divisória entre duas letras de colunas ou dois números de linhas. Serve para <b>ajustar a largura ou a altura</b> das células. Clique e arraste para o lado para esticar a coluna se o texto não couber e ficar cortado.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-coluna.svg" alt="Desenho de uma seta preta apontando para baixo" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Seta para Baixo:</b> Aparece quando o mouse é posicionado em cima das letras que identificam as colunas (A, B, C...). Um clique com esse cursor <b>seleciona a coluna inteira</b> de uma vez só, até o final da planilha.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-linha.svg" alt="Desenho de uma seta preta apontando para a direita" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Seta para a Direita:</b> Aparece quando o mouse é posicionado em cima dos números que identificam as linhas (1, 2, 3...). Um clique com esse cursor <b>seleciona a linha inteira</b> da tabela.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-texto.png" alt="Desenho da letra I maiúscula romana" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Barra de Texto (I-Beam):</b> Aparece quando você está editando o conteúdo interno de uma célula ou digitando na barra de fórmulas. Indica que o sistema está em <b>modo de digitação</b>.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-link.png" alt="Desenho de uma mãozinha apontando com o indicador" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Mãozinha de Link:</b> Aparece quando o mouse passa por cima de um hiperlink, site ou botão clicável dentro da planilha, indicando que aquela palavra vai <b>abrir uma página da internet</b>.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-selecionar.png" alt="Seta padrão do sistema operacional" class="icone" style="width: 100%; height: auto; max-width: 50px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Seta Padrão:</b> É o ponteiro comum que você usa para clicar nos menus superiores, configurações, botões de salvar ou ferramentas fora da grade de células.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-voce-sabia verde-excel">
+                    <h4>Você Sabia?</h4>
+                    <p>Um dos erros mais comuns de quem está aprendendo a usar planilhas é não prestar atenção no modelo do cursor antes de iniciar algum comando. Selecionar, mover ou preencher são funcionalidades ativadas por modelos de cursor diferentes.</p><br>
+                    <p>Além disso, a depender do editor de planilhas que você escolher, outros símbolos visuais podem ser adotados para realizar a mesma tarefa. No Google Planilhas <img src="assets/img/icons/google_sheets_icon.png" alt="Ícone do Google Planilhas" class="icone">, por exemplo, em vez de exibir o cursor de quatro setas <img src="assets/img/icons/cursor-mover-celulas.svg" alt="Desenho de quatro setas apontando para os lados ou uma mãozinha" class="icone">, o sistema exibe o ícone de uma mão <img src="assets/img/icons/cursor-mao-fechada.png" alt="Ícone de mão fechada" class="icone">, que abre ou fecha simulando agarrar o bloco de dados.</p>
+                </div>
+
+            </div>
+        `,
         botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "escolha_ods" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "saude_formatacao" 
-            }
+            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Avançar", destino: "escolha_tematica" }
         ]
     },
+
+    escolha_tematica: {
+        etapa: 4,
+        titulo: "Hora de comecar a construção de tabelas",
+        texto: `
+            <div>
+                <p>Com a conclusão dos módulos anteriores, você finalizou a etapa de introdução aos componentes visuais e de navegação dos editores de planilhas. Neste momento, você já está apto a identificar as coordenadas da grade, utilizar os comandos de teclado e reconhecer as funções de cada modelo de cursor do mouse. Caso você não se recorde do conteúdo, retorne e revise o material.</p><br>
+                
+                <p>A partir do módulo seguinte, iniciaremos as atividades práticas de nossa sequência didática. Para aplicar os conceitos estudados, utilizaremos dados sobre temáticas que afetam a vida de todas as pessoas. Selecione abaixo qual das três áreas temáticas você deseja utilizar para desenvolver o seu projeto de construção de tabelas:</p><br>
+
+                <div class="tabela-ferramentas">
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/E_WEB_03.png" alt="Logotipo do ODS 3: Ícone de um coração com uma linha de batimentos cardíacos" class="icone" style="width: 100%; height: auto; max-width: 55px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Missão 1: Boa Saúde e Bem-Estar</b><br>
+                            Investigue planilhas focadas no mapeamento de atendimentos médicos, distribuição de vacinas ou dados de saúde pública da comunidade para garantir uma vida saudável a todos.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/E_WEB_06.png" alt="Logotipo do ODS 6: Ícone de uma torneira com uma gota caindo" class="icone" style="width: 100%; height: auto; max-width: 55px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Missão 2: Água Potável e Saneamento</b><br>
+                            Analise tabelas que medem o consumo de água, o acesso ao tratamento de esgoto e o desperdício de recursos hídricos em regiões que precisam de ajuda urgente.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/E_WEB_13.png" alt="Logotipo do ODS 13: Ícone de uma planta germinando" class="icone" style="width: 100%; height: auto; max-width: 55px;">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Missão 3: Ação Contra a Mudança Global do Clima</b><br>
+                            Estude planilhas de monitoramento climático, índices de poluição do ar ou desmatamento, descobrindo o impacto das alterações climáticas através dos números.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>A temáticas foram escolhidas tomando como referência e inspiração os Objetivos de Desenvolvimento Sustentável (ODS) propostos pela Organização das Nações Unidas (ONU). Oos ODS representam uma agenda de 17 metas globais adaptadas para combater a pobreza, reduzir as desigualdades sociais e regionais e preservar os recursos ambientais. No contexto nacional, esses objetivos orientam a formulação de políticas públicas, projetos educacionais e ações corporativas, buscando garantir que o crescimento econômico do país ocorra de forma inclusiva, sustentável e acessível a toda a população até 2030. Acesse <a href="https://brasil.un.org/pt-br/sdgs">https://brasil.un.org/pt-br/sdgs</a>.</p>
+
+                <div class="caixa-voce-sabia verde-excel">
+                    <h4>Atenção:</h4>
+                    <p>Independentemente do tema que você escolher, os conceitos de planilhas aprendidos em nossa sequência didática serão os mesmos. Escolha aquele assunto que você mais tem curiosidade ou afinidade em aprender.</p>
+                </div>
+
+                <p>Clique no botão do tema desejado:</p>
+            </div>
+        `,
+        botoes: [
+            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Saúde", destino: "tipo_dados_saude" },
+            { texto: "Água", destino: "tipo_dados_agua" },
+            { texto: "Clima", destino: "tipo_dados_clima" }
+        ]
+    },
+
+    // ================= TRILHA SAÚDE E BEM-ESTAR =================
+    
+    tipo_dados_saude: {
+        etapa: 5,
+        titulo: "Tipos de dados em editores de planilhas",
+        texto: `
+            <div>
+                <p>Antes de iniciar a digitação de sua primeira tabela, é fundamental compreender que os editores de planilhas eletrônicas tratam as informações de maneiras diferentes a depender do seu conteúdo. Configurar o tipo de dado correto garante que o programa possa realizar cálculos matemáticos e organizar as informações de forma precisa.</p><br>
+
+                <p>Abaixo, estão listados os principais tipos de dados, os quais utilizaremos em nossos exemplos:</p><br>
+
+                <div class="tabela-ferramentas">
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <span class="icone">Abc</span>
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Texto:</b> Compreende letras, palavras, códigos ou combinações de caracteres. É utilizado para identificar nomes, categorias, observações ou rótulos de colunas, e seus valores não são processados em cálculos aritméticos.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <span class="icone">123</span>
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Inteiro:</b> Destinado ao registro de números exatos, ou seja, valores sem frações ou casas decimais. É o formato ideal para representar contagens absolutas, quantidades de itens e unidades inteiras.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <span class="icone">1,23</span>
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Decimal:</b> Utilizado para números que possuem valores fracionados após a vírgula. É o padrão indicado para medições precisas, notas, pesos e, principalmente, para a representação de valores financeiros (moedas).</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <span class="icone">%</span>
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Percentual:</b> Representa a proporção de uma parte em relação a um todo com base em cem. Embora o editor processe essa informação internamente como um número decimal, a tela exibe o valor formatado com o símbolo de porcentagem.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <span class="white-icon" style="font-size: 1.6em;">📅</span>
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Data:</b> Armazena informações cronológicas estruturadas em formatos padronizados (como dia, mês e ano). Este tipo permite ao software calcular intervalos de tempo, prazos e datas de vencimento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-voce-sabia verde-excel">
+                    <h4>Atenção:</h4>
+                    <p>Por padrão, os editores de planilhas alinham automaticamente os dados do tipo <b>Texto</b> à esquerda da célula, enquanto os dados numéricos (como <b>Inteiro, Decimal e Percentual</b>) são alinhados à direita. Essa é uma dica visual útil para identificar se o programa reconheceu corretamente o número digitado ou se o interpretou erroneamente como texto.</p><br>
+                    <p>Alguns editores de planilha podem apresentar erros nos cálculos matemáticos quando você tentar calcular valores utilizando uma célula está configurada como texto. Outros editores conseguirão efetuar o cálculo, mas a recomendação é sempre configurar a célula com o tipo de dado correto.</p>
+                </div>
+
+                <p>Após compreender a diferenciação dessas informações, seguiremos para as instruções de montagem da sua primeira tabela no editor de planilhas. Esta sequência didática usará as instruções seguindo a interface do OnlyOffice, mas as instruções dadas servirão para qualquer editor de planilhas, o símbolo dos ícones e o caminho da ferramente podem sofrer variações.</p><br>
+
+                <h3>Atividade prática</h3>
+                <p>Siga o passo a passo abaixo para construir a sua tabela de controle de imunização no editor de planilhas:</p><br>
+
+                <p><b>Passo 1: Criar um novo arquivo</b><br>
+                Abra o seu editor de planilhas (OnlyOffice). Na tela inicial, clique na opção <b>"Criar nova Planilha"</b> (ou acesse o menu <i>Arquivo > Novo > Planilha</i>). Um arquivo em branco com uma grade limpa será exibido.</p><br>
+
+                <p><b>Passo 2: Inserir a estrutura e os dados</b><br>
+                Utilize a primeira linha da grade (Linha 1) para digitar os títulos das colunas de <b>A</b> até <b>E</b>. Em seguida, preencha as linhas de 2 a 4 exatamente com os dados fictícios apresentados na tabela abaixo:</p><br>
+
+                <table class="tabela-dados-exercicio" style="width:100%; border-collapse: collapse; margin-bottom: 20px;">
+                    <thead>
+                        <tr style="background-color: #f2f2f2; border-bottom: 2px solid #ccc; text-align: left;">
+                            <th style="padding: 8px;">A1: Vacina/Lote</th>
+                            <th style="padding: 8px;">B1: Validade</th>
+                            <th style="padding: 8px;">C1: Doses Aplicadas</th>
+                            <th style="padding: 8px;">D1: Custo Unitário</th>
+                            <th style="padding: 8px;">E1: Estoque</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 8px;">Gripe - Lote A</td>
+                            <td style="padding: 8px;">15/10/2026</td>
+                            <td style="padding: 8px;">1420</td>
+                            <td style="padding: 8px;">25,50</td>
+                            <td style="padding: 8px;">580</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 8px;">Covid - Lote B</td>
+                            <td style="padding: 8px;">20/01/2027</td>
+                            <td style="padding: 8px;">3150</td>
+                            <td style="padding: 8px;">42,00</td>
+                            <td style="padding: 8px;">120</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 8px;">Tétano - Lote C</td>
+                            <td style="padding: 8px;">05/06/2026</td>
+                            <td style="padding: 8px;">890</td>
+                            <td style="padding: 8px;">18,75</td>
+                            <td style="padding: 8px;">410</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><b>Passo 3: Formatar os tipos de dados no OnlyOffice</b><br>
+                Após digitar os valores textuais e numéricos puros, você deve aplicar a formatação correta para cada coluna utilizando o menu superior do programa:</p>
+                <ul>
+                    <li><b>Coluna A (Vacina/Lote):</b> Selecione as células de A2 a A4. No painel superior, aba <i>Página Inicial</i>, localize a caixa de seleção de formato (que inicialmente exibe "Geral") e mude para <b>Texto</b>.</li>
+                    <li><b>Coluna B (Validade):</b> Selecione de B2 a B4. Na mesma caixa de seleção do topo, mude o formato para <b>Data</b>.</li>
+                    <li><b>Colunas C e E (Doses e Estoque):</b> Selecione estes intervalos e configure-os como <b>Inteiro</b> (ou "Número" sem casas decimais).</li>
+                    <li><b>Coluna D (Custo Unitário):</b> Selecione de D2 a D4 e configure o formato como <b>Moeda</b> (ou "Contábil"). O programa adicionará automaticamente o símbolo "R$" e ajustará as duas casas decimais.</li>
+                </ul><br>
+
+                <p><b>Passo 4: Salvar o documento</b><br>
+                Para assegurar que seu progresso não seja perdido, clique no menu <b>Arquivo</b> no canto superior esquerdo e selecione <b>Salvar como</b>. Escolha uma pasta de sua preferência no computador e nomeie o arquivo como <code>controle_vacinas_saude</code> no formato padrão (.xlsx).</p><br>
+
+                <p>Com o arquivo devidamente estruturado, formatado e salvo, clique no botão abaixo para prosseguir à verificação dos resultados.</p>
+            </div>
+        `,
+        botoes: [
+            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Saúde", destino: "tebela_tipo_dados_saude" }
+        ]
+    },
+    
     // === ETAPA 6: Elementos de Formatação ===
     saude_formatacao: {
         etapa: 6, 

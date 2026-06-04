@@ -237,6 +237,14 @@ button:focus { outline: 4px solid var(--focus-outline); }
     font-size: 1.25rem;
 }
 
+.icone {
+    width: auto;
+    height: 1.1em;             /* Um pouquinho maior que 1em para dar melhor visibilidade */
+    vertical-align: middle;    /* Alinha perfeitamente pelo meio da linha do texto */
+    margin-left: 4px;          /* Pequeno espaçamento à esquerda para não colar na palavra */
+    margin-right: 4px;         /* Pequeno espaçamento à direita */
+}
+
 .tecla {
     background-color: #ffffff;
     color: #333333;
