@@ -622,7 +622,7 @@ mouse_interface: {
                             <span class="icone">123</span>
                         </div>
                         <div class="col-conteudo">
-                            <p class="texto-unico-app"><b>Inteiro:</b> Destinado ao registro de números exatos, ou seja, valores sem frações ou casas decimais. É o formato ideal para representar contagens absolutas, quantidades de itens e unidades inteiras.</p>
+                            <p class="texto-unico-app"><b>Inteiro:</b> Destinado ao registro de números exatos, ou seja, valores sem frações ou casas decimals. É o formato ideal para representar contagens absolutas, quantidades de itens e unidades inteiras.</p>
                         </div>
                     </div>
 
@@ -657,92 +657,541 @@ mouse_interface: {
                 <div class="caixa-voce-sabia verde-excel">
                     <h4>Atenção:</h4>
                     <p>Por padrão, os editores de planilhas alinham automaticamente os dados do tipo <b>Texto</b> à esquerda da célula, enquanto os dados numéricos (como <b>Inteiro, Decimal e Percentual</b>) são alinhados à direita. Essa é uma dica visual útil para identificar se o programa reconheceu corretamente o número digitado ou se o interpretou erroneamente como texto.</p><br>
-                    <p>Alguns editores de planilha podem apresentar erros nos cálculos matemáticos quando você tentar calcular valores utilizando uma célula está configurada como texto. Outros editores conseguirão efetuar o cálculo, mas a recomendação é sempre configurar a célula com o tipo de dado correto.</p>
+                    <p>Alguns editores de planilha podem apresentar erros nos cálculos matemáticos quando você tentar calcular valores utilizando uma célula que está configurada como texto. Outros editores conseguirão efetuar o cálculo, mas a recomendação é sempre configurar a célula com o tipo de dado correto.</p>
                 </div>
 
-                <p>Após compreender a diferenciação dessas informações, seguiremos para as instruções de montagem da sua primeira tabela no editor de planilhas. Esta sequência didática usará as instruções seguindo a interface do OnlyOffice, mas as instruções dadas servirão para qualquer editor de planilhas, o símbolo dos ícones e o caminho da ferramente podem sofrer variações.</p><br>
+                <p>Após compreender a diferença dessas informações, seguiremos para as instruções de montagem da sua primeira tabela no editor de planilhas. Esta sequência didática usará as instruções seguindo a interface do OnlyOffice, mas as orientações dadas servirão para qualquer editor de planilhas; o símbolo dos ícones e o caminho das ferramentas podem sofrer variações.</p><br>
 
-                <h3>Atividade prática</h3>
-                <p>Siga o passo a passo abaixo para construir a sua tabela de controle de imunização no editor de planilhas:</p><br>
+                <h3>Atividade Prática</h3><br>
+                
+                <div>
+                    <p><b>Contexto da atividade:</b><br>
+                    Imagine que você trabalha na área administrativa de um posto de saúde do bairro. Ao final de cada mês, a coordenação da unidade solicita um relatório sobre a quantidade total de doses que foram aplicadas na população. Este relatório deverá apresentar a quantidade de doses aplicadas por lote de vacinação, indicar o prazo de validade do lote, o custo unitário da dose e o percentual de doses que ainda restam daquele lote.</p><br>
+                    <p>As informações sobre o lote, custo e estoque são obtidas pelo setor que controla o almoxarifado de vacinas, enquanto os números de doses aplicadas são obtidos com o setor de aplicação de vacinas.</p><br>
+                </div>
 
-                <p><b>Passo 1: Criar um novo arquivo</b><br>
-                Abra o seu editor de planilhas (OnlyOffice). Na tela inicial, clique na opção <b>"Criar nova Planilha"</b> (ou acesse o menu <i>Arquivo > Novo > Planilha</i>). Um arquivo em branco com uma grade limpa será exibido.</p><br>
+                <div>
+                    <h4>Inclusão de dados:</h4>
+                    <ol>
+                        <li>Abra o seu editor de planilhas.</li>
+                        <li>Crie uma nova planilha.</li>
+                        <li>Escreva as informações a seguir:</li>
+                    </ol><br>
+                </div>
 
-                <p><b>Passo 2: Inserir a estrutura e os dados</b><br>
-                Utilize a primeira linha da grade (Linha 1) para digitar os títulos das colunas de <b>A</b> até <b>E</b>. Em seguida, preencha as linhas de 2 a 4 exatamente com os dados fictícios apresentados na tabela abaixo:</p><br>
+                <div class="simulador-planilha">
+                    <table class="grade-onlyoffice">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade. Quando clicado, seleciona toda a grade." class="img-canto">
+                                </th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                                <th>F</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Vacina</td>
+                                <td>Lote</td>
+                                <td>Validade</td>
+                                <td>Doses aplicadas</td>
+                                <td>Custo unitário</td>
+                                <td>Em estoque</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Influenza</td>
+                                <td>L15F</td>
+                                <td>06/08/2027</td>
+                                <td class="num">1250</td>
+                                <td class="num">125,78</td>
+                                <td class="num">0%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Influenza</td>
+                                <td>L29S</td>
+                                <td>12/12/2027</td>
+                                <td class="num">237</td>
+                                <td class="num">130,45</td>
+                                <td class="num">76,3%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Febre Amarela</td>
+                                <td>L34X</td>
+                                <td>12/12/2027</td>
+                                <td class="num">96</td>
+                                <td class="num">249,2</td>
+                                <td class="num">54%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Tríplice viral</td>
+                                <td>L95M</td>
+                                <td>05/07/2027</td>
+                                <td class="num">149</td>
+                                <td class="num">150</td>
+                                <td class="num">36%</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>HPV</td>
+                                <td>L37Q</td>
+                                <td>06/07/2027</td>
+                                <td class="num">47</td>
+                                <td class="num">1150,12</td>
+                                <td class="num">76,4%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <table class="tabela-dados-exercicio" style="width:100%; border-collapse: collapse; margin-bottom: 20px;">
-                    <thead>
-                        <tr style="background-color: #f2f2f2; border-bottom: 2px solid #ccc; text-align: left;">
-                            <th style="padding: 8px;">A1: Vacina/Lote</th>
-                            <th style="padding: 8px;">B1: Validade</th>
-                            <th style="padding: 8px;">C1: Doses Aplicadas</th>
-                            <th style="padding: 8px;">D1: Custo Unitário</th>
-                            <th style="padding: 8px;">E1: Estoque</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid #ddd;">
-                            <td style="padding: 8px;">Gripe - Lote A</td>
-                            <td style="padding: 8px;">15/10/2026</td>
-                            <td style="padding: 8px;">1420</td>
-                            <td style="padding: 8px;">25,50</td>
-                            <td style="padding: 8px;">580</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #ddd;">
-                            <td style="padding: 8px;">Covid - Lote B</td>
-                            <td style="padding: 8px;">20/01/2027</td>
-                            <td style="padding: 8px;">3150</td>
-                            <td style="padding: 8px;">42,00</td>
-                            <td style="padding: 8px;">120</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #ddd;">
-                            <td style="padding: 8px;">Tétano - Lote C</td>
-                            <td style="padding: 8px;">05/06/2026</td>
-                            <td style="padding: 8px;">890</td>
-                            <td style="padding: 8px;">18,75</td>
-                            <td style="padding: 8px;">410</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4>Instruções de formatação:</h4>
+                <ol>
+                    <li>Selecione as células de <code>A1:B6</code>, vá até a guia <b>Página Inicial</b>, procure pela ferramenta <b>Formato de Número</b>, e aplique a opção <b>Texto</b> aos tipos de dados selecionados.</li>
+                    <li>Selecione as células de <code>C1:F1</code> e aplique a mesma opção de <b>Texto</b> aos tipos de dados selecionados.</li>
+                    <li>Selecione as células de <code>C2:C6</code> e aplique a opção de <b>Data Curta</b> aos tipos de dados selecionados.</li>
+                    <li>Selecione as células de <code>D2:D6</code> e aplique a opção de <b>Número</b> aos tipos de dados selecionados.</li>
+                    <li>No mesmo intervalo de <code>D2:D6</code>, vá até a guia <b>Página Inicial</b>, procure pela ferramenta <b>Estilo vírgula</b> <img src="assets/img/icons/estilo-virgula.svg" alt="Ícone da ferramenta Estilo vírgula. Para acessá-la pelo teclado pressione em sequência: alt H A O."> e aplique sobre o intervalo selecionado. Esta ferramenta é utilizada para incluir os pontos de milhares.</li>
+                    <li>Ainda no mesmo intervalo de <code>D2:D6</code>, na guia <b>Página Inicial</b>, procure pela ferramenta <b>Diminuir casas decimais</b> <img src="assets/img/icons/decimal-diminuir.svg" alt="Ícone da ferramenta Diminuir casas decimais. Para acessá-la pelo teclado pressione em sequência: alt H A P."> e ajuste o número de casas decimais para nenhuma.</li>
+                    <li>Selecione as células de <code>E2:E6</code>, vá até a guia <b>Página Inicial</b> e aplique a opção de <b>Moeda</b> aos tipos de dados selecionados.</li>
+                    <li>Selecione as células de <code>F2:F6</code>, na guia <b>Página Inicial</b>, procure pela ferramenta <b>Aumentar casas decimais</b> <img src="assets/img/icons/decimal-aumentar.svg" alt="Ícone da ferramenta Aumentar casas decimais. Para acessá-la pelo teclado pressione em sequência: alt H A Q."> e ajuste o número de casas decimais para duas.</li>
+                </ol><br>
 
-                <p><b>Passo 3: Formatar os tipos de dados no OnlyOffice</b><br>
-                Após digitar os valores textuais e numéricos puros, você deve aplicar a formatação correta para cada coluna utilizando o menu superior do programa:</p>
-                <ul>
-                    <li><b>Coluna A (Vacina/Lote):</b> Selecione as células de A2 a A4. No painel superior, aba <i>Página Inicial</i>, localize a caixa de seleção de formato (que inicialmente exibe "Geral") e mude para <b>Texto</b>.</li>
-                    <li><b>Coluna B (Validade):</b> Selecione de B2 a B4. Na mesma caixa de seleção do topo, mude o formato para <b>Data</b>.</li>
-                    <li><b>Colunas C e E (Doses e Estoque):</b> Selecione estes intervalos e configure-os como <b>Inteiro</b> (ou "Número" sem casas decimais).</li>
-                    <li><b>Coluna D (Custo Unitário):</b> Selecione de D2 a D4 e configure o formato como <b>Moeda</b> (ou "Contábil"). O programa adicionará automaticamente o símbolo "R$" e ajustará as duas casas decimais.</li>
-                </ul><br>
+                <h4><b>Resultado Esperado:</b></h4><br>
+                <p>Após aplicar as configurações de tipo de dado descritas nas instruções, sua tabela deverá apresentar a formatação visualizada na imagem abaixo:</p>
+                
+                <div class="simulador-planilha">
+                    <table class="grade-onlyoffice">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade. Quando clicado, seleciona toda a grade." class="img-canto">
+                                </th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                                <th>F</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Vacina</td>
+                                <td>Lote</td>
+                                <td>Validade</td>
+                                <td>Doses aplicadas</td>
+                                <td>Custo unitário</td>
+                                <td>Em estoque</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Influenza</td>
+                                <td>L15F</td>
+                                <td>06/08/2027</td>
+                                <td class="num">1.250</td>
+                                <td class="num">R$ 125,78</td>
+                                <td class="num">0,00%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Influenza</td>
+                                <td>L29S</td>
+                                <td>12/12/2027</td>
+                                <td class="num">237</td>
+                                <td class="num">R$ 130,45</td>
+                                <td class="num">76,30%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Febre Amarela</td>
+                                <td>L34X</td>
+                                <td>12/12/2027</td>
+                                <td class="num">96</td>
+                                <td class="num">R$ 249,20</td>
+                                <td class="num">54,00%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Tríplice viral</td>
+                                <td>L95M</td>
+                                <td>05/07/2027</td>
+                                <td class="num">149</td>
+                                <td class="num">R$ 150,00</td>
+                                <td class="num">36,00%</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>HPV</td>
+                                <td>L37Q</td>
+                                <td>06/07/2027</td>
+                                <td class="num">47</td>
+                                <td class="num">R$ 1.150,12</td>
+                                <td class="num">76,40%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
 
-                <p><b>Passo 4: Salvar o documento</b><br>
-                Para assegurar que seu progresso não seja perdido, clique no menu <b>Arquivo</b> no canto superior esquerdo e selecione <b>Salvar como</b>. Escolha uma pasta de sua preferência no computador e nomeie o arquivo como <code>controle_vacinas_saude</code> no formato padrão (.xlsx).</p><br>
+                <h4><b>Salve o arquivo:</b></h4>
+                <p>Não se esqueça de salvar o seu arquivo clicando na ferramenta <b>Salvar</b> <img src="assets/img/icons/salvar.svg" alt="Ícone da ferramenta Salvar. Para acessá-la pelo teclado mantenha pressionada a tecla control e pressione a tecla S."> ou o atalho <code>[ctrl+S]</code>. Se for a primeira vez salvando o arquivo, uma janela aparecerá para que você escolha o local e o nome do arquivo.</p>
 
-                <p>Com o arquivo devidamente estruturado, formatado e salvo, clique no botão abaixo para prosseguir à verificação dos resultados.</p>
+                <div class="caixa-voce-sabia verde-excel">
+                    <h4>Atividade complementar:</h4>
+                    <p>Você sabe quais são as vacinas obrigatórias para a sua faixa etária ou se a sua caderneta de vacinação pessoal está atualizada? O Ministério da Saúde disponibiliza o calendário nacional completo e informações sobre a proteção de cada imunizante. Para consultar as orientações oficiais, acesse a cartilha de vacinação através do endereço eletrônico: <a href="https://www.gov.br/saude/pt-br/vacinacao" target="_blank">www.gov.br/saude/pt-br/vacinacao</a>.</p>
+                </div>
+
+                <p>Nesta atividade você aprendeu a configurar as informações das células em texto, número e data; a diferenciar variações numéricas como inteiros, decimais, moedas e percentagens; e a aplicar máscaras de formatação para garantir a integridade e a correta visualização dos dados inseridos. Caso queira aprofundar seus conhecimentos, teste outros formatos de números como: científico, contabilidade, data completa, hora e fração. Os editores de planilha dão suporte a muitos formatos de dados. No próximo exercício aprenderemos sobre os elementos de formatação.</p>
             </div>
         `,
         botoes: [
             { texto: "Retornar", destino: "voltar_tela" },
-            { texto: "Saúde", destino: "tebela_tipo_dados_saude" }
+            { texto: "Avançar", destino: "elementos_formatacao_saude" }
         ]
     },
     
     // === ETAPA 6: Elementos de Formatação ===
-    saude_formatacao: {
-        etapa: 6, 
-        titulo: "E6. Formatação em Saúde",
-        texto: "Destaque as colunas de hospitais aplicando elementos de formatação como fontes, fundos e bordas nos cabeçalhos de atendimento.",
+ 
+    elementos_formatacao_saude: {
+        etapa: 6,
+        titulo: "Elementos de Formatação",
+        texto: `
+            <div>
+                <p>Após compreender como o editor interpreta a natureza de cada dado, o próximo passo é estruturar e estilizar a planilha para que ela se torne legível e eficiente. A formatação visual e os ajustes estruturais ajudam a definir a hierarquia da informação, guiam o olhar do leitor e transformam a massa de dados brutos em informação de fácil interpretação.</p><br>
+
+                <p>Nesta etapa, aprenderemos a manipular a estrutura de linhas e colunas para organizar o layout do documento, além de aplicar formatações essenciais de alinhamento, estilos de texto e delimitação de bordas. Abaixo, estão listadas as principais ferramentas de edição estrutural e visual que utilizaremos em nossos projetos:</p><br>
+
+                <div class="tabela-ferramentas">
+                    
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-linha.svg" alt="Inserir Linha" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Inserção de Linhas:</b> Permite adicionar uma nova linha horizontal acima da célula selecionada. Essencial para empurrar os dados para baixo e abrir espaço para o título principal na Linha 1.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cursor-coluna.svg" alt="Inserir Coluna" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Inserção de Colunas:</b> Adiciona uma nova coluna vertical à esquerda da célula selecionada. Usamos essa ferramenta para abrir espaço e organizar as novas colunas de controle (como <i>Estoque Inicial</i> e <i>Estoque Final</i>).</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/mesclar-centralizar.svg" alt="Mesclar e Centralizar" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Mesclar e Centralizar:</b> Combina um grupo de células selecionadas em uma única célula grande. É o recurso padrão para criar títulos principais que cruzam toda a largura da tabela.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/alinhamento-esquerda.svg" alt="Alinhar à Esquerda" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Alinhar à Esquerda:</b> Posiciona o conteúdo encostado na margem esquerda da célula. É a formatação padrão e ideal para textos, como os nomes das vacinas, pois facilita a leitura ocidental (da esquerda para a direita).</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/alinhamento-centralizado.svg" alt="Alinhamento Centralizado" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Alinhamento Centralizado:</b> Posiciona o conteúdo exatamente no meio da célula. Utilizado para cabeçalhos, códigos curtos (lotes) e datas, deixando o visual simétrico.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/alinhamento-direita.svg" alt="Alinhar à Direita" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Alinhar à Direita:</b> Posiciona o conteúdo encostado na margem direita da célula. É a regra de ouro para números e valores monetários, pois mantém as unidades, dezenas e centenas perfeitamente alinhadas verticalmente.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/alinhamento-justificado.svg" alt="Alinhamento Justificado" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Alinhamento Justificado:</b> Distribui o texto uniformemente entre as margens esquerda e direita da célula. Geralmente aplicado em células que contêm parágrafos grandes ou observações longas.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/alinhamento-superior.svg" alt="Alinhamento Superior" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Alinhamento Vertical Superior:</b> Cola o conteúdo no topo da célula. Útil quando uma linha é muito alta e você deseja alinhar os títulos por cima.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/alinhamento-meio.svg" alt="Alinhamento ao Meio" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Alinhamento Vertical ao Meio:</b> Centraliza o conteúdo verticalmente entre o topo e a base da célula. É o melhor ajuste para cabeçalhos de linhas mais largas, evitando que o texto fique "caído".</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/alinhamento-inferior.svg" alt="Alinhamento Inferior" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Alinhamento Vertical Inferior:</b> Posiciona o conteúdo na base da célula. É o comportamento padrão do editor antes de ser modificado.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/negrito.svg" alt="Negrito" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Negrito (Ctrl + B):</b> Engrossa a fonte para dar destaque imediato. Indicado para a linha de títulos, cabeçalhos das colunas e resultados de totais.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/italico.svg" alt="Itálico" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Itálico (Ctrl + I):</b> Inclina o texto sutilmente. Usado para diferenciar dados secundários, termos estrangeiros ou os códigos de identificação de lotes.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/sublinhado.svg" alt="Sublinhado" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Sublinhado (Ctrl + U):</b> Passa uma linha sob o texto. Na nossa planilha, serve como marcação estética para dar ênfase à palavra "Total".</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cor-fonte.svg" alt="Cor da Fonte" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Cor da Fonte:</b> Modifica a cor do texto ou dos números dentro da célula. É indispensável para garantir a leitura e o contraste ideal quando aplicamos fundos escuros, permitindo mudar a letra para branco, por exemplo.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/cor-preenchimento.svg" alt="Cor de Preenchimento" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Cor de Preenchimento (Lata de Tinta):</b> Pinta o fundo da célula. Ajuda a agrupar blocos visualmente, como o fundo escuro do título principal ou o tom pastel dos cabeçalhos.</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-ferramenta">
+                        <div class="col-logo">
+                            <img src="assets/img/icons/bordas-todas.svg" alt="Todas as Bordas" class="icone-app">
+                        </div>
+                        <div class="col-conteudo">
+                            <p class="texto-unico-app"><b>Bordas da Tabela:</b> Cria contornos ao redor das células para que a grade fique visível no relatório final ou na impressão. O painel do OnlyOffice oferece 12 opções de aplicação que você pode combinar: desde contornos completos (<i>bordas-todas</i>), apenas as grades internas (<i>bordas-internas</i>) ou linhas específicas para isolar o rodapé de totais, como a <b>borda inferior dupla</b>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Atividade Prática</h3><br>
+                
+                <div>
+                    <p><b>Contexto da atividade:</b><br>
+                    A coordenação do posto de saúde gostou do controle inicial, mas agora enviou a listagem completa das vacinas que chegaram ao almoxarifado. Para organizar esse volume de dados, precisaremos realizar ajustes físicos na estrutura da tabela (inserindo novas linhas e colunas para novos controles) e aplicar os elementos visuais de formatação que aprendemos para criar uma hierarquia clara de leitura.</p><br>
+                    <p>As colunas de <b>Estoque final</b> e <b>Em estoque</b> deverão ficar totalmente em branco por enquanto. Elas serão preenchidas no próximo módulo, onde aprenderemos a automatizar essas contas.</p><br>
+                </div>
+
+                <div>
+                    <h4>Modificação e Inclusão de dados:</h4>
+                    <ol>
+                        <li>Abra a planilha desenvolvida na atividade anterior.</li>
+                        <li>Precisaremos abrir espaço para novas colunas e alterar a posição de outra, para isso usaremos a ferramenta de inclusão de colunas e o recurso de arrastar intervalos selecionados. Os cabeçalhos da linha 1 deverão ficar exatamente nesta ordem: 
+                        <br><code>A: Vacina</code> | <code>B: Lote</code> | <code>C: Validade</code> | <code>D: Estoque inicial</code> | <code>E: Doses aplicadas</code> | <code>F: Estoque final</code> | <code>G: Em estoque</code> | <code>H: Custo unitário</code>.</li>
+                        <li>Clique com o botão direito sobre a letra da coluna <b>D</b> ("Doses aplicadas") e selecione a opção para inserir à esquerda.</li>
+                        <li>Selecione o intervalo <code>F1:F6</code>, posicione o mouse na borda do intervalo selecionado, certifique-se de que o cursor mudou o seu ícone para as <b>Quatro Setas</b> <img src="assets/img/icons/cursor-mover-celulas.svg" alt="Desenho de quatro setas apontando para os lados" class="icone" style="width: 1em; height: auto;">, clique, segure e arraste o intervalo até o intervalo <code>H1:H6</code>.</li>
+                        <li>Complete as informações da sua tabela conforme a tabela a seguir:</li>
+                    </ol><br>
+                </div>
+
+                <div class="simulador-planilha">
+                    <table class="grade-onlyoffice">
+                        <thead>
+                            <tr>
+                                <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                                <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Vacina</td><td>Lote</td><td>Validade</td><td>Estoque inicial</td><td>Doses aplicadas</td><td>Estoque final</td><td>Em estoque</td><td>Custo unitário</td>
+                            </tr>
+                            <tr><td>2</td><td>Influenza</td><td>L15F</td><td>06/08/2027</td><td class="num">1.250</td><td class="num">1.250</td><td></td><td></td><td class="num">R$ 125,78</td></tr>
+                            <tr><td>3</td><td>Influenza</td><td>L29S</td><td>12/12/2027</td><td class="num">1.000</td><td class="num">237</td><td></td><td></td><td class="num">R$ 130,45</td></tr>
+                            <tr><td>4</td><td>Febre Amarela</td><td>L34X</td><td>12/12/2027</td><td class="num">200</td><td class="num">96</td><td></td><td></td><td class="num">R$ 249,20</td></tr>
+                            <tr><td>5</td><td>Tríplice viral</td><td>L95M</td><td>05/07/2027</td><td class="num">400</td><td class="num">149</td><td></td><td></td><td class="num">R$ 150,00</td></tr>
+                            <tr><td>6</td><td>HPV</td><td>L37Q</td><td>06/07/2027</td><td class="num">200</td><td class="num">47</td><td></td><td></td><td class="num">R$ 1.150,12</td></tr>
+                            <tr><td>7</td><td>BCG</td><td>B01K</td><td>20/10/2027</td><td class="num">795</td><td class="num">795</td><td></td><td></td><td class="num">R$ 95,30</td></tr>
+                            <tr><td>8</td><td>BCG</td><td>B02J</td><td>15/11/2027</td><td class="num">500</td><td class="num">0</td><td></td><td></td><td class="num">R$ 95,30</td></tr>
+                            <tr><td>9</td><td>Covid-19</td><td>C42P</td><td>18/09/2027</td><td class="num">1.269</td><td class="num">1.269</td><td></td><td></td><td class="num">R$ 45,00</td></tr>
+                            <tr><td>10</td><td>Covid-19</td><td>C43P</td><td>22/10/2027</td><td class="num">2.000</td><td class="num">540</td><td></td><td></td><td class="num">R$ 45,00</td></tr>
+                            <tr><td>11</td><td>Dengue</td><td>D11V</td><td>30/06/2027</td><td class="num">1.114</td><td class="num">1.114</td><td></td><td></td><td class="num">R$ 180,50</td></tr>
+                            <tr><td>12</td><td>Dengue</td><td>D12V</td><td>15/08/2027</td><td class="num">1.500</td><td class="num">320</td><td></td><td></td><td class="num">R$ 180,50</td></tr>
+                            <tr><td>13</td><td>dT</td><td>T04R</td><td>11/04/2027</td><td class="num">1.220</td><td class="num">1.220</td><td></td><td></td><td class="num">R$ 32,15</td></tr>
+                            <tr><td>14</td><td>dT</td><td>T05R</td><td>19/05/2027</td><td class="num">800</td><td class="num">150</td><td></td><td></td><td class="num">R$ 32,15</td></tr>
+                            <tr><td>15</td><td>DTP</td><td>D08N</td><td>04/02/2027</td><td class="num">350</td><td class="num">88</td><td></td><td></td><td class="num">R$ 74,20</td></tr>
+                            <tr><td>16</td><td>Hepatite A</td><td>HA01</td><td>14/03/2027</td><td class="num">450</td><td class="num">112</td><td></td><td></td><td class="num">R$ 110,00</td></tr>
+                            <tr><td>17</td><td>Hepatite B</td><td>HB07</td><td>09/01/2027</td><td class="num">853</td><td class="num">853</td><td></td><td></td><td class="num">R$ 55,40</td></tr>
+                            <tr><td>18</td><td>Hepatite B</td><td>HB08</td><td>22/03/2027</td><td class="num">1.000</td><td class="num">210</td><td></td><td></td><td class="num">R$ 55,40</td></tr>
+                            <tr><td>19</td><td>Meningocócica</td><td>M22W</td><td>17/07/2027</td><td class="num">600</td><td class="num">415</td><td></td><td></td><td class="num">R$ 210,30</td></tr>
+                            <tr><td>20</td><td>Penta</td><td>P03Y</td><td>19/08/2027</td><td class="num">400</td><td class="num">305</td><td></td><td></td><td class="num">R$ 165,80</td></tr>
+                            <tr><td>21</td><td>Pneumocócica</td><td>PN10</td><td>11/11/2027</td><td class="num">300</td><td class="num">198</td><td></td><td></td><td class="num">R$ 190,00</td></tr>
+                            <tr><td>22</td><td>Poliomielite</td><td>VIP5</td><td>25/10/2027</td><td class="num">450</td><td class="num">240</td><td></td><td></td><td class="num">R$ 82,00</td></tr>
+                            <tr><td>23</td><td>Rotavírus</td><td>VR02</td><td>08/04/2027</td><td class="num">500</td><td class="num">390</td><td></td><td></td><td class="num">R$ 92,45</td></tr>
+                            <tr><td>24</td><td>Tríplice viral</td><td>TV09</td><td>30/05/2027</td><td class="num">350</td><td class="num">120</td><td></td><td></td><td class="num">R$ 150,00</td></tr>
+                            <tr><td>25</td><td>Varicela</td><td>VZ04</td><td>14/06/2027</td><td class="num">250</td><td class="num">85</td><td></td><td></td><td class="num">R$ 225,10</td></tr>
+                            <tr><td>26</td><td>Total</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div><br>
+
+                <h4>Instruções de formatação:</h4>
+                <ol>
+                    <li>Aplique as formatações de tipo de dado ensinadas na tela anterior nas novas linhas: estilo de milhar e sem decimais nas colunas D e E; formato Moeda na coluna H.</li>
+                    <li>Clique com o botão direito sobre o número <b>1</b> na barra lateral de linhas e selecione <b>Inserir Linha Acima</b> <img src="assets/img/icons/cursor-linha.svg" alt="Ícone de linha">. Na nova célula <code>A1</code> que surgiu vazia, digite o título: <code>SISTEMA DE INVENTÁRIO E CONTROLE DE IMUNIZANTES - UBS</code>.</li>
+                    <li>Selecione o intervalo de <code>A1:H1</code> e clique na ferramenta <b>Mesclar e Centralizar</b> <img src="assets/img/icons/mesclar-centralizar.svg" alt="Ícone Mesclar e Centralizar">. Com a célula ainda selecionada, mude o estilo para <b>Negrito</b> <img src="assets/img/icons/negrito.svg" alt="Ícone Negrito">, altere o tamanho da fonte para 14px, mude a <b>Cor de Preenchimento</b> <img src="assets/img/icons/cor-preenchimento.svg" alt="Ícone Cor de Preenchimento"> para um tom cinza-escuro e a <b>cor da fonte</b> <img src="assets/img/icons/cor-fonte.svg" alt="Cor da Fonte" class="icone-app"> para branco.</li>
+                    <li>Selecione os cabeçalhos da tabela no intervalo de <code>A2:H2</code>. Mude o alinhamento usando a ferramenta <b>Alinhamento Centralizado</b> <img src="assets/img/icons/alinhamento-centralizado.svg" alt="Ícone Alinhamento Centralizado">, alinhe também na vertical com a ferramenta <b>Alinhamento ao Meio</b> <img src="assets/img/icons/alinhamento-meio.svg" alt="Ícone Alinhamento Vertical ao Meio">. Aplique <b>Negrito</b> e preencha o fundo com um tom cinza-claro sutil.</li>
+                    <li>Selecione os nomes das vacinas no intervalo de <code>A3:A26</code> e aplique a ferramenta <b>Alinhar à Esquerda</b> <img src="assets/img/icons/alinhamento-esquerda.svg" alt="Ícone Alinhar à Esquerda">. Nas colunas de Lote (<code>B3:B26</code>) e Validade (<code>C3:C26</code>), aplique o <b>Alinhamento Centralizado</b>. Nas colunas numéricas de valores (<code>D3:H26</code>), certifique-se de usar a ferramenta <b>Alinhar à Direita</b> <img src="assets/img/icons/alinhamento-direita.svg" alt="Ícone Alinhar à Direita">.</li>
+                    <li>Selecione especificamente os códigos de lote no intervalo de <code>B3:B26</code> e clique na ferramenta <b>Itálico</b> <img src="assets/img/icons/italico.svg" alt="Ícone Itálico"> para diferenciá-los visualmente do resto das palavras.</li>
+                    <li>Vá até a última linha do relatório (Linha 27), selecione a célula onde está escrito "Total", aplique a ferramenta <b>Negrito</b> e depois a ferramenta <b>Sublinhado</b> <img src="assets/img/icons/sublinhado.svg" alt="Ícone Sublinhado">.</li>
+                    <li>Selecione toda a área preenchida do seu relatório, partindo da célula <code>A1</code> até a célula <code>H27</code>. Procure pela ferramenta de contornos e selecione a opção <b>Bordas Todas</b> <img src="assets/img/icons/bordas-todas.svg" alt="Ícone Bordas Todas"> para desenhar a grade de impressão.</li>
+                </ol><br>
+
+                <h4><b>Resultado Esperado:</b></h4><br>
+                <p>Após executar os passos de inserção estrutural, alinhamentos e aplicação de estilos estéticos, seu relatório técnico deverá apresentar exatamente o seguinte aspecto visual:</p><br>
+                
+                <div class="simulador-planilha">
+                    <table class="grade-onlyoffice" style="border-collapse: collapse; border: 1px solid #333333; width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; padding: 4px;"><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto." class="img-canto"></th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">A</th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">B</th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">C</th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">D</th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">E</th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">F</th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">G</th>
+                                <th style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">H</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">1</td>
+                                <td colspan="8" style="border: 1px solid #333333; text-align: center; font-weight: bold; background-color: #444444; color: #ffffff; font-size: 14px; padding: 6px;">SISTEMA DE INVENTÁRIO E CONTROLE DE IMUNIZANTES - UBS</td>
+                            </tr>
+                            <tr style="font-weight: bold; text-align: center; vertical-align: middle; background-color: #e8e8e8;">
+                                <td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; font-weight: normal; padding: 4px;">2</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Vacina</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Lote</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Validade</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Estoque inicial</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Doses aplicadas</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Estoque final</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Em estoque</td>
+                                <td style="border: 1px solid #333333; padding: 4px;">Custo unitário</td>
+                            </tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">3</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Influenza</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L15F</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">06/08/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.250</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.250</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 125,78</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">4</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Influenza</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L29S</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">12/12/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">237</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 130,45</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">5</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Febre Amarela</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L34X</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">12/12/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">200</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">96</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 249,20</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">6</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Tríplice viral</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L95M</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">05/07/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">400</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">149</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 150,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">7</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">HPV</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L37Q</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">06/07/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">200</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">47</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 1.150,12</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">8</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">BCG</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">B01K</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">20/10/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">795</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">795</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 95,30</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">9</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">BCG</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">B02J</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">15/11/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">0</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 95,30</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">10</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Covid-19</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">C42P</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">18/09/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.269</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.269</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 45,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">11</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Covid-19</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">C43P</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">22/10/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">2.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">540</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 45,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">12</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Dengue</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D11V</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">30/06/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.114</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.114</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 180,50</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">13</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Dengue</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D12V</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">15/08/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">320</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 180,50</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">14</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">dT</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">T04R</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">11/04/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.220</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.220</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 32,15</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">15</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">dT</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">T05R</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">19/05/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">800</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">150</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 32,15</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">16</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">DTP</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D08N</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">04/02/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">350</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">88</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 74,20</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">17</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite A</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HA01</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">14/03/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">450</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">112</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 110,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">18</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite B</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HB07</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">09/01/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">853</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">853</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 55,40</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">19</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite B</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HB08</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">22/03/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">210</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 55,40</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">20</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Meningocócica</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">M22W</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">17/07/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">600</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">415</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 210,30</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">21</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Penta</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">P03Y</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">19/08/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">400</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">305</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 165,80</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">22</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Pneumocócica</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">PN10</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">11/11/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">300</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">198</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 190,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">23</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Poliomielite</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VIP5</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">25/10/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">450</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">240</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 82,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">24</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Rotavírus</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VR02</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">08/04/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">390</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 92,45</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">25</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Tríplice viral</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">TV09</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">30/05/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">350</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">120</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 150,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">26</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Varicela</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VZ04</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">14/06/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">250</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">85</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 225,10</td></tr>
+                            <tr style="font-weight: bold;">
+                                <td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">27</td>
+                                <td style="border: 1px solid #333333; padding: 4px;"><u>Total</u></td>
+                                <td style="border: 1px solid #333333; padding: 4px;"></td>
+                                <td style="border: 1px solid #333333; padding: 4px;"></td>
+                                <td style="border: 1px solid #333333; padding: 4px;"></td>
+                                <td style="border: 1px solid #333333; padding: 4px;"></td>
+                                <td style="border: 1px solid #333333; padding: 4px;"></td>
+                                <td style="border: 1px solid #333333; padding: 4px;"></td>
+                                <td style="border: 1px solid #333333; padding: 4px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+
+                <h4><b>Salve o arquivo:</b></h4>
+                <p>Mantenha suas alterações seguras salvando o progresso da planilha. Clique no ícone de <b>Salvar</b> <img src="assets/img/icons/salvar.svg" alt="Ícone Salvar"> ou utilize o atalho de teclado padrão <code>[ctrl+S]</code>.</p>
+
+                <div class="caixa-voce-sabia verde-excel">
+                    <h4>A Importância da Imunização</h4>
+                    <p>A vacinação é uma das medidas mais eficazes de saúde pública para a prevenção, controle e erradicação de doenças. Segundo o Ministério da Saúde, manter a cobertura vacinal em níveis seguros não apenas protege o indivíduo que recebeu a dose, mas cria uma barreira de imunidade coletiva que resguarda toda a comunidade, especialmente os mais vulneráveis.</p>
+                    
+                    <p>Assista ao vídeo abaixo do Ministério da Saúde, que reforça a importância de imunizar-se e como esse ato individual protege a saúde de toda a população:</p>
+
+                    <div class="video-responsivo" style="margin-top: 1rem;">
+                        <iframe 
+                            src="https://www.youtube.com/embed/iA04p3rEz1o?si=UkrAugw2gAqabClM" 
+                            title="YouTube video player" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <p>Nesta atividade, você aprendeu a modificar a estrutura física de uma planilha existente inserindo linhas e colunas sem corromper a organização dos dados anteriores. Além disso, aplicou recursos de estilização visual (negrito, itálico, sublinhado, mesclagem e cores de preenchimento) que transformaram um emaranhado de dados brutos em uma interface amigável, organizada por alinhamentos coerentes e delimitada por bordas. No próximo módulo, usaremos essa mesma planilha montada para dar os primeiros passos no uso de fórmulas matemáticas automáticas.</p>
+        `,
         botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "saude_dados" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "saude_operadores" 
-            }
+            { texto: "Retornar", destino: "tipo_dados_saude" },
+            { texto: "Avançar", destino: "formulas_funcoes_saude" }
         ]
     },
+    
     // === ETAPA 7: Operadores Matemáticos ===
     saude_operadores: {
         etapa: 7, 
