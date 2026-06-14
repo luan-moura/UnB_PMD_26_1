@@ -9,12 +9,13 @@ const storyData = {
             { texto: "Iniciar", destino: "jornada" }
         ]
     },
+
     jornada: {
         etapa: 1, 
         titulo: "Nossa sequência didática",
         texto: "Nossa jornada passará por: Interfaces, Tipos de dados, Formatação, Operadores, Funções Iniciais, Funções Condicionais, Gráficos e Configurações de Impressão.",
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" }, 
+            { texto: "Retornar", destino: "capa" }, 
             { texto: "Continuar", destino: "cotidiano" }
         ]
     },
@@ -26,7 +27,7 @@ const storyData = {
         titulo: "As planilhas no cotidiano",
         texto: "Olhando ao seu redor, você já parou para pensar em como as informações chegam até nós todos os dias? Muitas vezes, sem perceber, nossos olhos observam o mundo e a nossa mente busca identificar comportamentos e padrões nos acontecimentos ao redor. A depender da situação, nosso olhar acha uma estrutura muito conhecida e poderosa: as tabelas.<br><br>Elas estão presentes na nossa vida em muito mais coisas do que a gente imagina. Quase tudo que exige organização, planejamento ou clareza é distribuído em linhas e colunas. Esse padrão de layout não existe por acaso; ele foi desenhado para facilitar a nossa mente na busca e na localização rápida de informações. Quer ver só?<br><br>Pense no calendário pendurado na parede ou na tela do seu celular. O que ele é, senão uma tabela clássica? Dias da semana nas colunas, semanas do mês nas linhas. E a grade horária das disciplinas escolares? Segunda, terça, quarta... cada matéria encaixada no seu quadrado, cruzando o dia com o horário exato. O mesmo acontece quando você pesquisa o horário de funcionamento de um posto de saúde ou de um supermercado nas redes sociais. A estrutura de grade está lá, simplificando sua vida.<br><br>Até nos momentos burocráticos da vida, as tabelas guiam nossas decisões. Quando você recebe um cupom fiscal no mercado, cada item comprado ocupa uma linha, dividida em colunas invisíveis de quantidade, valor unitário e preço total. E quando a conta de água ou de energia elétrica chega na sua casa, além do valor e do vencimento, o que mais chama a sua atenção? Provavelmente será aquele gráfico ou aquela tabela com o histórico de consumo dos últimos doze meses. Ali, olhando linha por linha, você descobre se gastou mais no verão ou no inverno e consegue planejar o orçamento do próximo mês.<br><br>Se quisermos, podemos estender essa organização de informações para uma infinidade de coisas. Por exemplo, quando você está nas redes sociais e vai rolando a tela, cada postagem é como se fosse uma linha de uma tabela infinita em uma única coluna, onde cada linha está organizada de um jeito que você sabe exatamente a localização da informação de quem postou, o que postou, quando postou e quantas curtidas, compartilhamentos ou comentários foram feitos.<br><br>E se você reparar bem, essa mesma lógica está por trás das grandes manchetes que vemos nos jornais da TV ou nas postagens da internet. Os repórteres traduzem tabelas o tempo todo para nos contar o que está acontecendo no mundo.<br><br>Quando a televisão faz um alerta preocupante sobre o aumento de casos de dengue no nosso estado ou mostra o resultado de um mutirão de vacinação, o que sustenta aquela notícia são informações que foram organizadas em uma imensa tabela. Alguém ou algum sistema, em um computador da Secretaria de Saúde, precisou analisar e somar as linhas com os registros de notificações de cada bairro para saber onde a situação é mais crítica.<br><br>O mesmo acontece quando vemos notícias sobre a crise climática e o meio ambiente. Seja ao falar do aumento do desmatamento na Amazônia ou ao anunciar que batemos o recorde do ano mais quente da história, os especialistas dependem das planilhas. Eles passam meses coletando milhares de dados científicos em tabelas com a ajuda de sistemas de monitoramento computadorizado para que, no final, o cruzamento de informações nos mostre com clareza o tamanho do impacto das ações humanas no planeta.<br><br>Até aquela notícia sobre os reservatórios de água da nossa região estarem operando no nível vermelho segue essa regra. A reportagem geralmente exibe na tela um histórico com as últimas medições, organizadas por datas e volumes em metros cúbicos. Olhando essa tabela disfarçada de notícia, a sociedade entende a necessidade de economizar água e os cientistas conseguem estimar o tempo que teremos até o abastecimento colapsar.<br><br>Percebe como as tabelas moldam nossa visão da realidade? Dominar as planilhas eletrônicas não serve só para aprender a digitar números em um computador para trabalhar em um escritório. É desenvolver autonomia. É aprender a ler o mundo através dos dados para poder agir no mundo com informação, tendo a capacidade de entender os problemas, refletir sobre soluções e propor transformações.<br><br>Você está prestes a dar os primeiros passos para dominar essa ferramenta e aprender a construir essas estruturas. Vamos continuar?",
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" }, 
+            { texto: "Retornar", destino: "jornada" }, 
             { texto: "Continuar", destino: "ferramentas" }
         ]
     },
@@ -98,7 +99,7 @@ const storyData = {
             Considerando as explicações sobre as principais ferramentas de edição de planilhas eletrônicas, qual delas você gostaria de aprender?</p>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "cotidiano" },
             { texto: "Excel", destino: "ambiente_excel" },
             { texto: "Google Planilhas", destino: "ambiente_google" },
             { texto: "OnlyOffice", destino: "ambiente_onlyoffice" }
@@ -162,7 +163,7 @@ const storyData = {
             </div><br>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "ferramentas" },
             { texto: "Avançar", destino: "teclado_excel" }
         ]
     },
@@ -195,7 +196,7 @@ const storyData = {
             </div>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "ambiente_excel" },
             { texto: "Avançar", destino: "interface" }
         ]
     },
@@ -242,7 +243,7 @@ const storyData = {
             </div><br>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "ferramentas" },
             { texto: "Avançar", destino: "teclado_google" }
         ]
     },
@@ -273,7 +274,7 @@ const storyData = {
             </div>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "ambiente_google" },
             { texto: "Avançar", destino: "interface" }
         ]
     },
@@ -320,7 +321,7 @@ const storyData = {
             </div><br>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "ferramentas" },
             { texto: "Avançar", destino: "teclado_onlyoffice" }
         ]
     },
@@ -352,7 +353,7 @@ const storyData = {
             </div>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "ambiente_onlyoffice" },
             { texto: "Avançar", destino: "interface" }
         ]
     },
@@ -428,7 +429,7 @@ const storyData = {
             </div>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "interface" },
             { texto: "Avançar", destino: "mouse_interface" }
         ]
     },
@@ -532,7 +533,7 @@ mouse_interface: {
             </div>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "teclado_interface" },
             { texto: "Avançar", destino: "escolha_tematica" }
         ]
     },
@@ -589,7 +590,7 @@ mouse_interface: {
             </div>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
+            { texto: "Retornar", destino: "mouse_interface" },
             { texto: "Saúde", destino: "tipo_dados_saude" },
             { texto: "Água", destino: "tipo_dados_agua" },
             { texto: "Clima", destino: "tipo_dados_clima" }
@@ -708,7 +709,7 @@ mouse_interface: {
                                 <td>2</td>
                                 <td>Influenza</td>
                                 <td>L15F</td>
-                                <td>06/08/2027</td>
+                                <td>06/08/27</td>
                                 <td class="num">1250</td>
                                 <td class="num">125,78</td>
                                 <td class="num">0%</td>
@@ -717,7 +718,7 @@ mouse_interface: {
                                 <td>3</td>
                                 <td>Influenza</td>
                                 <td>L29S</td>
-                                <td>12/12/2027</td>
+                                <td>12/12/27</td>
                                 <td class="num">237</td>
                                 <td class="num">130,45</td>
                                 <td class="num">76,3%</td>
@@ -726,7 +727,7 @@ mouse_interface: {
                                 <td>4</td>
                                 <td>Febre Amarela</td>
                                 <td>L34X</td>
-                                <td>12/12/2027</td>
+                                <td>12/12/27</td>
                                 <td class="num">96</td>
                                 <td class="num">249,2</td>
                                 <td class="num">54%</td>
@@ -735,7 +736,7 @@ mouse_interface: {
                                 <td>5</td>
                                 <td>Tríplice viral</td>
                                 <td>L95M</td>
-                                <td>05/07/2027</td>
+                                <td>05/07/27</td>
                                 <td class="num">149</td>
                                 <td class="num">150</td>
                                 <td class="num">36%</td>
@@ -744,7 +745,7 @@ mouse_interface: {
                                 <td>6</td>
                                 <td>HPV</td>
                                 <td>L37Q</td>
-                                <td>06/07/2027</td>
+                                <td>06/07/27</td>
                                 <td class="num">47</td>
                                 <td class="num">1150,12</td>
                                 <td class="num">76,4%</td>
@@ -797,7 +798,7 @@ mouse_interface: {
                                 <td>2</td>
                                 <td>Influenza</td>
                                 <td>L15F</td>
-                                <td>06/08/2027</td>
+                                <td>06/08/27</td>
                                 <td class="num">1.250</td>
                                 <td class="num">R$ 125,78</td>
                                 <td class="num">0,00%</td>
@@ -806,7 +807,7 @@ mouse_interface: {
                                 <td>3</td>
                                 <td>Influenza</td>
                                 <td>L29S</td>
-                                <td>12/12/2027</td>
+                                <td>12/12/27</td>
                                 <td class="num">237</td>
                                 <td class="num">R$ 130,45</td>
                                 <td class="num">76,30%</td>
@@ -815,7 +816,7 @@ mouse_interface: {
                                 <td>4</td>
                                 <td>Febre Amarela</td>
                                 <td>L34X</td>
-                                <td>12/12/2027</td>
+                                <td>12/12/27</td>
                                 <td class="num">96</td>
                                 <td class="num">R$ 249,20</td>
                                 <td class="num">54,00%</td>
@@ -824,7 +825,7 @@ mouse_interface: {
                                 <td>5</td>
                                 <td>Tríplice viral</td>
                                 <td>L95M</td>
-                                <td>05/07/2027</td>
+                                <td>05/07/27</td>
                                 <td class="num">149</td>
                                 <td class="num">R$ 150,00</td>
                                 <td class="num">36,00%</td>
@@ -833,7 +834,7 @@ mouse_interface: {
                                 <td>6</td>
                                 <td>HPV</td>
                                 <td>L37Q</td>
-                                <td>06/07/2027</td>
+                                <td>06/07/27</td>
                                 <td class="num">47</td>
                                 <td class="num">R$ 1.150,12</td>
                                 <td class="num">76,40%</td>
@@ -854,16 +855,16 @@ mouse_interface: {
             </div>
         `,
         botoes: [
-            { texto: "Retornar", destino: "voltar_tela" },
-            { texto: "Avançar", destino: "elementos_formatacao_saude" }
+            { texto: "Retornar", destino: "escolha_tematica" },
+            { texto: "Avançar", destino: "formatacao_saude" }
         ]
     },
     
     // === ETAPA 6: Elementos de Formatação ===
  
-    elementos_formatacao_saude: {
+    formatacao_saude: {
         etapa: 6,
-        titulo: "Elementos de Formatação",
+        titulo: "Elementos de formatação",
         texto: `
             <div>
                 <p>Após compreender como o editor interpreta a natureza de cada dado, o próximo passo é estruturar e estilizar a planilha para que ela se torne legível e eficiente. A formatação visual e os ajustes estruturais ajudam a definir a hierarquia da informação, guiam o olhar do leitor e transformam a massa de dados brutos em informação de fácil interpretação.</p><br>
@@ -1017,7 +1018,7 @@ mouse_interface: {
                     </div>
                 </div>
 
-                <h3>Atividade Prática</h3><br>
+                <h3>Atividade Prática</h3>
                 
                 <div>
                     <p><b>Contexto da atividade:</b><br>
@@ -1050,30 +1051,30 @@ mouse_interface: {
                                 <td>1</td>
                                 <td>Vacina</td><td>Lote</td><td>Validade</td><td>Estoque inicial</td><td>Doses aplicadas</td><td>Estoque final</td><td>Em estoque</td><td>Custo unitário</td>
                             </tr>
-                            <tr><td>2</td><td>Influenza</td><td>L15F</td><td>06/08/2027</td><td class="num">1.250</td><td class="num">1.250</td><td></td><td></td><td class="num">R$ 125,78</td></tr>
-                            <tr><td>3</td><td>Influenza</td><td>L29S</td><td>12/12/2027</td><td class="num">1.000</td><td class="num">237</td><td></td><td></td><td class="num">R$ 130,45</td></tr>
-                            <tr><td>4</td><td>Febre Amarela</td><td>L34X</td><td>12/12/2027</td><td class="num">200</td><td class="num">96</td><td></td><td></td><td class="num">R$ 249,20</td></tr>
-                            <tr><td>5</td><td>Tríplice viral</td><td>L95M</td><td>05/07/2027</td><td class="num">400</td><td class="num">149</td><td></td><td></td><td class="num">R$ 150,00</td></tr>
-                            <tr><td>6</td><td>HPV</td><td>L37Q</td><td>06/07/2027</td><td class="num">200</td><td class="num">47</td><td></td><td></td><td class="num">R$ 1.150,12</td></tr>
-                            <tr><td>7</td><td>BCG</td><td>B01K</td><td>20/10/2027</td><td class="num">795</td><td class="num">795</td><td></td><td></td><td class="num">R$ 95,30</td></tr>
-                            <tr><td>8</td><td>BCG</td><td>B02J</td><td>15/11/2027</td><td class="num">500</td><td class="num">0</td><td></td><td></td><td class="num">R$ 95,30</td></tr>
-                            <tr><td>9</td><td>Covid-19</td><td>C42P</td><td>18/09/2027</td><td class="num">1.269</td><td class="num">1.269</td><td></td><td></td><td class="num">R$ 45,00</td></tr>
-                            <tr><td>10</td><td>Covid-19</td><td>C43P</td><td>22/10/2027</td><td class="num">2.000</td><td class="num">540</td><td></td><td></td><td class="num">R$ 45,00</td></tr>
-                            <tr><td>11</td><td>Dengue</td><td>D11V</td><td>30/06/2027</td><td class="num">1.114</td><td class="num">1.114</td><td></td><td></td><td class="num">R$ 180,50</td></tr>
-                            <tr><td>12</td><td>Dengue</td><td>D12V</td><td>15/08/2027</td><td class="num">1.500</td><td class="num">320</td><td></td><td></td><td class="num">R$ 180,50</td></tr>
-                            <tr><td>13</td><td>dT</td><td>T04R</td><td>11/04/2027</td><td class="num">1.220</td><td class="num">1.220</td><td></td><td></td><td class="num">R$ 32,15</td></tr>
-                            <tr><td>14</td><td>dT</td><td>T05R</td><td>19/05/2027</td><td class="num">800</td><td class="num">150</td><td></td><td></td><td class="num">R$ 32,15</td></tr>
-                            <tr><td>15</td><td>DTP</td><td>D08N</td><td>04/02/2027</td><td class="num">350</td><td class="num">88</td><td></td><td></td><td class="num">R$ 74,20</td></tr>
-                            <tr><td>16</td><td>Hepatite A</td><td>HA01</td><td>14/03/2027</td><td class="num">450</td><td class="num">112</td><td></td><td></td><td class="num">R$ 110,00</td></tr>
-                            <tr><td>17</td><td>Hepatite B</td><td>HB07</td><td>09/01/2027</td><td class="num">853</td><td class="num">853</td><td></td><td></td><td class="num">R$ 55,40</td></tr>
-                            <tr><td>18</td><td>Hepatite B</td><td>HB08</td><td>22/03/2027</td><td class="num">1.000</td><td class="num">210</td><td></td><td></td><td class="num">R$ 55,40</td></tr>
-                            <tr><td>19</td><td>Meningocócica</td><td>M22W</td><td>17/07/2027</td><td class="num">600</td><td class="num">415</td><td></td><td></td><td class="num">R$ 210,30</td></tr>
-                            <tr><td>20</td><td>Penta</td><td>P03Y</td><td>19/08/2027</td><td class="num">400</td><td class="num">305</td><td></td><td></td><td class="num">R$ 165,80</td></tr>
-                            <tr><td>21</td><td>Pneumocócica</td><td>PN10</td><td>11/11/2027</td><td class="num">300</td><td class="num">198</td><td></td><td></td><td class="num">R$ 190,00</td></tr>
-                            <tr><td>22</td><td>Poliomielite</td><td>VIP5</td><td>25/10/2027</td><td class="num">450</td><td class="num">240</td><td></td><td></td><td class="num">R$ 82,00</td></tr>
-                            <tr><td>23</td><td>Rotavírus</td><td>VR02</td><td>08/04/2027</td><td class="num">500</td><td class="num">390</td><td></td><td></td><td class="num">R$ 92,45</td></tr>
-                            <tr><td>24</td><td>Tríplice viral</td><td>TV09</td><td>30/05/2027</td><td class="num">350</td><td class="num">120</td><td></td><td></td><td class="num">R$ 150,00</td></tr>
-                            <tr><td>25</td><td>Varicela</td><td>VZ04</td><td>14/06/2027</td><td class="num">250</td><td class="num">85</td><td></td><td></td><td class="num">R$ 225,10</td></tr>
+                            <tr><td>2</td><td>Influenza</td><td>L15F</td><td>06/08/27</td><td class="num">1.250</td><td class="num">1.250</td><td></td><td></td><td class="num">R$ 125,78</td></tr>
+                            <tr><td>3</td><td>Influenza</td><td>L29S</td><td>12/12/27</td><td class="num">1.000</td><td class="num">237</td><td></td><td></td><td class="num">R$ 130,45</td></tr>
+                            <tr><td>4</td><td>Febre Amarela</td><td>L34X</td><td>12/12/27</td><td class="num">200</td><td class="num">96</td><td></td><td></td><td class="num">R$ 249,20</td></tr>
+                            <tr><td>5</td><td>Tríplice viral</td><td>L95M</td><td>05/07/27</td><td class="num">400</td><td class="num">149</td><td></td><td></td><td class="num">R$ 150,00</td></tr>
+                            <tr><td>6</td><td>HPV</td><td>L37Q</td><td>06/07/27</td><td class="num">200</td><td class="num">47</td><td></td><td></td><td class="num">R$ 1.150,12</td></tr>
+                            <tr><td>7</td><td>BCG</td><td>B01K</td><td>20/10/27</td><td class="num">795</td><td class="num">795</td><td></td><td></td><td class="num">R$ 95,30</td></tr>
+                            <tr><td>8</td><td>BCG</td><td>B02J</td><td>15/11/27</td><td class="num">500</td><td class="num">0</td><td></td><td></td><td class="num">R$ 95,30</td></tr>
+                            <tr><td>9</td><td>Covid-19</td><td>C42P</td><td>18/09/27</td><td class="num">1.269</td><td class="num">1.269</td><td></td><td></td><td class="num">R$ 45,00</td></tr>
+                            <tr><td>10</td><td>Covid-19</td><td>C43P</td><td>22/10/27</td><td class="num">2.000</td><td class="num">540</td><td></td><td></td><td class="num">R$ 45,00</td></tr>
+                            <tr><td>11</td><td>Dengue</td><td>D11V</td><td>30/06/27</td><td class="num">1.114</td><td class="num">1.114</td><td></td><td></td><td class="num">R$ 180,50</td></tr>
+                            <tr><td>12</td><td>Dengue</td><td>D12V</td><td>15/08/27</td><td class="num">1.500</td><td class="num">320</td><td></td><td></td><td class="num">R$ 180,50</td></tr>
+                            <tr><td>13</td><td>dT</td><td>T04R</td><td>11/04/27</td><td class="num">1.220</td><td class="num">1.220</td><td></td><td></td><td class="num">R$ 32,15</td></tr>
+                            <tr><td>14</td><td>dT</td><td>T05R</td><td>19/05/27</td><td class="num">800</td><td class="num">150</td><td></td><td></td><td class="num">R$ 32,15</td></tr>
+                            <tr><td>15</td><td>DTP</td><td>D08N</td><td>04/02/27</td><td class="num">350</td><td class="num">88</td><td></td><td></td><td class="num">R$ 74,20</td></tr>
+                            <tr><td>16</td><td>Hepatite A</td><td>HA01</td><td>14/03/27</td><td class="num">450</td><td class="num">112</td><td></td><td></td><td class="num">R$ 110,00</td></tr>
+                            <tr><td>17</td><td>Hepatite B</td><td>HB07</td><td>09/01/27</td><td class="num">853</td><td class="num">853</td><td></td><td></td><td class="num">R$ 55,40</td></tr>
+                            <tr><td>18</td><td>Hepatite B</td><td>HB08</td><td>22/03/27</td><td class="num">1.000</td><td class="num">210</td><td></td><td></td><td class="num">R$ 55,40</td></tr>
+                            <tr><td>19</td><td>Meningocócica</td><td>M22W</td><td>17/07/27</td><td class="num">600</td><td class="num">415</td><td></td><td></td><td class="num">R$ 210,30</td></tr>
+                            <tr><td>20</td><td>Penta</td><td>P03Y</td><td>19/08/27</td><td class="num">400</td><td class="num">305</td><td></td><td></td><td class="num">R$ 165,80</td></tr>
+                            <tr><td>21</td><td>Pneumocócica</td><td>PN10</td><td>11/11/27</td><td class="num">300</td><td class="num">198</td><td></td><td></td><td class="num">R$ 190,00</td></tr>
+                            <tr><td>22</td><td>Poliomielite</td><td>VIP5</td><td>25/10/27</td><td class="num">450</td><td class="num">240</td><td></td><td></td><td class="num">R$ 82,00</td></tr>
+                            <tr><td>23</td><td>Rotavírus</td><td>VR02</td><td>08/04/27</td><td class="num">500</td><td class="num">390</td><td></td><td></td><td class="num">R$ 92,45</td></tr>
+                            <tr><td>24</td><td>Tríplice viral</td><td>TV09</td><td>30/05/27</td><td class="num">350</td><td class="num">120</td><td></td><td></td><td class="num">R$ 150,00</td></tr>
+                            <tr><td>25</td><td>Varicela</td><td>VZ04</td><td>14/06/27</td><td class="num">250</td><td class="num">85</td><td></td><td></td><td class="num">R$ 225,10</td></tr>
                             <tr><td>26</td><td>Total</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                         </tbody>
                     </table>
@@ -1082,7 +1083,7 @@ mouse_interface: {
                 <h4>Instruções de formatação:</h4>
                 <ol>
                     <li>Aplique as formatações de tipo de dado ensinadas na tela anterior nas novas linhas: estilo de milhar e sem decimais nas colunas D e E; formato Moeda na coluna H.</li>
-                    <li>Clique com o botão direito sobre o número <b>1</b> na barra lateral de linhas e selecione <b>Inserir Linha Acima</b> <img src="assets/img/icons/cursor-linha.svg" alt="Ícone de linha">. Na nova célula <code>A1</code> que surgiu vazia, digite o título: <code>SISTEMA DE INVENTÁRIO E CONTROLE DE IMUNIZANTES - UBS</code>.</li>
+                    <li>Clique com o botão direito sobre o número <b>1</b> na barra lateral de linhas e selecione <b>Inserir Linha Acima</b> <img src="assets/img/icons/cursor-linha.svg" alt="Ícone de linha">. Na nova célula <code>A1</code> que surgiu vazia, digite o título: <code>CONTROLE DE IMUNIZANTES APLICADOS NO MÊS</code>.</li>
                     <li>Selecione o intervalo de <code>A1:H1</code> e clique na ferramenta <b>Mesclar e Centralizar</b> <img src="assets/img/icons/mesclar-centralizar.svg" alt="Ícone Mesclar e Centralizar">. Com a célula ainda selecionada, mude o estilo para <b>Negrito</b> <img src="assets/img/icons/negrito.svg" alt="Ícone Negrito">, altere o tamanho da fonte para 14px, mude a <b>Cor de Preenchimento</b> <img src="assets/img/icons/cor-preenchimento.svg" alt="Ícone Cor de Preenchimento"> para um tom cinza-escuro e a <b>cor da fonte</b> <img src="assets/img/icons/cor-fonte.svg" alt="Cor da Fonte" class="icone-app"> para branco.</li>
                     <li>Selecione os cabeçalhos da tabela no intervalo de <code>A2:H2</code>. Mude o alinhamento usando a ferramenta <b>Alinhamento Centralizado</b> <img src="assets/img/icons/alinhamento-centralizado.svg" alt="Ícone Alinhamento Centralizado">, alinhe também na vertical com a ferramenta <b>Alinhamento ao Meio</b> <img src="assets/img/icons/alinhamento-meio.svg" alt="Ícone Alinhamento Vertical ao Meio">. Aplique <b>Negrito</b> e preencha o fundo com um tom cinza-claro sutil.</li>
                     <li>Selecione os nomes das vacinas no intervalo de <code>A3:A26</code> e aplique a ferramenta <b>Alinhar à Esquerda</b> <img src="assets/img/icons/alinhamento-esquerda.svg" alt="Ícone Alinhar à Esquerda">. Nas colunas de Lote (<code>B3:B26</code>) e Validade (<code>C3:C26</code>), aplique o <b>Alinhamento Centralizado</b>. Nas colunas numéricas de valores (<code>D3:H26</code>), certifique-se de usar a ferramenta <b>Alinhar à Direita</b> <img src="assets/img/icons/alinhamento-direita.svg" alt="Ícone Alinhar à Direita">.</li>
@@ -1112,7 +1113,7 @@ mouse_interface: {
                         <tbody>
                             <tr>
                                 <td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; font-weight: normal; padding: 4px;">1</td>
-                                <td colspan="8" style="border: 1px solid #333333; text-align: center; font-weight: bold; background-color: #444444; color: #ffffff; font-size: 14px; padding: 6px;">SISTEMA DE INVENTÁRIO E CONTROLE DE IMUNIZANTES - UBS</td>
+                                <td colspan="8" style="border: 1px solid #333333; text-align: center; font-weight: bold; background-color: #444444; color: #ffffff; font-size: 14px; padding: 6px;">CONTROLE DE IMUNIZANTES APLICADOS NO MÊS</td>
                             </tr>
                             <tr style="font-weight: bold; text-align: center; vertical-align: middle; background-color: #e8e8e8;">
                                 <td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; font-weight: normal; padding: 4px;">2</td>
@@ -1125,30 +1126,30 @@ mouse_interface: {
                                 <td style="border: 1px solid #333333; padding: 4px;">Em estoque</td>
                                 <td style="border: 1px solid #333333; padding: 4px;">Custo unitário</td>
                             </tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">3</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Influenza</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L15F</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">06/08/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.250</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.250</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 125,78</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">4</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Influenza</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L29S</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">12/12/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">237</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 130,45</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">5</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Febre Amarela</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L34X</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">12/12/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">200</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">96</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 249,20</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">6</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Tríplice viral</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L95M</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">05/07/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">400</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">149</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 150,00</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">7</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">HPV</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L37Q</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">06/07/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">200</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">47</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 1.150,12</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">8</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">BCG</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">B01K</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">20/10/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">795</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">795</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 95,30</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">9</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">BCG</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">B02J</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">15/11/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">0</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 95,30</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">10</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Covid-19</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">C42P</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">18/09/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.269</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.269</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 45,00</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">11</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Covid-19</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">C43P</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">22/10/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">2.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">540</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 45,00</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">12</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Dengue</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D11V</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">30/06/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.114</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.114</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 180,50</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">13</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Dengue</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D12V</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">15/08/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">320</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 180,50</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">14</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">dT</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">T04R</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">11/04/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.220</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.220</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 32,15</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">15</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">dT</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">T05R</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">19/05/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">800</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">150</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 32,15</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">16</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">DTP</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D08N</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">04/02/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">350</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">88</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 74,20</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">17</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite A</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HA01</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">14/03/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">450</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">112</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 110,00</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">18</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite B</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HB07</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">09/01/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">853</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">853</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 55,40</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">19</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite B</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HB08</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">22/03/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">210</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 55,40</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">20</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Meningocócica</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">M22W</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">17/07/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">600</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">415</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 210,30</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">21</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Penta</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">P03Y</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">19/08/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">400</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">305</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 165,80</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">22</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Pneumocócica</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">PN10</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">11/11/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">300</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">198</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 190,00</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">23</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Poliomielite</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VIP5</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">25/10/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">450</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">240</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 82,00</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">24</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Rotavírus</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VR02</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">08/04/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">390</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 92,45</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">25</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Tríplice viral</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">TV09</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">30/05/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">350</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">120</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 150,00</td></tr>
-                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">26</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Varicela</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VZ04</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">14/06/2027</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">250</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">85</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 225,10</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">3</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Influenza</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L15F</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">06/08/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.250</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.250</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 125,78</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">4</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Influenza</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L29S</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">12/12/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">237</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 130,45</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">5</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Febre Amarela</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L34X</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">12/12/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">200</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">96</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 249,20</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">6</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Tríplice viral</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L95M</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">05/07/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">400</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">149</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 150,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">7</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">HPV</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">L37Q</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">06/07/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">200</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">47</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 1.150,12</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">8</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">BCG</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">B01K</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">20/10/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">795</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">795</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 95,30</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">9</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">BCG</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">B02J</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">15/11/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">0</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 95,30</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">10</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Covid-19</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">C42P</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">18/09/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.269</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.269</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 45,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">11</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Covid-19</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">C43P</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">22/10/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">2.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">540</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 45,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">12</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Dengue</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D11V</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">30/06/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.114</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.114</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 180,50</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">13</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Dengue</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D12V</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">15/08/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">320</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 180,50</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">14</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">dT</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">T04R</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">11/04/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.220</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.220</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 32,15</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">15</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">dT</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">T05R</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">19/05/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">800</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">150</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 32,15</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">16</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">DTP</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">D08N</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">04/02/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">350</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">88</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 74,20</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">17</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite A</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HA01</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">14/03/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">450</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">112</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 110,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">18</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite B</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HB07</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">09/01/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">853</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">853</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 55,40</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">19</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Hepatite B</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">HB08</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">22/03/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">1.000</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">210</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 55,40</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">20</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Meningocócica</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">M22W</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">17/07/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">600</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">415</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 210,30</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">21</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Penta</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">P03Y</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">19/08/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">400</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">305</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 165,80</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">22</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Pneumocócica</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">PN10</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">11/11/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">300</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">198</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 190,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">23</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Poliomielite</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VIP5</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">25/10/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">450</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">240</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 82,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">24</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Rotavírus</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VR02</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">08/04/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">500</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">390</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 92,45</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">25</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Tríplice viral</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">TV09</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">30/05/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">350</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">120</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 150,00</td></tr>
+                            <tr><td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">26</td><td style="border: 1px solid #333333; text-align: left; padding: 4px;">Varicela</td><td style="border: 1px solid #333333; text-align: center; font-style: italic; padding: 4px;">VZ04</td><td style="border: 1px solid #333333; text-align: center; padding: 4px;">14/06/27</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">250</td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">85</td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; padding: 4px;"></td><td style="border: 1px solid #333333; text-align: right; padding: 4px;">R$ 225,10</td></tr>
                             <tr style="font-weight: bold;">
                                 <td style="background-color: #f2f2f2; border: 1px solid #d4d4d4; text-align: center; padding: 4px;">27</td>
                                 <td style="border: 1px solid #333333; padding: 4px;"><u>Total</u></td>
@@ -1188,41 +1189,363 @@ mouse_interface: {
         `,
         botoes: [
             { texto: "Retornar", destino: "tipo_dados_saude" },
-            { texto: "Avançar", destino: "formulas_funcoes_saude" }
+            { texto: "Avançar", destino: "operadores_saude" }
         ]
     },
     
     // === ETAPA 7: Operadores Matemáticos ===
-    saude_operadores: {
+    operadores_saude: {
         etapa: 7, 
-        titulo: "E7. Cálculos de Epidemias",
-        texto: "Utilize fórmulas manuais com operadores matemáticos básicos para subtrair casos antigos de novos casos detectados.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "saude_formatacao" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "saude_funcoes" 
-            }
-        ]
-    },
+        titulo: "Operadores matemáticos",
+        texto: `
+        <p>No ambiente das planilhas eletrônicas, a execução de qualquer cálculo automatizado exige a construção de <strong>fórmulas</strong>. O principal símbolo para que o editor compreenda que um texto inserido em uma célula representa uma operação matemática é o sinal de igual (<code>=</code>). <b>Toda e qualquer fórmula deve, obrigatoriamente, ser iniciada com esse caractere.</b></p>
+
+        <p>Uma fórmula pode ser definida como uma instrução lógica ou uma equação matemática que processa dados existentes para gerar um novo resultado automático. Em vez de utilizar valores fixos e estáticos, as fórmulas operam por meio de referências (como <code>A2</code> ou <code>B2</code>). Isso significa que, caso o dado de origem seja modificado ou atualizado na planilha, o editor recalcula o resultado final instantaneamente, eliminando a necessidade de refazer manualmente.</p>
+        
+        <p>Para estruturar as instruções lógicas dentro das células, utilizamos os operadores aritméticos padrão. A tabela abaixo apresenta a sintaxe exata utilizada pelos principais editores de mercado:</p>
+
+        <div class="tabela-ferramentas">
+            <table class="tabela-conceitual">
+                <thead>
+                    <tr>
+                        <th>Operação</th>
+                        <th>Símbolo</th>
+                        <th>Exemplo Prático</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Adição</strong></td>
+                        <td>+</td>
+                        <td><code>=A2+B2</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Subtração</strong></td>
+                        <td>-</td>
+                        <td><code>=A2-B2</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Multiplicação</strong></td>
+                        <td>*</td>
+                        <td><code>=A2*B2</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Divisão</strong></td>
+                        <td>/</td>
+                        <td><code>=A2/B2</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Exponenciação</strong></td>
+                        <td>^</td>
+                        <td><code>=A2^2</code> <small class="menu-item-disabled">(Elevado ao quadrado)</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Outro ponto importante na construção de fórmulas é a <strong>ordem de precedência matemática</strong>. O editor de planilhas não realiza os cálculos simplesmente da esquerda para a direita; ele obedece a regras universais de prioridade aritmética.</p>
+
+        <p>Dessa forma, as operações de <strong>exponenciação</strong> são processadas em primeiro lugar. Na sequência, executam-se as <strong>multiplicações e divisões</strong> e, por fim, as <strong>adições e subtrações</strong>. Quando houver a necessidade de alterar essa ordem natural de resolução — forçando o somatório de dois valores antes de sua respectiva divisão, por exemplo —, deve-se isolar a operação prioritária utilizando os <strong>parênteses <code>()</code></strong>.</p>
+
+        <p>Para compreender como o editor interpreta essas prioridades e de que maneira os parênteses modificam completamente o comportamento de um cálculo, analise os exemplos comparativos a seguir:</p>
+
+        <div class="tabela-ferramentas">
+            <table class="tabela-conceitual">
+                <thead>
+                    <tr>
+                        <th>Fórmula</th>
+                        <th>Ordem de resolução</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>=10+5/5</code></td>
+                        <td>Primeiro divide-se <code>5/5</code> (1) e depois soma-se <code>10+1</code></td>
+                        <td><strong>11</strong></td>
+                    </tr>
+                    <tr>
+                        <td><code>=(10+5)/5</code></td>
+                        <td>Os parênteses forçam a soma <code>10+5</code> (15) antes da divisão por 5</td>
+                        <td><strong>3</strong></td>
+                    </tr>
+                    <tr>
+                        <td><code>=3*2^2</code></td>
+                        <td>Primeiro resolve-se a potência <code>2^2</code> (4) e depois multiplica-se <code>3*4</code></td>
+                        <td><strong>12</strong></td>
+                    </tr>
+                    <tr>
+                        <td><code>=(3*2)^2</code></td>
+                        <td>Os parênteses forçam a multiplicação <code>3*2</code> (6) antes de elevar ao quadrado</td>
+                        <td><strong>36</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Abra o editor de planilha e reproduza as equações acima. Altere os números e observe se os novos resultados apresentados. Eles correspondem aos resultados que você esperava? Se não, tente descobrir qual foi o problema.</p>
+        
+        <h3>Atividade Prática</h3>
+
+        <p>Na etapa anterior, você auxiliou a equipe do posto de saúde organizando visualmente a tabela com técnicas de formatação. Agora que o layout está padronizado e limpo, a coordenação admiistrativa solicitou o fechamento da planilha e pediu que você incluí-se o custo total das aplicações no mês.</p>
+                
+        <p>A partir de agora, utilizaremos fórmulas para executar e automatizar qualquer tipo de cálculo ou instrução. Neste exercício usaremos alguns dos operadores aritiméticos aprendidos.</p>
+
+        <h4>Modificação e Inclusão de dados:</h4>
+        <ol>
+            <li>Abra a planilha desenvolvida na atividade anterior.</li>
+
+            <li>Insira um novo cabeçalho na célula <code>I2</code> com o título: <code>Custo Total</code>.</li>
+
+            <li>Selecione o título principal na linha 1 (que atualmente está mesclado de <code>A1:H1</code>), desfaça a mesclagem e selecione o novo intervalo de <code>A1:I1</code>. Clique novamente em <b>Mesclar e Centralizar</b> para reajustar o título ao novo tamanho do relatório. Reative a borda geral de <code>A1:I27</code> se necessário.</li>
+
+            <li>Calcule o Estoque Final. Selecione a célula <code>F3</code> (Estoque Final da vacina Influenza). Insira o sinal de igualdade e monte a fórmula subtraindo as <b>Doses aplicadas</b> (<code>E3</code>) do <b>Estoque inicial</b> (<code>D3</code>). <br><small class="menu-item-disabled">Fórmula: <code>=D3-E3</code></small></li>
+
+            <li>Use a alça de preenchimento automático para arrastar a fórmula da célula <code>F3</code> até a célula <code>F26</code>.Lembre-se que para usar a alça de preenchimento corretamente, você deve posicionar o cursor do mouse exatamente sobre o quadrado que marca o canto inferior esquerdo da célula até que o cursor fique com aparencia de <b>Cruz Preta e Fina</b><img src="assets/img/icons/cursor-arrastar-celulas.svg" alt="Desenho de uma cruz preta e fina" class="icone" style="height: 1em;">.</li>
+
+            <li>Calcule a Capacidade em Estoque. A coordenação informou que a capacidade máxima padrão de armazenamento para cada lote é de 1.500 unidades. Na célula <code>G3</code> (Em estoque), calcularemos a proporção atual do estoque dividindo o <b>Estoque final</b> (<code>F3</code>) por <code>1500</code>. <br><small class="menu-item-disabled">Fórmula: <code>=F3/1500</code></small></li>
+
+            <li>Arraste a fórmula de <code>G3</code> até <code>G26</code>. Formate o intervalo resultante com o estilo de <b>Porcentagem (%)</b>.</li>
+            
+            <li>Calcule o Custo Total Consumido. Na célula <code>I3</code> (Custo Total), calcularemos o valor financeiro total que já foi aplicado na população. Monte a fórmula multiplicando as <b>Doses aplicadas</b> (<code>E3</code>) pelo seu respectivo <b>Custo unitário</b> (<code>H3</code>). <br><small class="menu-item-disabled">Fórmula: <code>=E3*H3</code></small></li>
+            <li>Arraste a fórmula de <code>I3</code> até a célula <code>I26</code>. Formate o intervalo como <b>Moeda</b>.</li>
+            
+            <li>Calcule o somatório do Estoque Inicial. Na célula <code>D27</code>, monte a fórmula somando todas as células daquela coluna, desde a linha 3 até a linha 26. <br><small class="menu-item-disabled">Fórmula: <code>=D3+D4+D5+D6+D7+D8+D9+D10+D11+D12+D13+D14+D15+D16+D17+D18+D19+D20+D21+D22+D23+D24+D25+D26</code></small></li>
+        </ol>
+        
+        <p>Se você digitou a fórmula acima, deve ter achado exaustivo escrever uma fórmula que some 24 células usando apenas o operador de adição (<code>+</code>).</p>
+        <p>Usar esse mesmo método para calcular os totais das células <code>E27</code> (Doses aplicadas), <code>F27</code> (Estoque final) e <code>I27</code> (Custo Total) é ineficiente. Imagine se posto de saúde controlasse 500 lotes de vacinas, essa tarefa seria completamente inviável. Adiante descobrirmos como resolver esse problema em segundos.</p>
+        <h4><b>Salve o arquivo:</b></h4>
+                <p>Mantenha suas alterações seguras salvando o progresso da planilha. Clique no ícone de <b>Salvar</b> <img src="assets/img/icons/salvar.svg" alt="Ícone Salvar"> ou utilize o atalho de teclado padrão <code>[ctrl+S]</code>.</p>
+
+        <h4><b>Resultado Esperado:</b></h4>
+        <p>Após executar os passos de inserção estrutural, alinhamentos e aplicação de estilos estéticos, seu relatório técnico deverá apresentar exatamente o seguinte aspecto visual:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="9" style="text-align: center; font-weight: bold; background-color: #444444; color: #ffffff; font-size: 14px;">CONTROLE DE IMUNIZANTES APLICADOS NO MÊS</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #f2f2f2; text-align: center;">
+                        <td>2</td>
+                        <td style="text-align: left;">Vacina</td><td>Lote</td><td>Validade</td><td class="num">Estoque inicial</td><td class="num">Doses aplicadas</td><td class="num">Estoque final</td><td class="num">Em estoque</td><td class="num">Custo unitário</td><td class="num">Custo Total</td>
+                    </tr>
+                    <tr><td>3</td><td>Influenza</td><td style="font-style: italic; text-align: center;">L15F</td><td style="text-align: center;">06/08/27</td><td class="num">1.250</td><td class="num">1.250</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 125,78</td><td class="num">R$ 157.225,00</td></tr>
+                    <tr><td>4</td><td>Influenza</td><td style="font-style: italic; text-align: center;">L29S</td><td style="text-align: center;">12/12/27</td><td class="num">1.000</td><td class="num">237</td><td class="num">763</td><td class="num">51%</td><td class="num">R$ 130,45</td><td class="num">R$ 30.916,65</td></tr>
+                    <tr><td>5</td><td>Febre Amarela</td><td style="font-style: italic; text-align: center;">L34X</td><td style="text-align: center;">12/12/27</td><td class="num">200</td><td class="num">96</td><td class="num">104</td><td class="num">7%</td><td class="num">R$ 249,20</td><td class="num">R$ 23.923,20</td></tr>
+                    <tr><td>6</td><td>Tríplice viral</td><td style="font-style: italic; text-align: center;">L95M</td><td style="text-align: center;">05/07/27</td><td class="num">400</td><td class="num">149</td><td class="num">251</td><td class="num">17%</td><td class="num">R$ 150,00</td><td class="num">R$ 22.350,00</td></tr>
+                    <tr><td>7</td><td>HPV</td><td style="font-style: italic; text-align: center;">L37Q</td><td style="text-align: center;">06/07/27</td><td class="num">200</td><td class="num">47</td><td class="num">153</td><td class="num">10%</td><td class="num">R$ 1.150,12</td><td class="num">R$ 54.055,64</td></tr>
+                    <tr><td>8</td><td>BCG</td><td style="font-style: italic; text-align: center;">B01K</td><td style="text-align: center;">20/10/27</td><td class="num">795</td><td class="num">795</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 95,30</td><td class="num">R$ 75.763,50</td></tr>
+                    <tr><td>9</td><td>BCG</td><td style="font-style: italic; text-align: center;">B02J</td><td style="text-align: center;">15/11/27</td><td class="num">500</td><td class="num">0</td><td class="num">500</td><td class="num">33%</td><td class="num">R$ 95,30</td><td class="num">R$ 0,00</td></tr>
+                    <tr><td>10</td><td>Covid-19</td><td style="font-style: italic; text-align: center;">C42P</td><td style="text-align: center;">18/09/27</td><td class="num">1.269</td><td class="num">1.269</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 45,00</td><td class="num">R$ 57.105,00</td></tr>
+                    <tr><td>11</td><td>Covid-19</td><td style="font-style: italic; text-align: center;">C43P</td><td style="text-align: center;">22/10/27</td><td class="num">2.000</td><td class="num">540</td><td class="num">1.460</td><td class="num">97%</td><td class="num">R$ 45,00</td><td class="num">R$ 24.300,00</td></tr>
+                    <tr><td>12</td><td>Dengue</td><td style="font-style: italic; text-align: center;">D11V</td><td style="text-align: center;">30/06/27</td><td class="num">1.114</td><td class="num">1.114</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 180,50</td><td class="num">R$ 201.077,00</td></tr>
+                    <tr><td>13</td><td>Dengue</td><td style="font-style: italic; text-align: center;">D12V</td><td style="text-align: center;">15/08/27</td><td class="num">1.500</td><td class="num">320</td><td class="num">1.180</td><td class="num">79%</td><td class="num">R$ 180,50</td><td class="num">R$ 57.760,00</td></tr>
+                    <tr><td>14</td><td>dT</td><td style="font-style: italic; text-align: center;">T04R</td><td style="text-align: center;">11/04/27</td><td class="num">1.220</td><td class="num">1.220</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 32,15</td><td class="num">R$ 39.223,00</td></tr>
+                    <tr><td>15</td><td>dT</td><td style="font-style: italic; text-align: center;">T05R</td><td style="text-align: center;">19/05/27</td><td class="num">800</td><td class="num">150</td><td class="num">650</td><td class="num">43%</td><td class="num">R$ 32,15</td><td class="num">R$ 4.822,50</td></tr>
+                    <tr><td>16</td><td>DTP</td><td style="font-style: italic; text-align: center;">D08N</td><td style="text-align: center;">04/02/27</td><td class="num">350</td><td class="num">88</td><td class="num">262</td><td class="num">17%</td><td class="num">R$ 74,20</td><td class="num">R$ 6.529,60</td></tr>
+                    <tr><td>17</td><td>Hepatite A</td><td style="font-style: italic; text-align: center;">HA01</td><td style="text-align: center;">14/03/27</td><td class="num">450</td><td class="num">112</td><td class="num">338</td><td class="num">23%</td><td class="num">R$ 110,00</td><td class="num">R$ 12.320,00</td></tr>
+                    <tr><td>18</td><td>Hepatite B</td><td style="font-style: italic; text-align: center;">HB07</td><td style="text-align: center;">09/01/27</td><td class="num">853</td><td class="num">853</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 55,40</td><td class="num">R$ 47.256,20</td></tr>
+                    <tr><td>19</td><td>Hepatite B</td><td style="font-style: italic; text-align: center;">HB08</td><td style="text-align: center;">22/03/27</td><td class="num">1.000</td><td class="num">210</td><td class="num">790</td><td class="num">53%</td><td class="num">R$ 55,40</td><td class="num">R$ 11.634,00</td></tr>
+                    <tr><td>20</td><td>Meningocócica</td><td style="font-style: italic; text-align: center;">M22W</td><td style="text-align: center;">17/07/27</td><td class="num">600</td><td class="num">415</td><td class="num">185</td><td class="num">12%</td><td class="num">R$ 210,30</td><td class="num">R$ 87.274,50</td></tr>
+                    <tr><td>21</td><td>Penta</td><td style="font-style: italic; text-align: center;">P03Y</td><td style="text-align: center;">19/08/27</td><td class="num">400</td><td class="num">305</td><td class="num">95</td><td class="num">6%</td><td class="num">R$ 165,80</td><td class="num">R$ 50.569,00</td></tr>
+                    <tr><td>22</td><td>Pneumocócica</td><td style="font-style: italic; text-align: center;">PN10</td><td style="text-align: center;">11/11/27</td><td class="num">300</td><td class="num">198</td><td class="num">102</td><td class="num">7%</td><td class="num">R$ 190,00</td><td class="num">R$ 37.620,00</td></tr>
+                    <tr><td>23</td><td>Poliomielite</td><td style="font-style: italic; text-align: center;">VIP5</td><td style="text-align: center;">25/10/27</td><td class="num">450</td><td class="num">240</td><td class="num">210</td><td class="num">14%</td><td class="num">R$ 82,00</td><td class="num">R$ 19.680,00</td></tr>
+                    <tr><td>24</td><td>Rotavírus</td><td style="font-style: italic; text-align: center;">VR02</td><td style="text-align: center;">08/04/27</td><td class="num">500</td><td class="num">390</td><td class="num">110</td><td class="num">7%</td><td class="num">R$ 92,45</td><td class="num">R$ 36.055,50</td></tr>
+                    <tr><td>25</td><td>Tríplice viral</td><td style="font-style: italic; text-align: center;">TV09</td><td style="text-align: center;">30/05/27</td><td class="num">350</td><td class="num">120</td><td class="num">230</td><td class="num">15%</td><td class="num">R$ 150,00</td><td class="num">R$ 18.000,00</td></tr>
+                    <tr><td>26</td><td>Varicela</td><td style="font-style: italic; text-align: center;">VZ04</td><td style="text-align: center;">14/06/27</td><td class="num">250</td><td class="num">85</td><td class="num">165</td><td class="num">11%</td><td class="num">R$ 225,10</td><td class="num">R$ 19.133,50</td></tr>
+                    <tr style="font-weight: bold;">
+                        <td>27</td>
+                        <td style="text-decoration: underline;">Total</td><td></td><td></td><td class="num">19.351</td><td class="num"></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="caixa-voce-sabia verde-excel">
+            <h4>O que é Imunidade de Rebanho?</h4>
+            <p>Quando uma grande parte de uma população é vacinada contra uma doença, ela cria uma espécie de "escudo de proteção" que impede o vírus de se espalhar. Isso é chamado de <strong>Imunidade de Rebanho</strong>. Esse fenômeno protege indiretamente as pessoas que não podem ser vacinadas, como bebês recém-nascidos ou pacientes em tratamentos graves de saúde. Na planilha que você está calculando, cada lote distribuído e cada dose aplicada representam uma engrenagem matemática real para alcançar a porcentagem ideal de segurança e salvar vidas na comunidade.</p>
+            
+            <p>Assista ao vídeo abaixo para entender como funciona essa barreira de proteção coletiva:</p>
+
+            <div class="video-responsivo" style="margin-top: 1rem;">
+                <iframe 
+                    src="https://www.youtube.com/embed/ruQ0rLeSeVo?si=kbnp_-jqLVja4iDy" 
+                    title="Vídeo explicativo sobre Imunidade de Rebanho"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <p>Nesta etapa, você aprendeu a transformar dados estáticos em informações dinâmicas construindo fórmulas com os operadores de adição, subtração, multiplicação e divisão, além de definir a ordem de precedência aritmética com o uso dos parênteses. Contudo, ao digitar a exaustiva soma de 24 linhas para consolidar o total do Estoque Inicial, você se deparou com o limite das fórmulas que usam operadores aritiméticos para grandes intervalos.</p>
+        <p>Na próxima etapa, você compreenderá o conceito e a sintaxe de estruturas pré-definidas como as funções <code>SOMA</code>, <code>MÉDIA</code>, <code>MÁXIMO</code>, <code>MÍNIMO</code> e <code>CONT.NÚM</code>, projetadas para processar grandes volumes de dados instantaneamente.</p>
+    `,
+    botoes: [
+        { texto: "Voltar", destino: "formatacao_saude" },
+        { texto: "Avançar", destino: "funcoes_saude" }
+    ]
+},
     // === ETAPA 8: Funções Iniciais ===
-    saude_funcoes: {
+    funcoes_saude: {
         etapa: 8, 
         titulo: "E8. Médias de Atendimento",
-        texto: "Aplique as funções pré-definidas MÉDIA e MÁXIMO para avaliar o tempo de espera em prontos-socorros da região.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "saude_operadores" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "saude_condicionais" 
-            }
-        ]
+        texto: `
+        <p>Até o momento, você construiu fórmulas instruindo o editor célula por célula (como <code>=A1+A2+A3</code>). Embora funcional para poucos dados, esse método se torna inviável em cenários reais. Para resolver isso, as planilhas eletrônicas utilizam <strong>Funções</strong>: estruturas lógicas pré-definidas que realizam cálculos complexos instantaneamente sobre grandes intervalos de células.</p>
+
+        <p>Uma função é composta por três elementos obrigatórios que ditam sua <strong>sintaxe</strong>:</p>
+        <ol>
+            <li><strong>O sinal de igualdade (<code>=</code>):</strong> Indica ao editor que uma operação será realizada.</li>
+            <li><strong>O nome da função:</strong> O comando específico em letras maiúsculas (ex: <code>SOMA</code>).</li>
+            <li><strong>Os argumentos entre parênteses <code>()</code>:</strong> Os dados ou intervalos de células que a função irá processar.</li>
+        </ol>
+
+        <p>Para selecionar um bloco de dados, utilizamos o operador de intervalo <strong>dois-pontos (<code>:</code>)</strong>, que significa "até". Por exemplo, <code>A3:A26</code> indica que a função processará todas as células da linha 3 até a linha 26 de forma contínua.</p>
+
+        <h4>Catálogo de Funções Essenciais para Gestão em Saúde</h4>
+        <p>Para atender às solicitações de relatórios da coordenação do posto de saúde, utilizaremos o seguinte conjunto de funções estatísticas e matemáticas:</p>
+
+        <div class="tabela-ferramentas">
+            <table class="tabela-conceitual">
+                <thead>
+                    <tr>
+                        <th>Função</th>
+                        <th>O que ela faz?</th>
+                        <th>Exemplo de Sintaxe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>SOMA</code></td>
+                        <td>Soma todos os valores numéricos presentes no intervalo selecionado.</td>
+                        <td><code>=SOMA(D3:D26)</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>CONT.NÚM</code></td>
+                        <td>Conta quantas células no intervalo possuem números cadastrados (ignora textos ou células vazias).</td>
+                        <td><code>=CONT.NÚM(E3:E26)</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>MÁXIMO</code></td>
+                        <td>Identifica e retorna o maior valor numérico encontrado dentro do intervalo.</td>
+                        <td><code>=MÁXIMO(H3:H26)</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>MÍNIMO</code></td>
+                        <td>Identifica e retorna o menor valor numérico encontrado dentro do intervalo.</td>
+                        <td><code>=MÍNIMO(H3:H26)</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>MÉDIA</code></td>
+                        <td>Calcula a média aritmética simples (soma todos os valores e divide pela quantidade de elementos).</td>
+                        <td><code>=MÉDIA(I3:I26)</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Além das funções básicas de processamento de volumes, a coordenação epidemiológica solicitou indicadores de tendência central avançados para o perfil dos pacientes:</p>
+        <ul>
+            <li><code>MEDIANA</code>: Retorna o valor central do intervalo (o número que divide a lista ordenada exatamente ao meio).</li>
+            <li><code>MODO</code> ou <code>MODA</code>: Identifica o valor que mais se repete no banco de dados (o perfil mais comum).</li>
+        </ul>
+
+        <h3>Atividade Prática: Auditoria Epidemiológica</h3>
+        
+        <div>
+            <p><b>Contexto da atividade:</b><br>
+            A coordenação administrativa do posto de saúde validou os custos totais que você calculou manualmente na tela anterior. Agora, eles precisam consolidar a linha de Totais de forma profissional e, em paralelo, abriram um chamado urgente: exportaram um relatório bruto do sistema de atendimento contendo o prontuário anônimo das <strong>1.487 pessoas imunizadas com a vacina de Influenza</strong> no mês. Precisamos cruzar esses dados para gerar o perfil epidemiológico da comunidade.</p>
+        </div>
+
+        <h4>Passo 1: Simplificando a Planilha de Inventário</h4>
+        <ol>
+            <li>Abra a sua planilha de controle de imunizantes na linha **27**.</li>
+            <li>Apague a fórmula manual exaustiva da célula <code>D27</code>. Substitua-a pela função de intervalo: <code>=SOMA(D3:D26)</code>. Pressione Enter e observe o mesmo resultado surgir em um segundo.</li>
+            <li>Substitua as fórmulas de totais das células <code>E27</code>, <code>F27</code> e <code>I27</code> utilizando a função <code>=SOMA()</code> adaptada para cada coluna.</li>
+        </ol>
+
+        <h4>Passo 2: Análise de Dados em Larga Escala (Arquivo CSV)</h4>
+        <ol>
+            <li>Faça o download do banco de dados bruto enviado pelo sistema do posto de saúde clicando no link a seguir: <a href="assets/data/imunizados_influenza.csv" class="link-download" download><strong>Baixar_Base_Imunizados.csv</strong></a>.</li>
+            <li>Abra o arquivo baixado no seu editor de planilhas. Note que ele criará uma nova aba ou arquivo com três colunas: <code>A: Cód_Paciente</code> | <code>B: Gênero</code> | <code>C: Idade</code>, distribuídos ao longo de 1.487 linhas de registros.</li>
+            <li>Em uma área livre ao lado da sua nova tabela, monte uma pequena grade de resumo e aplique as funções aprendidas para responder às seguintes perguntas da coordenação:</li>
+        </ol>
+
+        <div class="tabela-ferramentas">
+            <table class="tabela-conceitual">
+                <thead>
+                    <tr>
+                        <th>Indicador Requerido</th>
+                        <th>Célula de Destino</th>
+                        <th>Função Recomendada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total de Pacientes Imunizados</td>
+                        <td><code>F2</code></td>
+                        <td><code>=CONT.NÚM(C2:C1488)</code></td>
+                    </tr>
+                    <tr>
+                        <td>Idade Média dos Pacientes</td>
+                        <td><code>F3</code></td>
+                        <td><code>=MÉDIA(C2:C1488)</code></td>
+                    </tr>
+                    <tr>
+                        <td>Idade Máxima (Mais idoso)</td>
+                        <td><code>F4</code></td>
+                        <td><code>=MÁXIMO(C2:C1488)</code></td>
+                    </tr>
+                    <tr>
+                        <td>Idade Mínima (Mais jovem)</td>
+                        <td><code>F5</code></td>
+                        <td><code>=MÍNIMO(C2:C1488)</code></td>
+                    </tr>
+                    <tr>
+                        <td>Idade Mediana do Grupo</td>
+                        <td><code>F6</code></td>
+                        <td><code>=MEDIANA(C2:C1488)</code></td>
+                    </tr>
+                    <tr>
+                        <td>Idade Mais Frequente (Moda)</td>
+                        <td><code>F7</code></td>
+                        <td><code>=MODA(C2:C1488)</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+        <div class="caixa-voce-sabia verde-excel">
+            <h4>Você sabia? Dados que Salvam Vidas</h4>
+            <p>A análise estatística de idade e gênero na aplicação de vacinas não serve apenas para preencher relatórios burocráticos. Ela orienta a tomada de decisão em saúde pública. Se a função <code>MÉDIA</code> ou <code>MODA</code> indicar que poucos jovens estão procurando a vacina de Influenza, por exemplo, a direção do posto pode criar campanhas direcionadas para escolas ou redes sociais. Organizar dados com precisão matemática é o que permite mapear surtos e garantir que nenhuma subpopulação fique vulnerável.</p>
+            
+            <p>Assista ao vídeo curto abaixo para entender como a ciência de dados e a epidemiologia andam de mãos dadas para conter o avanço de vírus na sociedade:</p>
+
+            <div class="video-responsivo" style="margin-top: 1rem;">
+                <iframe 
+                    src="https://www.youtube.com/embed/37GfR0_Vnfc" 
+                    title="Epidemiologia e Ciência de Dados na Saúde Pública" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <p><strong>Resumo da Etapa e Próximos Passos:</strong> Parabéns por concluir a Etapa 8! Nesta tela, você migrou do nível de fórmulas manuais para o uso automatizado de funções profissionais como <code>SOMA</code>, <code>CONT.NÚM</code>, <code>MÉDIA</code> e descobridores de extremos (<code>MÁXIMO</code> e <code>MÍNIMO</code>), aplicando-as com sucesso em uma auditoria de 1.487 registros de pacientes. O seu relatório técnico agora reflete indicadores estatísticos reais do posto de saúde. No entanto, o que acontece se precisarmos arrastar uma fórmula que multiplica o custo fixo de logística, mas o endereço da célula da taxa de câmbio não pode se mover junto? Na próxima tela, entraremos em um conceito crítico de produtividade avançada: as <strong>Referências Relativas e Absolutas (Fixação de Células com $)</strong>, essencial para replicação em massa de cálculos sem corromper as matrizes. Salve suas duas planilhas e avance!</p>
+    `,
+    botoes: [
+        { texto: "Voltar", destino: "operadores_saude" },
+        { texto: "Avançar", destino: "fixacao_celulas_saude" }
+    ]
     },
     // === ETAPA 9: Funções Condicionais ===
     saude_condicionais: {

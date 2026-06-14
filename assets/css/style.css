@@ -328,6 +328,41 @@ button:focus { outline: 4px solid var(--focus-outline); }
     margin: 0 auto;
 }
 
+/* Nova Estética para Tabelas Conceituais de Alto Contraste */
+.tabela-conceitual {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    color: var(--text-main);
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra sutil para destacar a tabela do fundo da página */
+    border-radius: 4px;
+    overflow: hidden; /* Garante que os cantos arredondados funcionem com o fundo do th */
+}
+
+.tabela-conceitual th {
+    background-color: var(--bg-dark-accessible); /* Tom mais escuro para máximo contraste com o texto branco */
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.85rem 1.2rem;
+    text-align: left;
+}
+
+.tabela-conceitual td {
+    padding: 0.85rem 1.2rem;
+    border-bottom: 1px solid var(--disabled-bg); /* Linha horizontal clara que delimita cada linha */
+}
+
+/* Remove a borda da última linha para um acabamento mais limpo */
+.tabela-conceitual tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Realce sutil ao passar o mouse para guiar o foco visual do aluno */
+.tabela-conceitual tbody tr:hover {
+    background-color: #f1f8e9; /* Um verde extremamente suave apenas no hover */
+}
+
 /* --- Suporte a Vídeos Responsivos (YouTube/Vimeo) --- */
 
 .video-responsivo {
