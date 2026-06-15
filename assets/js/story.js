@@ -1604,14 +1604,877 @@ mouse_interface: {
     // === ETAPA 9: Funções Condicionais ===
     condicionais_saude: {
         etapa: 9, 
-        titulo: "Funções condicioanis",
+        titulo: "Funções condicionais",
         texto: `
+        <p>Até o momento, suas planilhas executavam os mesmos cálculos matemáticos de forma idêntica para todas as linhas. No entanto, a análise de dados normalmente depende de regras, critérios e condições específicas.</p>
+
+        <p>As <strong>Funções Condicionais</strong> permitem que o editor de planilhas analise as informações e tome decisões automáticas com base em testes lógicos predefinidos. Em vez de procurar ou conferir linha por linha visualmente, você programa a planilha para filtrar, somar, contar ou exibir alertas de forma automatizada, dependendo do resultado encontrado.</p>
+
+        <h3>Principais Funções Condicionais</h3>
+
+        <p>Abaixo estão as funções mais utilizadas para automatizar a análise de dados sob critérios específicos:</p>
+
+        <div class="tabela-ferramentas">
+            
+            <div class="linha-ferramenta">
+                <div class="col-logo" style="display: flex; align-items: center; justify-content: center;">
+                    <code style="font-size: 1.25rem; font-weight: bold; color: #107c41;">SE</code>
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app">
+                        <b>O que ela faz:</b> Avalia se uma condição lógica é verdadeira ou falsa, retornando um resultado para cada situação.<br>
+                        <b>Exemplo de Sintaxe:</b> <code>=SE(F3&lt;100;"CRÍTICO";"OK")</code>
+                    </p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo" style="display: flex; align-items: center; justify-content: center;">
+                    <code style="font-size: 1.1rem; font-weight: bold; color: #107c41;">CONT.SE</code>
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app">
+                        <b>O que ela faz:</b> Examina um intervalo e conta apenas as células que atendem a um critério específico (como um texto ou um número exato).<br>
+                        <b>Exemplo de Sintaxe:</b> <code>=CONT.SE(C3:C26;"Feminino")</code>
+                    </p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo" style="display: flex; align-items: center; justify-content: center;">
+                    <code style="font-size: 1.1rem; font-weight: bold; color: #107c41;">CONT.SES</code>
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app">
+                        <b>O que ela faz:</b> Permite realizar contagens mais complexas no mesmo intervalo ou em intervalos diferentes utilizando múltiplos critérios simultâneos.<br>
+                        <b>Exemplo de Sintaxe:</b> <code>=CONT.SES(C3:C26;"Feminino";B3:B26;"&gt;=60")</code>
+                    </p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo" style="display: flex; align-items: center; justify-content: center;">
+                    <code style="font-size: 1.1rem; font-weight: bold; color: #107c41;">SOMASE</code>
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app">
+                        <b>O que ela faz:</b> Analisa um intervalo de critérios e, caso encontre a correspondência solicitada, soma os valores correspondentes de uma coluna de números.<br>
+                        <b>Exemplo de Sintaxe:</b> <code>=SOMASE(A3:A26;"Influenza";I3:I26)</code>
+                    </p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo" style="display: flex; align-items: center; justify-content: center;">
+                    <code style="font-size: 1.1rem; font-weight: bold; color: #107c41;">SOMASES</code>
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app">
+                        <b>O que ela faz:</b> Soma os valores de um intervalo numérico com base em dois ou mais critérios exigidos ao mesmo tempo.<br>
+                        <b>Exemplo de Sintaxe:</b> <code>=SOMASES(I3:I26;A3:A26;"Influenza";C3:C26;"Masculino")</code>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Regras Importantes para Criar Condicionais</h3>
+
+        <p>Aprofundando nosso conhecimento sobre a sintaxe das funções, você precisa dominar quatro conceitos essenciais que são muito usados em arguents de funções cndicionais, mas que se aplicam a outras funções:</p>
+
+        <h4>1. Operadores de Comparação (Testes Lógicos)</h4>
+
+        <p>O primeiro argumento de uma função condicional é sempre um teste lógico. Ele consiste em uma comparação objetiva entre dois valores que obrigatoriamente resulta em apenas duas respostas possíveis: <strong>VERDADEIRO</strong> (representado pelo sistema como o bit 1) ou <strong>FALSO</strong> (representado pelo bit 0). Para construir esses argumentos, utilizamos os operadores relacionais abaixo:</p>
+
+        <div class="tabela-ferramentas">
+            <table class="tabela-conceitual">
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Nome</th>
+                        <th>O que faz?</th>
+                        <th>Exemplo</th>
+                        <th>Resultado esperado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>=</code></td>
+                        <td>Igual a</td>
+                        <td>Verifica se o primeiro valor é exatamente idêntico ao segundo.</td>
+                        <td><code>A1 = "Sim"</code></td>
+                        <td>Retorna VERDADEIRO se o conteúdo de A1 for a palavra Sim.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&gt;</code></td>
+                        <td>Maior que</td>
+                        <td>Verifica se o valor à esquerda é estritamente maior que o valor à direita.</td>
+                        <td><code>B2 &gt; 60</code></td>
+                        <td>Retorna VERDADEIRO se o número em B2 for de 61 para cima.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;</code></td>
+                        <td>Menor que</td>
+                        <td>Verifica se o valor à esquerda é estritamente menor que o valor à direita.</td>
+                        <td><code>B2 &lt; 18</code></td>
+                        <td>Retorna VERDADEIRO se o número em B2 for de 17 para baixo.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&gt;=</code></td>
+                        <td>Maior ou igual a</td>
+                        <td>Verifica se o valor à esquerda é maior ou se possui exatamente o mesmo valor da direita.</td>
+                        <td><code>C3 &gt;= 10</code></td>
+                        <td>Retorna VERDADEIRO se o número em C3 for igual a 10 ou superior.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;=</code></td>
+                        <td>Menor ou igual a</td>
+                        <td>Verifica se o valor à esquerda é menor ou se possui exatamente o mesmo valor da direita.</td>
+                        <td><code>C3 &lt;= 5</code></td>
+                        <td>Retorna VERDADEIRO se o número em C3 for igual a 5 ou inferior.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;&gt;</code></td>
+                        <td>Diferente de</td>
+                        <td>Analisa se dois valores não correspondem um ao outro sob nenhuma hipótese.</td>
+                        <td><code>D4 &lt;&gt; "Não"</code></td>
+                        <td>Retorna VERDADEIRO se o conteúdo de D4 for qualquer palavra que não seja Não.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4>2. O uso do cifrão ($) para fixar referências (Travamento)</h4>
+
+        <p>Quando escrevemos uma fórmula e a arrastamos para baixo ou para o lado, o editor de planilhas atualiza automaticamente as linhas e colunas das células mencionadas. Esse comportamento padrão é chamado de <strong>referência relativa</strong>. No entanto, ao usar funções condicionais, muitas vezes precisamos fixar um intervalo específico (como uma tabela de consulta ou um critério único) para impedir que ele saia do lugar. Para travar uma célula, linha ou coluna, adicionamos o caractere <code>$</code> antes da letra ou do número.</p>
+
+        <div class="tabela-ferramentas">
+            <table class="tabela-conceitual">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Exemplo</th>
+                        <th>O que faz?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Referência Relativa</strong></td>
+                        <td><code>A1</code></td>
+                        <td>Não possui travas. Tanto a linha quanto a coluna mudam automaticamente quando a fórmula é copiada ou arrastada.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Referência Absoluta (Fixar Tudo)</strong></td>
+                        <td><code>$A$1</code></td>
+                        <td>Trava completamente a coluna (letra) e a linha (número). A célula referenciada nunca se move, não importa para onde a fórmula seja arrastada.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Referência Mista (Fixar apenas Linha)</strong></td>
+                        <td><code>A$1</code></td>
+                        <td>A coluna (letra) continua livre para mudar se arrastada para os lados, mas a linha (número) fica congelada se arrastada para baixo.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Referência Mista (Fixar apenas Coluna)</strong></td>
+                        <td><code>$A1</code></td>
+                        <td>A coluna (letra) fica congelada se arrastada para os lados, mas a linha (número) continua livre para mudar se arrastada para baixo.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Para compreender o impacto do travamento, abra uma planilha em branco no seu editor de dados e preencha exatamente o intervalo de <code>A1</code> até <code>C3</code> com os seguintes nomes de cores:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Azul</td>
+                        <td>Verde</td>
+                        <td>Amarelo</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Branco</td>
+                        <td>Cinza</td>
+                        <td>Roxo</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Vermelho</td>
+                        <td>Preto</td>
+                        <td>Rosa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Agora, realize os quatro testes abaixo e observe com atenção como as fórmulas se transformam internamente:</p>
+
+        <h5>Teste 1: Referência Relativa</h5>
+        <p>Clique na célula <code>A5</code>, digite a fórmula <code>=A1</code> e pressione Enter. Em seguida, clique na alça de preenchimento no canto inferior direito de <code>A5</code>, arraste para baixo até a célula <code>A7</code> e solte. Mantendo as três células selecionadas, clique novamente sobre a alça de preenchimento, arraste para o lado até a célula <code>C7</code> e solte.</p>
+        <p><strong>O que aconteceu:</strong> Como não havia nenhuma trava, o editor seguiu o movimento do seu mouse. Ao olhar o resultado nas células, você verá a matriz de cores copiada de forma idêntica ao topo. O resultado textual e suas respectivas fórmulas serão:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>5</th>
+                        <td>Azul <small class="menu-item-disabled">=A1</small></td>
+                        <td>Verde <small class="menu-item-disabled">=B1</small></td>
+                        <td>Amarelo <small class="menu-item-disabled">=C1</small></td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Branco <small class="menu-item-disabled">=A2</small></td>
+                        <td>Cinza <small class="menu-item-disabled">=B2</small></td>
+                        <td>Roxo <small class="menu-item-disabled">=C2</small></td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Vermelho <small class="menu-item-disabled">=A3</small></td>
+                        <td>Preto <small class="menu-item-disabled">=B3</small></td>
+                        <td>Rosa <small class="menu-item-disabled">=C3</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Teste 2: Referência Absoluta (Fixar Tudo)</h5>
+        <p>Clique na célula <code>A9</code>, digite a fórmula <code>=$A$1</code> e pressione Enter. Clique na alça de preenchimento e arraste para baixo até <code>A11</code>, e depois para o lado até <code>C11</code>.</p>
+        <p><strong>O que aconteceu:</strong> O caractere <code>$</code> antes da letra A e antes do número 1 congelou a célula por completo. Todas as células desse novo intervalo exibirão a palavra "Azul", pois ficaram presas à célula original. Confira o resultado:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>9</th>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A$1</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Teste 3: Referência Mista (Fixar apenas Linha)</h5>
+        <p>Clique na célula <code>A13</code>, digite a fórmula <code>=A$1</code> e pressione Enter. Arraste para baixo até <code>A15</code>, e depois para o lado até <code>C15</code>.</p>
+        <p><strong>O que aconteceu:</strong> A linha 1 foi congelada, mas as colunas ficaram livres. Quando você arrastou para baixo, a fórmula continuou presa à primeira linha. Quando arrastou para os lados, ela se moveu para as colunas B e C. Na tela, a primeira linha de cores se repete verticalmente:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>13</th>
+                        <td>Azul <small class="menu-item-disabled">=A$1</small></td>
+                        <td>Verde <small class="menu-item-disabled">=B$1</small></td>
+                        <td>Amarelo <small class="menu-item-disabled">=C$1</small></td>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td>Azul <small class="menu-item-disabled">=A$1</small></td>
+                        <td>Verde <small class="menu-item-disabled">=B$1</small></td>
+                        <td>Amarelo <small class="menu-item-disabled">=C$1</small></td>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td>Azul <small class="menu-item-disabled">=A$1</small></td>
+                        <td>Verde <small class="menu-item-disabled">=B$1</small></td>
+                        <td>Amarelo <small class="menu-item-disabled">=C$1</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Teste 4: Referência Mista (Fixar apenas Coluna)</h5>
+        <p>Clique na célula <code>A17</code>, digite a fórmula <code>=$A1</code> e pressione Enter. Arraste para baixo até <code>A19</code>, e depois para o lado até <code>C19</code>.</p>
+        <p><strong>O que aconteceu:</strong> A coluna A foi congelada, mas as linhas ficaram livres para mudar. Quando você arrastou para baixo, a fórmula desceu pelas linhas 1, 2 e 3. Quando arrastou para o lado, o <code>$</code> impediu que a fórmula lesse as colunas B ou C. Na tela, a primeira coluna de cores se repete horizontalmente:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>17</th>
+                        <td>Azul <small class="menu-item-disabled">=$A1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A1</small></td>
+                        <td>Azul <small class="menu-item-disabled">=$A1</small></td>
+                    </tr>
+                    <tr>
+                        <th>18</th>
+                        <td>Branco <small class="menu-item-disabled">=$A2</small></td>
+                        <td>Branco <small class="menu-item-disabled">=$A2</small></td>
+                        <td>Branco <small class="menu-item-disabled">=$A2</small></td>
+                    </tr>
+                    <tr>
+                        <th>19</th>
+                        <td>Vermelho <small class="menu-item-disabled">=$A3</small></td>
+                        <td>Vermelho <small class="menu-item-disabled">=$A3</small></td>
+                        <td>Vermelho <small class="menu-item-disabled">=$A3</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4>3. Uso de Aspas para Textos</h4>
+
+        <p>Sempre que o seu teste lógico ou o seu critério envolver uma palavra (texto), ela deve estar entre aspas duplas (ex: <code>"Feminino"</code>, <code>"Sim"</code>). Se você esquecer as aspas, o editor tentará localizar uma função com esse nome e gerará o erro <code>#NOME?</code>. Números puros não precisam de aspas.</p>
+
+        <h4>4. Cuidado com os Separadores e a Ordem dos Argumentos</h4>
+
+        <p>Lembre-se de separar cada argumento estritamente com ponto e vírgula (<code>;</code>). Na função <code>SE</code>, a ordem dita o resultado: o primeiro termo após o teste lógico é o que acontece se for <strong>Verdadeiro</strong>, e o segundo se for <strong>Falso</strong>. Inverter essa ordem fará seu relatório exibir dados trocados.</p>
+
+        <h3>Atividade Prática:</h3>
+
+        <p>O gestor da unidade de saúde precisa consolidar os dados das pessoas que receberam a vacina da Influenza. De acondo com a tabela anterior, 1.487 pessoas receberam o imunizante de Influenza (lotes L15F e L29S). Ele exportou do sistema o arquivo <code>imunizacao_influenza.csv</code> contendo os dados registrados no mês na seguinte estrutura:</p>
         
-        `,
+        <ul>
+            <li><strong>Matrícula:</strong> Número de identificação com 11 dígitos.</li>
+            <li><strong>Idade:</strong> Idade do paciente  em números inteiros.</li>
+            <li><strong>Gênero:</strong> Identificado como "Masculino" ou "Feminino".</li>
+            <li><strong>Gestante/Puérpera:</strong> Identificado como "Sim" ou "Não".</li>
+        </ul>
+
+        <h4>Instruções do Exercício:</h4>
+
+        <h5>Importação e Salvamento dos Dados</h5>
+        <ol>
+            <li>Realize o download do arquivo de dados brutos clicando no link: <a href="../docs/imunizacao_influenza.csv" class="link-download" download><strong>imunizacao_influenza.csv</strong></a>.</li>
+            <li>Abra o arquivo baixado em seu editor de planilhas. Na janela de importação que será exibida, confirme o conjunto de caracteres (codificação) e configure os separadores de colunas corretos para que os dados fiquem distribuídos adequadamente nas colunas de <code>A</code> a <code>D</code>.</li>
+            <li>Salve imediatamente uma cópia do arquivo no formato nativo do seu editor de planilhas (como <code>.xlsx</code> ou <code>.ods</code>). O formato original <code>.csv</code> é um formato de texto plano e não retém fórmulas, múltiplas planilhas (abas) ou formatações estéticas.</li>
+        </ol>
+
+        <h5>Preparação e Categorização da Base de Dados</h5>
+        <ol>
+            <li>Renomeie a guia da planilha atual para <code>base</code>.</li>
+            <li>Na célula <code>E1</code>, insira o cabeçalho <code>Grupo</code>.</li>
+            <li>Na célula <code>E2</code>, insira a função <code>SES</code> para categorizar a idade do paciente (coluna B) conforme os seguintes critérios:
+                <ul>
+                    <li>Se a idade for menor ou igual a 2, deve retornar <code>"Bebê"</code>;</li>
+                    <li>Se a idade for menor ou igual a 12, deve retornar <code>"Criança"</code>;</li>
+                    <li>Se a idade for menor ou igual a 18, deve retornar <code>"Adolescente"</code>;</li>
+                    <li>Se a idade for menor ou igual a 59, deve retornar <code>"Adulto"</code>;</li>
+                    <li>Se a idade for maior que 59, deve retornar <code>"Idoso"</code>.</li>
+                </ul>
+            </li>
+            <li>Com a célula <code>E2</code> selecionada, dê um duplo clique na alça de preenchimento (canto inferior direito da célula) para replicar a função automaticamente até a linha 1488, cobrindo todos os 1.487 registros de pacientes.</li>
+        </ol>
+
+        <h5>Etapa 3: Criação do Relatório de Avaliação</h5>
+        <ol>
+            <li>Crie uma nova planilha (aba) no mesmo arquivo e renomeie-a para <code>avaliação</code>.</li>
+            <li>Na célula <code>A1</code> da planilha <code>avaliação</code>, insira o título geral: <code>RELATÓRIO TÉCNICO DE AVALIAÇÃO DA CAMPANHA DE INFLUENZA</code>.</li>
+            <li>Selecione o intervalo de <code>A1:D1</code> e aplique o comando de mesclagem de células. Formate este intervalo mesclado com a cor de fundo cinza-escuro, centralize o texto e defina a fonte para branco em negrito com o tamanho de 14px.</li>
+            <li>Deixe a linha <code>2</code> completamente em branco para garantir o espaçamento de respiro necessário antes do início das tabelas.</li>
+            <li>Construa as tabelas de resumo e utilize as funções matemáticas, estatísticas e lógicas aprendidas para preencher os valores solicitados pela administração do posto. Todos os dados abaixo devem ser calculados por meio de fórmulas:
+                <ul>
+                    <li><strong>Tabela 1: Indicadores Gerais de Idade</strong>
+                        <ul>
+                            <li>Na célula <code>A3</code>, insira o texto descritivo: <code>Indicadores Gerais de Idade</code>.</li>
+                            <li>Na célula <code>B3</code>, insira o texto informativo: <code>Resultado da Fórmula</code>.</li>
+                            <li>Selecione o intervalo <code>A3:B3</code> e aplique a formatação de preenchimento com a cor cinza-escuro e altere a cor da fonte para branco em negrito. Alinhe o texto de <code>B3</code> ao centro.</li>
+                            <li>Na célula <code>A4</code>, insira o texto: <code>Idade média dos imunizados:</code>. Na célula <code>B4</code>, utilize a função <code>MÉDIA</code> apontando para a coluna de idade da planilha <code>base</code>. Formate o resultado desta célula para exibir um número inteiro (sem casas decimais) e alinhe-o ao centro.</li>
+                            <li>Na célula <code>A5</code>, insira o texto: <code>Idade mediana dos imunizados:</code>. Na célula <code>B5</code>, utilize a função <code>MEDIANA</code> com o mesmo intervalo de idades e alinhe o resultado ao centro.</li>
+                            <li>Na célula <code>A6</code>, insira o texto: <code>Idade mais frequente dos imunizados (Moda):</code>. Na célula <code>B6</code>, utilize a função <code>MODO</code> (ou <code>MODA.ÚNICO</code>) para identificar o valor recorrente e alinhe o resultado ao centro.</li>
+                            <li>Selecione o intervalo de texto <code>A4:A6</code> e aplique a cor de fundo cinza-claro em negrito.</li>
+                            <li>Selecione todo o intervalo preenchido da tabela (<code>A3:B6</code>) e aplique a formatação <strong>Todas as Bordas</strong>.</li>
+                            <li>Deixe a linha <code>7</code> completamente em branco para garantir o espaçamento adequado antes da próxima tabela.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tabela 2: Doses Aplicadas por Gênero</strong>
+                        <ul>
+                            <li>Na célula <code>A8</code>, insira o texto descritivo: <code>Doses aplicadas por gênero</code>.</li>
+                            <li>Na célula <code>B8</code>, insira o texto informativo: <code>Total</code>.</li>
+                            <li>Selecione o intervalo <code>A8:B8</code>, aplique a cor de fundo cinza-escuro e altere a fonte para branco em negrito. Alinhe o texto da célula <code>B8</code> ao centro.</li>
+                            <li>Na célula <code>A9</code>, insira o texto: <code>Masculino</code>. Na célula <code>B9</code>, utilize a função <code>CONT.SE</code> apontando para a coluna de gênero da planilha <code>base</code> para contar as ocorrências do termo "Masculino" com o uso de travamento absoluto (<code>$</code>). Alinhe o resultado ao centro.</li>
+                            <li>Na célula <code>A10</code>, insira o texto: <code>Feminino</code>. Na célula <code>B10</code>, utilize a função <code>CONT.SE</code> com os mesmos critérios para contar as ocorrências do termo "Feminino". Alinhe o resultado ao centro.</li>
+                            <li>Selecione o intervalo de texto <code>A9:A10</code> e aplique a cor de fundo cinza-claro em negrito.</li>
+                            <li>Na célula <code>A11</code>, insira o texto: <code>TOTAL</code> em letras maiúsculas. Na célula <code>B11</code>, utilize a função <code>SOMA</code> para consolidar os valores das células <code>B9</code> e <code>B10</code>. Alinhe o resultado ao centro.</li>
+                            <li>Selecione o intervalo <code>A11:B11</code>, aplique um preenchimento cinza de tom médio e defina todo o texto da linha em negrito para destacar o fechamento dos dados.</li>
+                            <li>Selecione todo o intervalo preenchido da tabela (<code>A8:B11</code>) e aplique a formatação <strong>Todas as Bordas</strong>.</li>
+                            <li>Deixe a linha <code>12</code> completamente em branco para garantir o espaçamento adequado antes da próxima tabela.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tabela 3: Doses Aplicadas por Grupo</strong>
+                        <ul>
+                            <li>Na célula <code>A13</code>, insira o texto descritivo: <code>Doses aplicadas por grupo</code>.</li>
+                            <li>Na célula <code>B13</code>, insira o texto informativo: <code>Total</code>.</li>
+                            <li>Selecione o intervalo <code>A13:B13</code>, aplique a cor de fundo cinza-escuro e altere a fonte para branco em negrito. Alinhe o texto da célula <code>B13</code> ao centro.</li>
+                            <li>Nas células da coluna A, da linha 14 à linha 18, insira sequencialmente as categorias estruturadas na base de dados: <code>Bebê</code> (<code>A14</code>), <code>Criança</code> (<code>A15</code>), <code>Adolescente</code> (<code>A16</code>), <code>Adulto</code> (<code>A17</code>) e <code>Idoso</code> (<code>A18</code>).</li>
+                            <li>Nas células correspondentes da coluna B (<code>B14</code> a <code>B18</code>), utilize a função <code>CONT.SE</code> apontando para o intervalo da coluna E da planilha <code>base</code> para extrair a quantidade total de doses de cada um dos cinco grupos criados. Alinhe todos os resultados ao centro.</li>
+                            <li>Selecione o intervalo de texto <code>A14:A18</code> e aplique a cor de fundo cinza-claro em negrito.</li>
+                            <li>Na célula <code>A19</code>, insira o texto: <code>TOTAL</code> em letras maiúsculas. Na célula <code>B19</code>, utilize a função <code>SOMA</code> para consolidar os valores do intervalo de <code>B14</code> a <code>B18</code>. Alinhe o resultado ao centro.</li>
+                            <li>Selecione o intervalo <code>A19:B19</code>, aplique um preenchimento cinza de tom médio e defina todo o texto da linha em negrito para destacar o fechamento dos dados.</li>
+                            <li>Selecione todo o intervalo preenchido da tabela (<code>A13:B19</code>) e aplique a formatação <strong>Todas as Bordas</strong>.</li>
+                            <li>Deixe a linha <code>20</code> completamente em branco para garantir o espaçamento adequado antes da próxima tabela.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tabela 4: Análise de Gestantes e Puérperas</strong>
+                        <ul>
+                            <li>Na célula <code>A21</code>, insira o texto descritivo: <code>Doses aplicadas em grávidas ou puérperas?</code>.</li>
+                            <li>Na célula <code>B21</code>, insira o texto informativo: <code>Total</code>.</li>
+                            <li>Selecione o intervalo <code>A21:B21</code>, aplique a cor de fundo cinza-escuro e altere a fonte para branco em negrito. Alinhe o texto da célula <code>B21</code> ao centro.</li>
+                            <li>Na célula <code>A22</code>, insira o texto: <code>Sim</code>. Na célula <code>B22</code>, utilize a função <code>CONT.SES</code> cruzando dois critérios da planilha <code>base</code>: o gênero deve ser igual a <code>"Feminino"</code> e a coluna de gestação deve ser igual a <code>"Sim"</code>. Alinhe o resultado ao centro.</li>
+                            <li>Na célula <code>A23</code>, insira o texto: <code>Não</code>. Na célula <code>B23</code>, utilize a função <code>CONT.SES</code> para contabilizar as pacientes que possuem o gênero igual a <code>"Feminino"</code> e a coluna de gestação igual a <code>"Não"</code>. Alinhe o resultado ao centro.</li>
+                            <li>Selecione o intervalo de texto <code>A22:A23</code> e aplique a cor de fundo cinza-claro em negrito.</li>
+                            <li>Na célula <code>A24</code>, insira o texto: <code>TOTAL</code> em letras maiúsculas. Na célula <code>B24</code>, utilize a função <code>SOMA</code> para consolidar os valores das células <code>B22</code> e <code>B23</code>. Alinhe o resultado ao centro.</li>
+                            <li>Selecione o intervalo <code>A24:B24</code>, aplique um preenchimento cinza de tom médio e defina todo o texto da linha em negrito para destacar o fechamento dos dados.</li>
+                            <li>Selecione todo o intervalo preenchido da tabela (<code>A21:B24</code>) e aplique a formatação <strong>Todas as Bordas</strong>.</li>
+                            <li>Deixe a linha <code>25</code> completamente em branco para garantir o espaçamento adequado antes da próxima tabela.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tabela 5: Matriz de Grupo por Gênero</strong>
+                        <ul>
+                            <li>Na célula <code>A26</code>, insira o título: <code>Doses aplicadas por grupo e gênero</code>. Mescle o intervalo de <code>A26:D26</code>, aplique a cor de fundo cinza-escuro, centralize o texto e defina a fonte para branco em negrito.</li>
+                            <li>Na linha 27, monte os cabeçalhos das colunas: insira <code>Grupo</code> em <code>A27</code> (alinhado à esquerda), <code>Masculino</code> em <code>B27</code>, <code>Feminino</code> em <code>C27</code> e <code>Total</code> em <code>D27</code>. Selecione o intervalo <code>A27:D27</code>, aplique o fundo cinza de tom médio, defina o texto para branco em negrito e centralize as células de <code>B27</code> a <code>D27</code>.</li>
+                            <li>Nas células da coluna A, da linha 28 à linha 32, insira as cinco categorias etárias na mesma ordem das tabelas anteriores: <code>Bebê</code> (<code>A28</code>), <code>Criança</code> (<code>A29</code>), <code>Adolescente</code> (<code>A30</code>), <code>Adulto</code> (<code>A31</code>) e <code>Idoso</code> (<code>A32</code>). Aplique nestas células o fundo cinza-claro em negrito.</li>
+                            <li>No intervalo de dados de <code>B28</code> a <code>C32</code>, utilize a função <code>CONT.SES</code> cruzando os critérios da planilha <code>base</code>. A função deve validar simultaneamente a coluna de grupos (conforme a categoria descrita na coluna A) e a coluna de gênero (<code>"Masculino"</code> para a coluna B ou <code>"Feminino"</code> para a coluna C). Centralize todos os resultados obtidos.</li>
+                            <li>No intervalo de <code>D28</code> a <code>D32</code>, utilize a função <code>SOMA</code> horizontal para consolidar o total de doses de cada grupo (soma das colunas B e C correspondentes). Defina estes resultados em negrito, com preenchimento de fundo branco ou sem preenchimento, e alinhe-os ao centro.</li>
+                            <li>Na célula <code>A33</code>, insira o texto: <code>TOTAL</code> em letras maiúsculas.</li>
+                            <li>Nas células <code>B33</code>, <code>C33</code> e <code>D33</code>, utilize a função <code>SOMA</code> vertical para consolidar os totais de cada coluna. Alinhe os resultados ao centro.</li>
+                            <li>Selecione o intervalo <code>A33:D33</code>, aplique o preenchimento cinza de tom médio e formate todo o texto da linha em negrito.</li>
+                            <li>Selecione todo o intervalo estruturado da tabela (<code>A26:D33</code>) e aplique a formatação <strong>Todas as Bordas</strong>.</li>
+                            <li>Deixe a linha <code>34</code> completamente em branco para manter o espaçamento de respiro padrão do relatório.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tabela 6: Perfil de Gestantes/Puérperas por Faixa Etária</strong>
+                        <ul>
+                            <li>Na célula <code>A35</code>, insira o texto descritivo: <code>Imunização em Gestantes ou Puérperas por Grupo</code>.</li>
+                            <li>Na célula <code>B35</code>, insira o texto informativo: <code>Total</code>.</li>
+                            <li>Selecione o intervalo <code>A35:B35</code>, aplique a cor de fundo cinza-escuro e altere a fonte para branco em negrito. Alinhe o texto da célula <code>B35</code> ao centro.</li>
+                            <li>Nas células da coluna A, da linha 36 à linha 38, insira apenas as categorias etárias que registraram ocorrências para este público específico: <code>Criança</code> (<code>A36</code>), <code>Adolescente</code> (<code>A37</code>) e <code>Adulto</code> (<code>A38</code>).</li>
+                            <li>Nas células correspondentes da coluna B (<code>B36</code> a <code>B38</code>), utilize a função <code>CONT.SES</code> para segmentar os dados aplicando três critérios simultâneos baseados na planilha <code>base</code>: o gênero deve ser igual a <code>"Feminino"</code>, a coluna de gestação deve ser igual a <code>"Sim"</code> e a coluna de grupos deve corresponder à categoria descrita na coluna A da planilha atual. Alinhe os resultados ao centro.</li>
+                            <li>Selecione o intervalo de texto <code>A36:A38</code> e aplique a cor de fundo cinza-claro em negrito.</li>
+                            <li>Na célula <code>A39</code>, insira o texto: <code>TOTAL</code> em letras maiúsculas. Na célula <code>B39</code>, utilize a função <code>SOMA</code> para consolidar os valores do intervalo de <code>B36</code> a <code>B38</code>. Alinhe o resultado ao centro.</li>
+                            <li>Selecione o intervalo <code>A39:B39</code>, aplique o preenchimento cinza de tom médio e defina todo o texto da linha em negrito para destacar o encerramento do relatório técnico.</li>
+                            <li>Selecione todo o intervalo estruturado da tabela (<code>A35:B39</code>) e aplique a formatação <strong>Todas as Bordas</strong>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <h4>Resultados Esperados:</h4>
+
+        <h5>Planilha base</h5>
+        
+        <p>Após importar o arquivo e propagar a função <code>SES</code> na coluna <code>E</code>, a sua aba <code>base</code> apresentará a seguinte estrutura de dados padrão (sem formatação adicional):</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="text-align: left;">
+                        <td>1</td>
+                        <td>Matrícula</td><td class="num">Idade</td><td>Gênero</td><td>Grávida ou Puérpera</td><td>Grupo</td>
+                    </tr>
+                    <tr><td>2</td><td>26860259222</td><td class="num">80</td><td>Feminino</td><td>Não</td><td>Idoso</td></tr>
+                    <tr><td>3</td><td>99219212493</td><td class="num">63</td><td>Masculino</td><td>Não</td><td>Idoso</td></tr>
+                    <tr><td>4</td><td>53745843845</td><td class="num">20</td><td>Feminino</td><td>Sim</td><td>Adulto</td></tr>
+                    <tr><td>5</td><td>76870146263</td><td class="num">36</td><td>Feminino</td><td>Não</td><td>Adulto</td></tr>
+                    <tr><td>6</td><td>78291146786</td><td class="num">34</td><td>Feminino</td><td>Sim</td><td>Adulto</td></tr>
+                    <tr><td>7</td><td>9754510526</td><td class="num">33</td><td>Masculino</td><td>Não</td><td>Adulto</td></tr>
+                    <tr><td>8</td><td>61347323549</td><td class="num">0</td><td>Masculino</td><td>Não</td><td>Bebê</td></tr>
+                    <tr><td>9</td><td>42843479552</td><td class="num">83</td><td>Masculino</td><td>Não</td><td>Idoso</td></tr>
+                    <tr><td>10</td><td>86667548581</td><td class="num">25</td><td>Feminino</td><td>Não</td><td>Adulto</td></tr>
+                    
+                    <tr style="color: #888888; font-style: italic; text-align: center;">
+                        <td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td>
+                    </tr>
+                    
+                    <tr><td>1485</td><td>77107044964</td><td class="num">84</td><td>Feminino</td><td>Não</td><td>Idoso</td></tr>
+                    <tr><td>1486</td><td>3859770348</td><td class="num">58</td><td>Masculino</td><td>Não</td><td>Adulto</td></tr>
+                    <tr><td>1487</td><td>13990490278</td><td class="num">79</td><td>Masculino</td><td>Não</td><td>Idoso</td></tr>
+                    <tr><td>1488</td><td>51687409038</td><td class="num">54</td><td>Masculino</td><td>Não</td><td>Adulto</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h5>Planilha avaliação — Tabela 1: Indicadores Gerais de Idade</h5>
+
+        <p>Na aba <code>avaliação</code>, a primeira tabela estruturada e calculada com as funções estatísticas deve apresentar o seguinte aspecto visual a partir da linha 3:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th><th>C</th><th>D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="4" style="text-align: center; font-weight: bold; background-color: #444444; color: #ffffff; font-size: 14px;">RELATÓRIO TÉCNICO DE AVALIAÇÃO DA CAMPANHA DE INFLUENZA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #555555; color: #ffffff;">
+                        <td>3</td>
+                        <td style="text-align: left;">Indicadores Gerais de Idade</td>
+                        <td style="text-align: center;">Resultado da Fórmula</td>
+                        <td style="background-color: #ffffff;"></td><td style="background-color: #ffffff;"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Idade média dos imunizados:</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">35</td>
+                        <td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Idade mediana dos imunizados:</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">34</td>
+                        <td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Idade mais frequente dos imunizados (Moda):</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">1</td>
+                        <td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td></td><td></td><td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Planilha avaliação — Tabela 2: Doses Aplicadas por Gênero</h5>
+
+        <p>Abaixo do primeiro bloco, a tabela destinada à contagem de gênero e consolidação do total geral de doses deve apresentar a seguinte configuração visual a partir da linha 8:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold; background-color: #555555; color: #ffffff;">
+                        <td>8</td>
+                        <td style="text-align: left;">Doses aplicadas por gênero</td>
+                        <td style="text-align: center;">Total</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Masculino</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">721</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Feminino</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">766</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #e6e6e6;">
+                        <td>11</td>
+                        <td style="text-align: left; text-transform: uppercase;">Total</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">1487</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Planilha avaliação — Tabela 3: Doses Aplicadas por Grupo</h5>
+
+        <p>Abaixo do bloco de gênero, a tabela destinada à contagem de doses por faixa etária (grupos epidemiológicos) e consolidação do total deve apresentar a seguinte configuração visual a partir da linha 13:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold; background-color: #555555; color: #ffffff;">
+                        <td>13</td>
+                        <td style="text-align: left;">Doses aplicadas por grupo</td>
+                        <td style="text-align: center;">Total</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Bebê</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">93</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Criança</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">212</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Adolescente</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">97</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Adulto</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">877</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Idoso</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">208</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #e6e6e6;">
+                        <td>19</td>
+                        <td style="text-align: left; text-transform: uppercase;">Total</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">1487</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Planilha avaliação — Tabela 4: Análise de Gestantes e Puérperas</h5>
+
+        <p>Abaixo do bloco de grupos, a tabela voltada ao monitoramento específico de gestantes e puérperas dentro do público feminino deve apresentar a seguinte configuração visual a partir da linha 21:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold; background-color: #555555; color: #ffffff;">
+                        <td>21</td>
+                        <td style="text-align: left;">Doses aplicadas em grávidas ou puérperas?</td>
+                        <td style="text-align: center;">Total</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Sim</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">47</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Não</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">719</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #e6e6e6;">
+                        <td>24</td>
+                        <td style="text-align: left; text-transform: uppercase;">Total</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">766</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Planilha avaliação — Tabela 5: Matriz de Grupo por Gênero</h5>
+
+        <p>Abaixo do bloco de gestantes, a matriz cruzada que mapeia os grupos epidemiológicos em relação ao gênero dos pacientes deve apresentar a seguinte configuração visual a partir da linha 26:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th><th>C</th><th>D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold; background-color: #444444; color: #ffffff;">
+                        <td>26</td>
+                        <td colspan="4" style="text-align: center;">Doses aplicadas por grupo e gênero</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #555555; color: #ffffff; text-align: center;">
+                        <td>27</td>
+                        <td style="text-align: left;">Grupo</td><td style="text-align: center;">Masculino</td><td style="text-align: center;">Feminino</td><td style="text-align: center;">Total</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Bebê</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">48</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">45</td>
+                        <td class="num" style="font-family: monospace; text-align: center; font-weight: bold; background-color: #fafafa;">93</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Criança</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">108</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">104</td>
+                        <td class="num" style="font-family: monospace; text-align: center; font-weight: bold; background-color: #fafafa;">212</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Adolescente</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">45</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">52</td>
+                        <td class="num" style="font-family: monospace; text-align: center; font-weight: bold; background-color: #fafafa;">97</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Adulto</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">431</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">446</td>
+                        <td class="num" style="font-family: monospace; text-align: center; font-weight: bold; background-color: #fafafa;">877</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Idoso</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">89</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">119</td>
+                        <td class="num" style="font-family: monospace; text-align: center; font-weight: bold; background-color: #fafafa;">208</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #e6e6e6;">
+                        <td>33</td>
+                        <td style="text-align: left; text-transform: uppercase;">Total</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">721</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">766</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">1487</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td></td><td></td><td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>Planilha avaliação — Tabela 6: Perfil de Gestantes/Puérperas por Faixa Etária</h5>
+
+        <p>Para concluir o relatório, a tabela final de segmentação etária restrita às pacientes registradas como gestantes ou puérperas deve apresentar a seguinte configuração visual a partir da linha 35:</p>
+
+        <div class="simulador-planilha">
+            <table class="grade-onlyoffice">
+                <thead>
+                    <tr>
+                        <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                        <th>A</th><th>B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold; background-color: #555555; color: #ffffff;">
+                        <td>35</td>
+                        <td style="text-align: left;">Imunização em Gestantes ou Puérperas por Grupo</td>
+                        <td style="text-align: center;">Total</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Criança</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">0</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Adolescente</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">5</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td style="background-color: #f2f2f2; font-weight: bold;">Adulto</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">42</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #e6e6e6;">
+                        <td>39</td>
+                        <td style="text-align: left; text-transform: uppercase;">Total</td>
+                        <td class="num" style="font-family: monospace; text-align: center;">47</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="caixa-voce-sabia verde-excel">
+            <h4>O que é a Influenza e qual a importância da vacinação?</h4>
+            <p>A Influenza é uma infecção respiratória aguda provocada pelos vírus dos tipos A, B, C e D. No entanto, as variantes A e B são as principais responsáveis pelas epidemias anuais. Embora o quadro possa se manifestar de forma leve, a doença apresenta risco de evolução grave, podendo ocasionar hospitalizações e óbitos, especialmente em grupos vulneráveis como gestantes, puérperas, crianças pequenas e idosos.</p>
+            
+            <p>O monitoramento epidemiológico desses grupos, semelhante ao realizado nesta atividade prática, orienta as estratégias de saúde pública. A imunização anual é a principal medida de prevenção contra as formas graves da doença, sendo necessária a atualização periódica da vacina devido à mutação constante do vírus.</p>
+            
+            <p>Para entender detalhadamente o comportamento do vírus, os sintomas e as formas de tratamento comentadas pela Dra. Miriam Dalben (infectologista), assista ao vídeo explicativo:</p>
+
+            <div class="video-responsivo" style="margin-top: 1rem;">
+                <iframe 
+                    src="https://www.youtube.com/embed/ouhPNJIpLvI" 
+                    title="INFLUENZA (gripe): tipos, sintomas e tratamento" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <p>Nesta etapa, você aprendeu a utilizar funções essenciais para extrair informações e estatísticas básicas sob critérios específicos em um intervalo de dados. Na próxima seção, entraremos no conteúdo de <strong>Gráficos</strong>. Vamos entender como transformar esses números consolidados e relatórios textuais em recursos visuais (como gráficos de barras, colunas e setores), facilitando a apresentação dos resultados.</p>
+    `,
         botoes: [
-        { texto: "Voltar", destino: "funcoes_saude" },
-        { texto: "Avançar", destino: "graficos_saude" }
-    ]
+            { texto: "Voltar", destino: "funcoes_saude" },
+            { texto: "Avançar", destino: "graficos_saude" }
+        ]
     },
     // === ETAPA 10: Gráficos ===
     saude_graficos: {
