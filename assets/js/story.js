@@ -853,6 +853,18 @@ mouse_interface: {
 
                 <p>Nesta atividade você aprendeu a configurar as informações das células em texto, número e data; a diferenciar variações numéricas como inteiros, decimais, moedas e percentagens; e a aplicar máscaras de formatação para garantir a integridade e a correta visualização dos dados inseridos. Caso queira aprofundar seus conhecimentos, teste outros formatos de números como: científico, contabilidade, data completa, hora e fração. Os editores de planilha dão suporte a muitos formatos de dados. No próximo exercício aprenderemos sobre os elementos de formatação.</p>
             </div>
+
+            <section class="avaliacao-reacao">
+                <div>
+                    <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+                </div>
+
+                <aside>
+                    <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                        <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                    </a>
+                </aside>
+            </section>
         `,
         botoes: [
             { texto: "Retornar", destino: "escolha_tematica" },
@@ -1186,6 +1198,18 @@ mouse_interface: {
                 </div>
 
                 <p>Nesta atividade, você aprendeu a modificar a estrutura física de uma planilha existente inserindo linhas e colunas sem corromper a organização dos dados anteriores. Além disso, aplicou recursos de estilização visual (negrito, itálico, sublinhado, mesclagem e cores de preenchimento) que transformaram um emaranhado de dados brutos em uma interface amigável, organizada por alinhamentos coerentes e delimitada por bordas. No próximo módulo, usaremos essa mesma planilha montada para dar os primeiros passos no uso de fórmulas matemáticas automáticas.</p>
+
+                <section class="avaliacao-reacao">
+                    <div>
+                        <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+                    </div>
+
+                    <aside>
+                        <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                            <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                        </a>
+                    </aside>
+                </section>
         `,
         botoes: [
             { texto: "Retornar", destino: "tipo_dados_saude" },
@@ -1387,6 +1411,18 @@ mouse_interface: {
 
         <p>Nesta etapa, você aprendeu a transformar dados estáticos em informações dinâmicas construindo fórmulas com os operadores de adição, subtração, multiplicação e divisão, além de definir a ordem de precedência aritmética com o uso dos parênteses. Contudo, ao digitar a exaustiva soma de 24 linhas para consolidar o total do Estoque Inicial, você se deparou com o limite das fórmulas que usam operadores aritiméticos para grandes intervalos.</p>
         <p>Na próxima etapa, você compreenderá o conceito e a sintaxe de estruturas pré-definidas como as funções <code>SOMA</code>, <code>MÉDIA</code>, <code>MÁXIMO</code>, <code>MÍNIMO</code> e <code>CONT.NÚM</code>, projetadas para processar grandes volumes de dados instantaneamente.</p>
+
+        <section class="avaliacao-reacao">
+            <div>
+                <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+            </div>
+
+            <aside>
+                <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                    <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                </a>
+            </aside>
+        </section>
     `,
     botoes: [
         { texto: "Voltar", destino: "formatacao_saude" },
@@ -1595,6 +1631,18 @@ mouse_interface: {
         </div>
 
         <p>Nesta etapa, você aprendeu a utilizar funções essenciais para extrair informações e estatísticas básicas de um intervalo de dados. Na próxima seção, entraremos no conteúdo de <strong>Análise Condicional</strong> e vamos aplicar algumas outras funções aprendidas aqui. Vamos entender como utilizar a função <code>SE</code> e suas variações para fazer a planilha tomar decisões automáticas a partir de condições lógicas.</p>
+
+        <section class="avaliacao-reacao">
+            <div>
+                <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+            </div>
+
+            <aside>
+                <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                    <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                </a>
+            </aside>
+        </section>
     `,
     botoes: [
         { texto: "Voltar", destino: "operadores_saude" },
@@ -2470,6 +2518,18 @@ mouse_interface: {
         </div>
 
         <p>Nesta etapa, você aprendeu a utilizar funções essenciais para extrair informações e estatísticas básicas sob critérios específicos em um intervalo de dados. Na próxima seção, entraremos no conteúdo de <strong>Gráficos</strong>. Vamos entender como transformar esses números consolidados e relatórios textuais em recursos visuais (como gráficos de barras, colunas e setores), facilitando a apresentação dos resultados.</p>
+
+        <section class="avaliacao-reacao">
+            <div>
+                <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+            </div>
+
+            <aside>
+                <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                    <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                </a>
+            </aside>
+        </section>
     `,
         botoes: [
             { texto: "Voltar", destino: "funcoes_saude" },
@@ -2477,19 +2537,209 @@ mouse_interface: {
         ]
     },
     // === ETAPA 10: Gráficos ===
-    saude_graficos: {
+    graficos_saude: {
         etapa: 10, 
-        titulo: "E10. Gráficos de Linha Hospitalar",
-        texto: "Converta dados tabulares em um gráfico de linhas para demonstrar visualmente a tendência de queda de uma doença.",
+        titulo: "Construção de gráficos nos editores de planilhas",
+        texto: `
+        <p>Os gráficos são representações visuais de dados quantitativos. Eles transformam tabelas em imagens fáceis compreenção. Quando temos uma tabela pequena o nosso cérebro consegue interpretar as informações muito rapidamente. Porém, se a quantidade de linhas ou de locunas aumenta muito, fica mais dificil para o nosso cérebro identificar os padrões e identificar informações rápidamente. Neste momento, as formas, cores e comprimentos usados nos gráfico guiam nosso cérebro a interpretar as informações de forma rápida e intuitiva.</p>
+
+        <p>No entanto, para que um gráfico cumpra o seu papel de forma eficiente, é preciso escolher o modelo correto. Existem diversos tipos de gráficos disponíveis nos editores de planilhas, e cada um deles foi desenhado para comunicar um tipo específico de informação, dependendo se o seu objetivo é comparar categorias, mostrar partes de um todo ou identificar tendências históricas.</p>
+
+        <h3>Principais Tipos de Gráficos e Suas Aplicações</h3>
+
+        <p>Conheça os modelos mais utilizados e as situações ideais para aplicar cada um deles:</p>
+
+        <div class="tabela-ferramentas">
+            
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-coluna.svg" alt="Gráfico de Colunas" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Colunas:</b> Ideal para comparar valores entre diferentes categorias em um momento específico. As categorias ficam dispostas no eixo horizontal (ex: o total de imunizados por posto de saúde ou por faixa etária).</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-linha.svg" alt="Gráfico de Linhas" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Linhas:</b> Perfeito para mostrar tendências e variações de dados ao longo de um período contínuo. Usamos esse modelo para monitorar o aumento ou a queda nos casos de gripe mês a mês ao longo do ano.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-pizza.svg" alt="Gráfico de Pizza" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Pizza:</b> Utilizado para exibir a composição proporcional de um todo, dividindo os dados em fatias percentuais. Funciona melhor com poucas categorias, como a distribuição de imunizados por gênero.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-barra.svg" alt="Gráfico de Barras" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Barras:</b> Semelhante ao de colunas, mas com os dados na horizontal e as categorias no eixo vertical. É excelente para exibir relatórios quando os nomes dos grupos são muito longos.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-area.svg" alt="Gráfico de Área" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Área:</b> Baseia-se no gráfico de linhas, mas possui o espaço abaixo da linha preenchido com cor. Serve para enfatizar a magnitude das alterações e o volume total acumulado no período.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-pontos.svg" alt="Gráfico de Dispersão" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Dispersão (Pontos X,Y):</b> Mostra a relação ou correlação entre duas variáveis numéricas simultâneas. Na saúde, ajuda a avaliar se a idade do paciente possui relação direta com o tempo de recuperação da infecção.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-radar.svg" alt="Gráfico de Radar" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Radar:</b> Útil para comparar múltiplas variáveis quantitativas ao mesmo tempo a partir de um ponto central, criando uma forma geométrica para analisar perfis multifatoriais de atendimento.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-boxplot.svg" alt="Gráfico Boxplot" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráfico de Boxplot (Diagrama de Caixa):</b> Representa a distribuição estatística dos dados através de quartis. Ele destaca graficamente a mediana, a dispersão das idades dos pacientes e os valores discrepantes (<i>outliers</i>).</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/grafico-combinados.svg" alt="Gráficos Combinados" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Gráficos Combinados:</b> Realiza a fusão de dois modelos visuais diferentes no mesmo espaço (como coluna e linha sobrepostas). É ideal para cruzar duas métricas de naturezas distintas, exibindo o total de doses aplicadas (coluna) junto com a taxa de cobertura vacinal atingida (linha).</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Atividade Prática</h3>
+
+        <p>Após importar o arquivo <code>imunizacao_influenza.csv</code> e estruturar as tabelas de resumo epidemiológico, precisaremos construir elementos visuais para que a equipe gestora consiga observar o relatório e compreender instantaneamente o perfil do público atendido. Para isso, criaremos representações gráficas específicas para cada uma das tabelas consolidadas (gênero, faixa etária e subgrupos de risco).</p>
+
+        <p>Antes de inserir qualquer gráfico no seu editor de planilhas, você deve <strong>selecionar corretamente o intervalo de células</strong> que contém as categorias e os valores correspondentes. Deixar os cabeçalhos de fora ou incluir as linhas de "Total" por engano fará com que o gráfico exiba informações distorcidas ou barras redundantes.</p>
+
+        <p>O roteiro a seguir utizou o ONLYOFFICE para criar os gráficos da atividade anterior:</p>
+
+        <div class="passos-atividade">
+            
+            <div class="passo-item">
+                <h4 class="passo-titulo">Gráfico de Pizza para a Distribuição por Gênero</h4>
+                <p class="passo-descricao">Este gráfico exibirá a proporção de doses aplicadas entre homens e mulheres.</p>
+                
+                <ul>
+                    <li>Clique e arraste o mouse do intervalo <code>A8</code> até <code>B10</code> (Selecione os cabeçalhos e as linhas "Masculino" e "Feminino". Não inclua a linha 11 do Total.).</li>
+                    <li>Acesse a guia superior <strong>Inserir</strong> &gt; clique no botão <strong>Gráfico</strong> &gt; escolha a categoria <strong>Pizza</strong>.</li>
+                    <li>Dê um duplo clique no título padrão do gráfico e altere para: <span class="titulo-grafico-exemplo">Doses Aplicadas por Gênero</span>. Na barra lateral direita de configurações do gráfico, ative a opção <strong>Rótulos de Dados</strong> para exibir os números exatos dentro ou fora das fatias.</li>
+                </ul>
+            </div>
+
+            <div class="passo-item">
+                <h4 class="passo-titulo">Gráfico de Colunas para Doses por Grupo Epidemiológico</h4>
+                <p class="passo-descricao">Perfeito para comparar visualmente qual faixa etária teve a maior adesão à campanha vacinal.</p>
+                
+                <ul>
+                    <li>Selecione o intervalo de <code>A13</code> até <code>B18</code> (Contemplando desde o cabeçalho até a linha do grupo "Idoso". Fique atento para deixar a linha 19 do Total de fora.)</li>
+                    <li>Vá em <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; escolha o modelo de <strong>Colunas</strong> (as barras verticais clássicas).</li>
+                    <li>Edite o título do gráfico para: <span class="titulo-grafico-exemplo">Adesão à Campanha por Faixa Etária</span>. Nas propriedades do gráfico à direita, certifique-se de manter visíveis os rótulos do eixo horizontal (com os nomes dos grupos) e adicione os <strong>Rótulos de Dados</strong> no topo de cada coluna.</li>
+                </ul>
+            </div>
+
+            <div class="passo-item">
+                <h4 class="passo-titulo">Gráfico de Barras Aninhadas em 100% para Subgrupo de Gestantes</h4>
+                <p class="passo-descricao">Este formato exibe o preenchimento proporcional completo (100%) indicando o impacto do grupo específico de grávidas e puérperas dentro do universo total de pacientes do gênero feminino.</p>
+                
+                <ul>
+                    <li>Selecione de <code>A21</code> até <code>B23</code> (Cabeçalho e opções "Sim" e "Não". Não inclua a linha 24.).</li>
+                    <li>Clique em <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; navegue até a seção de <strong>Barras</strong> (horizontais) e escolha a variação <strong>Barras Aninhadas 100%</strong> (ou Barras Empilhadas 100%).</li>
+                    <li>Altere o título para: <span class="titulo-grafico-exemplo">Proporção de Gestantes e Puérperas Atendidas</span>. Ative a exibição dos rótulos internos para demonstrar o contraste numérico das duas faixas segmentadas.</li>
+                </ul>
+            </div>
+
+            <div class="passo-item">
+                <h4 class="passo-titulo">Gráfico de Barras Agrupadas para Matriz Cruzada de Grupo e Gênero</h4>
+                <p class="passo-descricao">O gráfico de barras horizontais lado a lado facilitará a leitura e a comparação direta entre os subgrupos masculino e feminino dentro de cada categoria etária.</p>
+                
+                <ul>
+                    <li>Selecione o intervalo que vai de <code>A27</code> até <code>C32</code>. Veja que estamos pegando a coluna "Grupo", "Masculino" e "Feminino", ignorando completamente a coluna "Total" (coluna D) e a linha final de "Total geral" (linha 33).</li>
+                    <li>Vá em <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; escolha a opção de <strong>Barras</strong> e selecione o modelo de <strong>Barras Agrupadas</strong>.</li>
+                    <li>Modifique o título para: <span class="titulo-grafico-exemplo">Distribuição de Gênero por Grupo Epidemiológico</span>. Certifique-se de que a legenda indicando qual cor representa o gênero Masculino e qual representa o Feminino esteja visível (geralmente posicionada na parte inferior ou lateral do gráfico).</li>
+                </ul>
+            </div>
+
+            <div class="passo-item">
+                <h4 class="passo-titulo">Gráfico de Rosca para Perfil Etário das Gestantes e Puérperas</h4>
+                <p class="passo-descricao">Uma variação do gráfico de pizza, também funciona para destacar percentuais, frações ou parte de um todo.</p>
+                
+                <ul>
+                    <li>Marque o intervalo de <code>A35</code> até <code>B38</code> (Desde o cabeçalho até a linha do grupo "Adulto". Não selecione a linha 39 do Total).</li>
+                    <li>Acesse <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; selecione a categoria <strong>Pizza</strong> e clique na variação de gráfico em formato de <strong>Rosca</strong>.</li>
+                    <li>Defina o título do gráfico como: <span class="titulo-grafico-exemplo">Faixa Etária de Grávidas e Puérperas Imunizadas</span>. Ative os <strong>Rótulos de Dados</strong> nas propriedades para evidenciar graficamente que a grande maioria se concentrou no grupo das adultas.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p>Após inserir os gráficos, eles serão gerados empilhados no centro da tela. Clique sobre eles e arraste-os para as áreas em branco localizadas ao lado ou logo abaixo de suas respectivas tabelas, mantendo o seu relatório limpo, organizado e legível.</p>
+
+        <div class="caixa-voce-sabia verde-excel">
+        <h4>Como a higiene protege a nossa saúde no dia a dia?</h4>
+        <p>Os hábitos de higiene, como tomar banho, escovar os dentes e lavar o rosto, embora simples, são barreiras importantíssimas contra germes e bactérias. Na Grécia Antiga, esses cuidados já eram tão valorizados que inspiraram a palavra "higiene", usada para definir as práticas que nos mantêm limpos e livres de infecções transmissíveis.</p>
+        
+        <p>A lavagem correta das mãos, especialmente após voltar da rua, ir ao banheiro ou antes das refeições, é uma das medidas mais eficazes para prevenir problemas de saúde frequentes, como a diarreia e as gripes. Pequenas mudanças de atitude na nossa rotina nos dão bem-estar e ajudam a interromper cadeias de transmissão de doenças na comunidade.</p>
+        
+        <p>Para conhecer curiosidades históricas sobre a evolução da limpeza em diferentes culturas e aprender a técnica certa para eliminar a sujeira das mãos, assista ao vídeo a srguir:</p>
+
+        <div class="video-responsivo" style="margin-top: 1rem;">
+            <iframe 
+                src="https://www.youtube.com/embed/iUkh8J9sNyQ" 
+                title="A Higiene no dia a dia" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+        <p>Nesta tela, você aprendeu que os gráficos são excelentes ferramentas de comunicação dos dados; praticou a conversão de dados tabulares em representações visuais como gráficos de colunas, linhas e pizza; foi alertado de que é necessário selecionar o modelo de gráfico mais adequado para cada tipo de situação; e foi capaz de configurar títulos, legendas e rótulos para facilitar a interpretação das informações.</p>
+        <p>Na próxima etapa fecharemos esta sequência didática com as características de configuração de página para uma boa impressão ou exportação das tabelas em arquivos paginados.</p>
+
+        <section class="avaliacao-reacao">
+            <div>
+                <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+            </div>
+
+            <aside>
+                <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                    <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                </a>
+            </aside>
+        </section>
+        `,
         botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "saude_condicionais" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "saude_impressao" 
-            }
+            { texto: "Voltar", destino: "condicionais_saude" },
+            { texto: "Avançar", destino: "impressao_saude" }
         ]
     },
     // === ETAPA 11: Área de Impressão e Exportação ===
