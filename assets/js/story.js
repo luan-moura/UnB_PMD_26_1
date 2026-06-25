@@ -2704,23 +2704,23 @@ mouse_interface: {
         <p>Após inserir os gráficos, eles serão gerados empilhados no centro da tela. Clique sobre eles e arraste-os para as áreas em branco localizadas ao lado ou logo abaixo de suas respectivas tabelas, mantendo o seu relatório limpo, organizado e legível.</p>
 
         <div class="caixa-voce-sabia verde-excel">
-        <h4>Como a higiene protege a nossa saúde no dia a dia?</h4>
-        <p>Os hábitos de higiene, como tomar banho, escovar os dentes e lavar o rosto, embora simples, são barreiras importantíssimas contra germes e bactérias. Na Grécia Antiga, esses cuidados já eram tão valorizados que inspiraram a palavra "higiene", usada para definir as práticas que nos mantêm limpos e livres de infecções transmissíveis.</p>
-        
-        <p>A lavagem correta das mãos, especialmente após voltar da rua, ir ao banheiro ou antes das refeições, é uma das medidas mais eficazes para prevenir problemas de saúde frequentes, como a diarreia e as gripes. Pequenas mudanças de atitude na nossa rotina nos dão bem-estar e ajudam a interromper cadeias de transmissão de doenças na comunidade.</p>
-        
-        <p>Para conhecer curiosidades históricas sobre a evolução da limpeza em diferentes culturas e aprender a técnica certa para eliminar a sujeira das mãos, assista ao vídeo a srguir:</p>
+            <h4>Como a higiene protege a nossa saúde no dia a dia?</h4>
+            <p>Os hábitos de higiene, como tomar banho, escovar os dentes e lavar o rosto, embora simples, são barreiras importantíssimas contra germes e bactérias. Na Grécia Antiga, esses cuidados já eram tão valorizados que inspiraram a palavra "higiene", usada para definir as práticas que nos mantêm limpos e livres de infecções transmissíveis.</p>
+            
+            <p>A lavagem correta das mãos, especialmente após voltar da rua, ir ao banheiro ou antes das refeições, é uma das medidas mais eficazes para prevenir problemas de saúde frequentes, como a diarreia e as gripes. Pequenas mudanças de atitude na nossa rotina nos dão bem-estar e ajudam a interromper cadeias de transmissão de doenças na comunidade.</p>
+            
+            <p>Para conhecer curiosidades históricas sobre a evolução da limpeza em diferentes culturas e aprender a técnica certa para eliminar a sujeira das mãos, assista ao vídeo a srguir:</p>
 
-        <div class="video-responsivo" style="margin-top: 1rem;">
-            <iframe 
-                src="https://www.youtube.com/embed/iUkh8J9sNyQ" 
-                title="A Higiene no dia a dia" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
+            <div class="video-responsivo" style="margin-top: 1rem;">
+                <iframe 
+                    src="https://www.youtube.com/embed/iUkh8J9sNyQ" 
+                    title="A Higiene no dia a dia" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
-    </div>
 
         <p>Nesta tela, você aprendeu que os gráficos são excelentes ferramentas de comunicação dos dados; praticou a conversão de dados tabulares em representações visuais como gráficos de colunas, linhas e pizza; foi alertado de que é necessário selecionar o modelo de gráfico mais adequado para cada tipo de situação; e foi capaz de configurar títulos, legendas e rótulos para facilitar a interpretação das informações.</p>
         <p>Na próxima etapa fecharemos esta sequência didática com as características de configuração de página para uma boa impressão ou exportação das tabelas em arquivos paginados.</p>
@@ -2743,264 +2743,292 @@ mouse_interface: {
         ]
     },
     // === ETAPA 11: Área de Impressão e Exportação ===
-    saude_impressao: {
+    impressao_saude: {
         etapa: 11, 
-        titulo: "E11. Exportar Relatório de Saúde",
-        texto: "Configure a orientação da folha em modo Paisagem para exportar os dados epidemiológicos finais em formato PDF.",
+        titulo: "Configurações de impressão",
+        texto: `
+        <p>Em algumas situações, saber configurar a página de uma planilha eletrônica antes de exportá-la para outro formato de arquivo é essencial. Sem esses ajustes, as tabelas extensas e outros elementos gráficos utilizados costumam ser cortados ao meio, tornando impossível a compreensão das informações na maioria dos casos. Gastar alguns minutos ajustando o layout garante que qualquer pessoa consiga ler suas planilhas com clareza, organização e profissionalismo.</p>
+        
+        <h3>Principais Recursos de Configuração de Página</h3>
+
+        <p>Para garantir que o relatório mantenha o visual profissional na folha de papel ou no PDF, conheça as ferramentas disponíveis na guia Layout de Página e suas funções:</p>
+
+        <div class="tabela-ferramentas">
+            
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-margens.png" alt="Configuração de Margens" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Margens:</b> Determinam o recuo e o espaço em branco ao redor de toda a área externa dos dados, delimitando os limites da folha de papel. Ajustar para margens "Estreitas" ajuda a acomodar tabelas levemente mais largas sem quebrar colunas.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-orientacao.png" alt="Orientação da Página" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Orientação:</b> Altera a disposição do papel entre o modo <b>Retrato</b> (página vertical, recomendada para listas longas como a aba base de pacientes) e o modo <b>Paisagem</b> (página horizontal, ideal para abas com múltiplos gráficos posicionados lado a lado).</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-tamanho.png" alt="Tamanho da Página" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Tamanho:</b> Define as dimensões físicas do papel no qual o arquivo será impresso ou gerado em PDF. No serviço público e em relatórios de saúde no Brasil, o padrão normatizado obrigatório é o formato <b>A4</b>.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-area.png" alt="Área de Impressão" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Área de Impressão:</b> Permite que você selecione e isole apenas uma planilha ou uma matriz específica para o envio à impressora. Isso evita o desperdício de papel e impede que rascunhos ou dados brutos fora do relatório final sejam impressos por engano.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-quebras.png" alt="Quebras de Página" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Quebras:</b> Forçam o encerramento da página atual e iniciam o fluxo de dados na folha seguinte a partir de uma célula selecionada. É fundamental para organizar relatórios extensos, garantindo que cada tabela comece no topo de uma nova folha.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-cabecalho.png" alt="Cabeçalho e Rodapé" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Cabeçalho/Rodapé:</b> Áreas reservadas nas extremidades superior e inferior da página para a inserção automática de metadados informativos. São usadas para exibir o número da página, o nome da secretaria de saúde ou a data de emissão do relatório de vacinação.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-dimensionar.png" alt="Dimensionar para Ajustar" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Dimensionar:</b> Reduz ou amplia o tamanho proporcional dos dados para que eles caibam perfeitamente em uma quantidade exata de páginas. Permite forçar, por exemplo, que uma tabela larga e seus respectivos gráficos sejam condensados de forma legível em apenas uma folha de largura.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/impressao-titulos.png" alt="Imprimir Títulos" class="icone-app">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Imprimir títulos:</b> Permite selecionar linhas ou colunas específicas para que sejam repetidas automaticamente no topo de todas as páginas impressas. Em relatórios extensos, esse recurso garante que o cabeçalho com os nomes das colunas apareça em cada folha, evitando que o leitor se perca.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Atividade Prática: Ajustando as Planilhas para o Gestor</h3>
+        <p>Agora que organizamos os dados da campanha de vacinação contra a Influenza, o último passo será preparar o relatório para o gestor do posto de saúde. Como a aba <code>base</code> tem uma lista enorme de pacientes e a aba <code>avaliação</code> traz os gráficos e tabelas de resumo, vamos configurar a impressão de cada uma delas de jeitos diferentes para que o documento não fique cortado ou desorganizado. Siga o passo a passo abaixo para fazer esses ajustes no seu editor de planilhas:</p>
+        
+        <div class="passos-atividade">
+
+            <div class="passo-item">
+                <h4 class="passo-titulo">Configuração para impressão da planilha "base"</h4>
+                <p class="passo-descricao">Como a aba <code>base</code> contém os dados brutos de todos os 1.487 pacientes, lidaremos com uma tabela muito longa verticalmente, mas com poucas colunas. Vamos configurá-la para manter a rastreabilidade dos cabeçalhos em cada folha.</p>
+                
+                <div class="passo-detalhes">
+                    <p>Clique na aba <code>base</code> na barra inferior. Na guia superior <strong>Layout de Página</strong>, clique em <strong>Orientação</strong> e selecione a opção <strong>Retrato</strong>.</p>
+                    
+                    <p>Garanta que o <strong>Tamanho</strong> esteja definido como <strong>A4</strong>. Em <strong>Margens</strong>, selecione a opção <strong>Normal</strong>.</p>
+                    
+                    <p>Para evitar que o leitor se perca ao virar as páginas impressas fisicamente ou rolar o PDF na tela, clique em <strong>Imprimir Títulos</strong>. Na opção de repetir linhas no topo, selecione a <strong>Linha 1</strong> (onde estão os rótulos de Matrícula, Idade, Gênero, Gestante e Grupo). Isso fixará o cabeçalho em todas as páginas impressas.</p>
+                    
+                    <p>Clique no recurso <strong>Cabeçalho e Rodapé</strong>. No cabeçalho (topo), insira o texto: <span class="titulo-grafico-exemplo">Listagem de Imunizados - Campanha Influenza</span>. No rodapé (base), selecione a numeração de página automática (ex: "Página 1 de X") para organizar o documento.</p>
+                </div>
+            </div>
+
+            <div class="passo-item">
+                <h4 class="passo-titulo">Configuração para impressão da planilha "Avaliação"</h4>
+                <p class="passo-descricao">A aba <code>avaliação</code> concentra as tabelas e os gráficos. Aqui, o desafio é garantir que as tabelas e seus respectivos gráficos fiquem organizados na página de forma harmônica, sem cortes desordenados.</p>
+                
+                <div class="passo-detalhes">
+                    <p>Mude para a planilha <code>avaliação</code>. Na guia <strong>Layout</strong>, altere a <strong>Orientação</strong> para <strong>Paisagem</strong> (horizontal). Isso dará a amplitude necessária para posicionar os gráficos ao lado das tabelas.</p>
+                    
+                    <p>Para maximizar a área de plotagem dos gráficos e o tamanho das tabelas, mude o botão <strong>Margens</strong> para a opção <strong>Estreita</strong>.</p>
+                    
+                    <p>Se houver alguma anotação ou rascunho de cálculo fora do relatório, selecione apenas o intervalo que vai de <code>A1</code> até a última linha ocupada pelo Gráfico de Rosca. Clique em <strong>Área de Impressão</strong> &gt; <strong>Definir Área de Impressão</strong>. Caso queira que a Tabela 5 (Matriz Cruzada) comece obrigatoriamente em uma nova folha física, selecione a célula <code>A26</code> e clique em <strong>Quebras</strong> &gt; <strong>Inserir Quebra de Página</strong>.</p>
+                    
+                    <p>Para impedir que um gráfico ou uma coluna lateral escape por poucos centímetros para uma folha em branco extra, utilize a ferramenta <strong>Dimensionar (Ajustar Escala)</strong>. Configure a largura para forçar o ajuste em <strong>1 Página de Largura</strong>, permitindo que o editor de planilha reduza a escala proporcionalmente para encaixar o layout.</p>
+                    
+                    <p>Adicione um <strong>Cabeçalho</strong> com o texto <span class="titulo-grafico-exemplo">Relatório Técnico de Avaliação Epidemiológica</span> e, no <strong>Rodapé</strong>, insira a inserção automática da data atual de emissão do documento.</p>
+                </div>
+            </div>
+
+            <div class="passo-item">
+                <h4>Visualizar e Exportar seu Relatório</h4>
+                <p>Depois de aplicar todas as configurações nas duas abas, você não deve fechar ou enviar o arquivo sem antes conferir como ele ficou. Fazer essa checagem evita surpresas, como colunas cortadas ou páginas em branco desnecessárias.</p>
+                
+                <p>Siga estes dois passos antes de finalizar:</p>
+                <div class="passo-detalhes">
+                    <p>Pressione as teclas <code>Ctrl + P</code> no seu teclado (ou vá em <em>Arquivo > Imprimir</em>). Em vez de mandar imprimir fisicamente, use a tela de visualização para folhear o documento digitalmente. Repare como a aba <code>base</code> repete o cabeçalho em todas as folhas e como a aba <code>avaliação</code> ajustou os gráficos perfeitamente na horizontal.</p>
+                    <p>Com tudo certo, vá no menu <em>Arquivo</em>, escolha a opção <strong>Exportar</strong> (ou <em>Salvar Como</em>) e selecione o formato <strong>PDF</strong>.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="caixa-voce-sabia verde-excel">
+            <h4>Fatores coletivos que afetam a saúde pública</h4>
+            <p>Na etapa anterior, vimos como os hábitos individuais de higiene são fundamentais para conter a transmissão de vírus como o da Influenza. No entanto, para que a saúde preventiva seja eficiente, as ações individuais precisam estar amparadas por outros fatores que afetam a coletividade. O bem-estar de uma comunidade depende de, entre outras coisas, o acesso à água potável, a infraestrutura de saneamento básico e a estabilidade climática do nosso planeta.</p>
+            
+            <h5>Acesso à Água Potável e Saúde da População</h5>
+            <p>A água limpa é o primeiro insumo de saúde pública em qualquer lugar. Sem água tratada para consumo e preparo de alimentos, a população fica diretamente exposta a microorganismos que causam surtos de diarreia, desidratação e infecções graves. Entenda mais sobre as doenças veiculadas pela água no vídeo abaixo:</p>
+            
+            <div class="video-responsivo" style="margin-top: 1rem; margin-bottom: 2rem;">
+                <iframe 
+                    src="https://www.youtube.com/embed/USu2rWUnoXw" 
+                    title="Doenças Veiculadas pela Água" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h5>Saneamento Básico e Indicadores Epidemiológicos</h5>
+            <p>A ausência de coleta e tratamento de esgoto cria um ciclo infinito de doenças. Jogar o esgoto em lugares inapropriados contamina o solo e os lençóis freáticos, atraindo vetores de doenças como ratos e mosquitos, além de espalhar vírus e parasitas que afetam principalmente o desenvolvimento infantil e a imunidade das pessoas. Assista ao vídeo sobre os impactos diretos da falta de saneamento básico:</p>
+
+            <div class="video-responsivo" style="margin-top: 1rem; margin-bottom: 2rem;">
+                <iframe 
+                    src="https://www.youtube.com/embed/5keWkc1dXdA" 
+                    title="Doenças causadas pela falta de saneamento básico" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h5>Mudanças Climáticas e a Saúde do Futuro</h5>
+            <p>As grandes mudanças no meio ambiente estão alterando o mapa das doenças no mundo. O aumento das temperaturas e o clima extremo (como secas prolongadas, enchentes repentinas, ondas de calor mais intensas e frequentes) destroem o habitat de animais silvestres, aceleram o desmatamento e aumentam as ocorrências de queimadas. Cada um desses fatores citados pode ocasionar situações que favorecem diferentes tipos de doenças nas populações afetadas. Para entender como a crise do clima mexe diretamente com o nosso sistema de saúde, assista ao vídeo a seguir:</p>
+
+            <div class="video-responsivo" style="margin-top: 1rem;">
+                <iframe 
+                    src="https://www.youtube.com/embed/psbQUk_GrWY" 
+                    title="Saúde, Poluição e Mudanças Climáticas" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="resumo-aprendizado">
+            <p>Nesta última etapa, você aprendeu a usar as <strong>ferramentas de impressão</strong> para ajustar suas tabelas e gráficos ao layout e às dimensões das páginas. Na prática, você aplicou recursos como orientação, margens, tamanho, quebras, cabeçalho e rodapé, além de dimensionamento, títulos e definição da área de impressão.</p>
+            <p>Tudo o que foi visto nesta sequência didática pode ser refeito e revisto. As configurações e formatações aplicadas podem ser testadas de diferentes maneiras. O mais importante é exercitar e testar novas possibilidades.</p>
+        </div>
+
+        <section class="avaliacao-reacao">
+            <div>
+                <p>Antes de avançar para a próxima tela, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+            </div>
+
+            <aside>
+                <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                    <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                </a>
+            </aside>
+        </section>
+        `,
         botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "saude_graficos" 
-            }, 
-            { 
-                texto: "Finalizar Jornada", 
-                destino: "conclusao" 
-            }
+            { texto: "Voltar", destino: "graficos_saude" },
+            { texto: "Avançar", destino: "encerramento" }
         ]
     },
 
-    // ================= TRILHA B: ODS 6 (ÁGUA E SANEAMENTO) =================
-    
-    // === ETAPA 5: Tipos de Dados ===
-    agua_dados: {
-        etapa: 5, 
-        titulo: "E5. Consumo de Água",
-        texto: "Registraremos volumes em Litros (decimais) e usaremos o tipo de dados de Data para o monitoramento de reservatórios locais.",
+encerramento: {
+        etapa: 12, 
+        titulo: "Encerramento",
+        texto: `
+        <p>Parabéns pela conclusão desta sequência didática. Ao finalizar todas as etapas propostas, você demonstrou dedicação e adquiriu competências essenciais para o tratamento de dados e estruturação de informações que podem ser replicadas para qualquer área do conhecimento e infinitas situações do nosso cotidiano. Esperamos que este material tenha contribuído para o desenvolvimento de sua autonomia e cidadania digital!</p>
+        
+        <p>Ao longo deste percurso, foram estudados os seguintes tópicos:</p>
+        
+        <ul>
+            <li><strong>Introdução e Interface:</strong> Compreensão do papel das tabelas no cotidiano, diferenciação entre editores locais e em nuvem, e domínio da navegação em estruturas de linhas, colunas, células e pastas de trabalho.</li>
+            <li><strong>Tipos de Dados e Formatação:</strong> Classificação de informações em texto, número, data e hora, aplicação de máscaras de formatação e personalização estética do layout por meio de fontes, fundos, bordas, alinhamentos e mesclagem.</li>
+            <li><strong>Operadores e Fórmulas:</strong> Construção de cálculos manuais utilizando operadores aritméticos de adição, subtração, multiplicação, divisão, quociente, resto e exponenciação, observando a precedência matemática e o uso de parênteses.</li>
+            <li><strong>Funções Estatísticas e Referências:</strong> Processamento de dados por meio das funções SOMA, CONT.NÚM, MÁXIMO, MÍNIMO e MÉDIA, além do uso de referências absolutas e relativas para a replicação eficiente de cálculos.</li>
+            <li><strong>Lógica Condicional e Visualização:</strong> Aplicação de estruturas de tomada de decisão com as funções SE, CONT.SE e SOMASE, e implementação de regras de formatação condicional para sinalização visual de dados.</li>
+            <li><strong>Gráficos e Impressão:</strong> Conversão de dados tabulares em gráficos adequados (colunas, linhas e pizza), configuração de elementos visuais e ajuste de propriedades de página, cabeçalhos, rodapés e áreas de impressão para exportação de relatórios em formato PDF.</li>
+        </ul>
+        
+        <p>Este treinamento representa apenas o primeiro capítulo de seu aprendizado em planilhas eletrônicas. O universo das ferramentas de escritório é vasto e oferece inúmeros recursos avançados que ainda podem ser explorados, como o cruzamento complexo de dados, a automação de processos e a análise estatística aprofundada. Recomendamos muito que você continue exercitando esses conceitos e buscando novos conhecimentos para expandir suas habilidades profissionais e acadêmicas.</p>
+
+        <p>Vale destacar que todo o conteúdo deste material introdutório foi produzido e fundamentado a partir das diretrizes oficiais das ferramentas do mercado. Caso você queira consultar as fontes originais ou aprofundar seus estudos, recomendamos visitar os portais de documentação e suporte dos três principais editores utilizados:</p>
+
+        <div class="tabela-ferramentas">
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/microsoft_office_Excel_icon.png" alt="Ícone do Microsoft Excel" style="width: 100%; height: auto; max-width: 50px;">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Microsoft Excel:</b> Acesse os guias passo a passo, tutoriais de fórmulas e soluções de problemas diretamente na <a href="https://support.microsoft.com/pt-br/excel" target="_blank" rel="noopener noreferrer">Central de Suporte do Excel</a>.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/onlyoffice_icon.png" alt="Ícone do ONLYOFFICE" style="width: 100%; height: auto; max-width: 50px;">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>ONLYOFFICE:</b> Consulte as instruções detalhadas de ferramentas e recursos visuais diretamente no <a href="https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor.aspx" target="_blank" rel="noopener noreferrer">Guia do Usuário do Editor de Planilhas</a>.</p>
+                </div>
+            </div>
+
+            <div class="linha-ferramenta">
+                <div class="col-logo">
+                    <img src="assets/img/icons/google_sheets_icon.png" alt="Ícone do Google Sheets" style="width: 100%; height: auto; max-width: 50px;">
+                </div>
+                <div class="col-conteudo">
+                    <p class="texto-unico-app"><b>Google Sheets:</b> Explore a documentação oficial sobre compartilhamento, funções e formatações na <a href="https://support.google.com/docs/answer/6000292?hl=pt-PT" target="_blank" rel="noopener noreferrer">Central de Ajuda dos Editores de Documentos Google</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <p>Bons estudos!</p>
+        `,
         botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "escolha_ods" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "agua_formatacao" 
-            }
-        ]
-    },
-    // === ETAPA 6: Elementos de Formatação ===
-    agua_formatacao: {
-        etapa: 6, 
-        titulo: "E6. Layout de Recursos Hídricos",
-        texto: "Formate a estética da planilha alterando cores de fontes e estilos de célula para diferenciar rios poluídos de recuperados.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "agua_dados" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "agua_operadores" 
-            }
-        ]
-    },
-    // === ETAPA 7: Operadores Matemáticos ===
-    agua_operadores: {
-        etapa: 7, 
-        titulo: "E7. Desperdício Calculado",
-        texto: "Divida o volume total captado pelo número de habitantes usando operadores matemáticos para descobrir o gasto per capita.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "agua_formatacao" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "agua_funcoes" 
-            }
-        ]
-    },
-    // === ETAPA 8: Funções Iniciais ===
-    agua_funcoes: {
-        etapa: 8, 
-        titulo: "E8. Somas de Saneamento",
-        texto: "Descubra o total de água consumida pela comunidade utilizando a função pré-definida SOMA de forma eficiente.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "agua_operadores" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "agua_condicionais" 
-            }
-        ]
-    },
-    // === ETAPA 9: Funções Condicionais ===
-    agua_condicionais: {
-        etapa: 9, 
-        titulo: "E9. Alertas de Escassez",
-        texto: "Insira a função de tomada de decisão SE para exibir um texto de alerta se o volume de água cair abaixo do aceitável.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "agua_funcoes" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "agua_graficos" 
-            }
-        ]
-    },
-    // === ETAPA 10: Gráficos ===
-    agua_graficos: {
-        etapa: 10, 
-        titulo: "E10. Gráfico de Pizza do Consumo",
-        texto: "Gere representações visuais convertendo dados em um gráfico de pizza para apontar as maiores perdas na rede.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "agua_condicionais" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "agua_impressao" 
-            }
-        ]
-    },
-    // === ETAPA 11: Área de Impressão e Exportação ===
-    agua_impressao: {
-        etapa: 11, 
-        titulo: "E11. Relatório de Sustentabilidade",
-        texto: "Defina propriedades de página e a área específica de impressão para ocultar notas de rascunho na distribuição do material.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "agua_graficos" 
-            }, 
-            { 
-                texto: "Finalizar Jornada", 
-                destino: "conclusao" 
-            }
+            { texto: "Saúde", destino: "impressao_saude" },
+            { texto: "Água", destino: "impressao_agua" },
+            { texto: "Clima", destino: "impressao_clima" },
+            { texto: "Referências", destino: "referencias" }
         ]
     },
 
-    // ================= TRILHA C: ODS 13 (AÇÃO CLIMÁTICA) =================
-    
-    // === ETAPA 5: Tipos de Dados ===
-    clima_dados: {
-        etapa: 5, 
-        titulo: "E5. Emissões de Carbono",
-        texto: "Montaremos uma planilha com dados científicos usando variações numéricas decimais para representar gases estufa.",
+    referencias: {
+        etapa: 13, 
+        titulo: "Referências",
+        texto: `
+        
+        `,
         botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "escolha_ods" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "clima_formatacao" 
-            }
-        ]
-    },
-    // === ETAPA 6: Elementos de Formatação ===
-    clima_formatacao: {
-        etapa: 6, 
-        titulo: "E6. Destacando Anomalias",
-        texto: "Aplique preenchimento de fundos escuros e bordas reforçadas em células para demarcar visualmente os anos de maior aquecimento.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "clima_dados" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "clima_operadores" 
-            }
-        ]
-    },
-    // === ETAPA 7: Operadores Matemáticos ===
-    clima_operadores: {
-        etapa: 7, 
-        titulo: "E7. Projeção Matemática",
-        texto: "Multiplique as taxas de desmatamento pelo fator de emissão anual aplicando os conceitos de precedência matemática.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "clima_formatacao" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "clima_funcoes" 
-            }
-        ]
-    },
-    // === ETAPA 8: Funções Iniciais ===
-    clima_funcoes: {
-        etapa: 8, 
-        titulo: "E8. Extremos de Temperatura",
-        texto: "Localize de maneira automatizada a temperatura global mais alta em um grande volume de registros usando a função MÁXIMO.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "clima_operadores" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "clima_condicionais" 
-            }
-        ]
-    },
-    // === ETAPA 9: Funções Condicionais ===
-    clima_condicionais: {
-        etapa: 9, 
-        titulo: "E9. Metas do Acordo de Paris",
-        texto: "Utilize a função de contagem sob critérios específicos CONT.SE para computar quantos países violaram as metas climáticas.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "clima_funcoes" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "clima_graficos" 
-            }
-        ]
-    },
-    // === ETAPA 10: Gráficos === [cite: 54]
-    clima_graficos: {
-        etapa: 10, 
-        titulo: "E10. Gráfico de Colunas de CO2",
-        texto: "Selecione e monte um gráfico de colunas comparando a redução de poluentes entre diferentes blocos econômicos.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "clima_condicionais" 
-            }, 
-            { 
-                texto: "Avançar", 
-                destino: "clima_impressao" 
-            }
-        ]
-    },
-    // === ETAPA 11: Área de Impressão e Exportação ===
-    clima_impressao: {
-        etapa: 11, 
-        titulo: "E11. Divulgação Científica",
-        texto: "Aplique cabeçalho e rodapé profissionais com numeração de páginas e exporte seu relatório climático unificado.",
-        botoes: [
-            { 
-                texto: "Voltar", 
-                destino: "clima_graficos" 
-            }, 
-            { 
-                texto: "Finalizar Jornada", 
-                destino: "conclusao" 
-            }
+            { texto: "Retornar", destino: "encerramento" },
+            { texto: "Créditos", destino: "creditos" }
         ]
     },
 
-    // ================= ENCERRAMENTO (RECONTRO DOS CAMINHOS) =================
-    conclusao: {
-        etapa: 12, // Etapa final de fechamento no menu lateral
-        titulo: "Certificação e Próximos Passos",
-        texto: "Parabéns! Você concluiu a sequência didática de planilhas de forma brilhante e com plena consciência cidadã. Suas tomadas de decisões demonstraram como dados brutos transformam realidades.",
+    creditos: {
+        etapa: 14, 
+        titulo: "Créditos",
+        texto: `
+        
+        `,
         botoes: [
-            { 
-                texto: "Reiniciar Toda a Sequência", 
-                destino: "capa" 
-            }
+            { texto: "Retornar", destino: "referencias" },
+            { texto: "Reiniciar", destino: "capa" }
         ]
-    }
+    },
 };
 
 // Configuração atualizada dos nomes exibidos no menu lateral (Alinhado de 1 a 12)
@@ -3016,5 +3044,7 @@ const etapasConfig = [
     { id: 9, nome: "9. Condicionais" },
     { id: 10, nome: "10. Gráficos" },
     { id: 11, nome: "11. Impressão" },
-    { id: 12, nome: "12. Encerramento" }
+    { id: 12, nome: "12. Encerramento" },
+    { id: 13, nome: "13. Referências" },
+    { id: 14, nome: "14. Créditos" }
 ];
