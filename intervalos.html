@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface dos editores de planilha</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page-id="4">
+
+    <div id="sidebar-overlay"></div>
+
+    <header>
+        <button id="mobile-menu-btn" aria-label="Abrir menu de navegação">☰ Menu</button>
+        <div class="accessibility-controls">
+            <button id="btn-contrast">◐ Contraste</button>
+            <button id="btn-font-decrease">A-</button>
+            <button id="btn-font-increase">A+</button>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <aside id="sidebar">
+            <nav id="sidebar-nav"></nav>
+        </aside>
+
+        <main>
+            <h1>Interface dos editores de planilha</h1>
+            
+            <p>Independentemente da ferramenta que você escolha (Excel, Google Planilhas ou OnlyOffice), a área de trabalho da planilha é sempre a mesma: uma enorme grade organizada por letras e números, onde cada retângulo possui uma referência exclusiva e serve para guardar uma informação.</p>
+            
+            <p>Observe atentamente cada uma das partes que compõem a interface na imagem a seguir:</p>
+
+            <div class="imagem">
+                <img src="assets/img/screens/onlyoffice_grid_map.png" alt="Área de trabalho da planilha no OnlyOffice. Na imagem, a linha 3 está pintada de azul, a coluna B está pintada de amarelo, a célula B3 está pintada de verde e 3 intervalos diferentes estão pintados de laranja">
+            </div>
+
+            <p>Vamos entender cada umas dessas partes?</p>
+
+            <ol>
+                <li><strong>Colunas:</strong> São as divisões verticais da grade, identificadas sempre por <strong>letras</strong> (<code>A</code>, <code>B</code>, <code>C</code>...) posicionadas na parte superior da interface. Na imagem, a coluna <code>B</code> foi pintada de Amarelo.</li>
+                
+                <li><strong>Linhas:</strong> São as divisões horizontais, identificadas por <strong>números</strong> (<code>1</code>, <code>2</code>, <code>3</code>...) posicionados na lateral esquerda da interface. Na imagem, a Linha <code>3</code> foi pintada de azul.</li>
+                
+                <li><strong>Célula:</strong> É o retângulo gerado pelo cruzamento de uma linha com uma coluna. O nome ou endereço da célula é a combinação da letra com o número. Na imagem, o cruzamento da coluna <code>B</code> com a linha <code>3</code> gera a Célula <code>B3</code>, pintada na cor Verde.</li>
+                
+                <li><strong>Intervalo:</strong> É um conjunto de células selecionadas juntas. Sempre que nos referimos a um intervalo da planilha, indicamos o início desse intervalo pelo endereço da célula localizada no canto superior esquerdo (por exemplo, <code>F6</code>) e o final do intervalo pelo endereço da célula no canto inferior direito (por exemplo, <code>H10</code>). Na linguagem das planilhas, nós escrevemos um intervalo usando o sinal de dois pontos (<code>:</code>) para separar os endereços de início e final (por exemplo, <code>F6:H10</code>). Sempre que você vê os dois pontos (<code>:</code>) entenda como se fosse a palavra "até". Na imagem, estão pintados de laranja os intervalos <code>D5:F5</code>, <code>D7:D10</code> e <code>F6:H10</code>.</li>
+            </ol>
+
+            <div class="destaque">
+                <h4>O editor de planilhas é enorme</h4>
+                <p>Uma planilha eletrônica parece infinita, mas ela tem limites! No OnlyOffice e no Excel, o tamanho máximo que uma única página pode ter é de exatamente <strong>1.048.576 linhas</strong> e <strong>16.384 colunas</strong>.</p>
+                
+                <p><strong>Mas atenção</strong>, só porque esse espaço existe, não significa que devemos tentar lotar a planilha até o final. Se você colocar informações demais (como o cadastro de todos os habitantes de uma grande cidade), o computador vai travar ou ficar muito lento ao fazer contas simples. O arquivo também corre um sério risco de <strong>corromper</strong> (dar um erro que o impede de abrir normalmente), fazendo você perder todos os seus dados.</p>
+                
+                <p>Quando uma empresa precisa mexer com essa quantidade gigantesca de dados, o correto não é usar planilhas, mas sim um <strong>Banco de Dados</strong> (sistemas especiais criados apenas para guardar e processar milhões de informações com total segurança, rapidez e sem risco de travamentos).</p>
+            </div>
+
+            <div class="btn-group">
+                <div class="btn-group-left">
+                    <a href="tela_excel.html" class="btn btn-secondary">Excel</a>
+                    <a href="tela_google.html" class="btn btn-secondary">Google</a>
+                    <a href="tela_onlyoffice.html" class="btn btn-secondary">OnlyOffice</a>
+                </div>
+                <div class="btn-group-right">
+                    <a href="selecao.html" class="btn btn-primary">Avançar</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Material desenvolvido por 
+            <a href="https://github.com/luan-moura" target="_blank" rel="noopener noreferrer">Luan Moura</a> e 
+            <a href="https://github.com/tenemosvhs" target="_blank" rel="noopener noreferrer">Gabriel Medeiros</a>.
+        </p>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>

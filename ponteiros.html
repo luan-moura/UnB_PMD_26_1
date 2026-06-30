@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A funcionalidade de cada modelo de cursor do mouse</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page-id="4">
+
+    <div id="sidebar-overlay"></div>
+
+    <header>
+        <button id="mobile-menu-btn" aria-label="Abrir menu de navegação">☰ Menu</button>
+        <div class="accessibility-controls">
+            <button id="btn-contrast">◐ Contraste</button>
+            <button id="btn-font-decrease">A-</button>
+            <button id="btn-font-increase">A+</button>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <aside id="sidebar">
+            <nav id="sidebar-nav" aria-label="Menu de Navegação Principal"></nav>
+        </aside>
+
+        <main>
+            <h1>A funcionalidade de cada modelo de cursor do mouse</h1>
+            
+            <p>Se você optar por utilizar o mouse para navegar pela sua planilha, perceberá que o modelo do ponteiro/cursor muda de formato a depender do que estiver embaixo dele. Cada formato de cursor indica uma funcionalidade completamente diferente e importante dentro da grade ou da interface:</p>
+
+            <div class="explicacoes">
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-selecao-celulas.svg" alt="Desenho de uma cruz branca larga">
+                    <p><strong>Cruz Branca Larga:</strong> Aparece quando o mouse está posicionado bem no meio de uma célula. O único objetivo desse formato de cursor é <strong>selecionar</strong>. Ao clicar e arrastar, você seleciona um conjunto de células (um intervalo) sem alterar o conteúdo delas.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-arrastar-celulas.svg" alt="Desenho de uma cruz preta e fina">
+                    <p><strong>Cruz Preta e Fina:</strong> Também conhecida como alça de preenchimento. Só aparece quando o mouse está posicionado exatamente em cima do quadradinho que fica no canto inferior direito da célula ativa. Serve para <strong>arrastar, copiar e preencher fórmulas</strong> ou sequências de dados automaticamente.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-mover-celulas.svg" alt="Desenho de quatro setas apontando para os lados">
+                    <p><strong>Quatro Setas:</strong> Aparece quando você posiciona o mouse exatamente em cima da linha limite da borda de uma célula selecionada. Esse formato serve para <strong>mover</strong> a informação daquela célula para outro lugar na tabela. Também funciona para mover intervalos.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-largura-colunas.svg" alt="Desenho de uma linha vertical com duas setas apontando para os lados">
+                    <p><strong>Redimensionar Colunas ou Linhas:</strong> Aparece quando você posiciona o mouse exatamente na linha divisória entre duas letras de colunas ou dois números de linhas. Serve para <strong>ajustar a largura ou a altura</strong> das células. Clique e arraste para o lado para esticar a coluna se o texto não couber e ficar cortado.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-coluna.svg" alt="Desenho de uma seta preta apontando para baixo">
+                    <p><strong>Seta para Baixo:</strong> Aparece quando o mouse é posicionado em cima das letras que identificam as colunas (A, B, C...). Um clique com esse cursor <strong>seleciona a coluna inteira</strong> de uma vez só, até o final da planilha.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-linha.svg" alt="Desenho de uma seta preta apontando para a direita">
+                    <p><strong>Seta para a Direita:</strong> Aparece quando o mouse é posicionado em cima dos números que identificam as linhas (1, 2, 3...). Um clique com esse cursor <strong>seleciona a linha inteira</strong> da tabela.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-texto.png" alt="Desenho da letra I maiúscula romana">
+                    <p><strong>Barra de Texto (I-Beam):</strong> Aparece quando você está editando o conteúdo interno de uma célula ou digitando na barra de fórmulas. Indica que o sistema está em <strong>modo de digitação</strong>.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-link.png" alt="Desenho de uma mãozinha apontando com o indicador">
+                    <p><strong>Mãozinha de Link:</strong> Aparece quando o mouse passa por cima de um hiperlink, site ou botão clicável dentro da planilha, indicando que aquela palavra vai <strong>abrir uma página da internet</strong>.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/cursor-selecionar.png" alt="Seta padrão do sistema operacional">
+                    <p><strong>Seta Padrão:</strong> É o ponteiro comum que você usa para clicar nos menus superiores, configurações, botões de salvar ou ferramentas fora da grade de células.</p>
+                </div>
+            </div>
+
+            <div class="destaque">
+                <h4>Olhe para o ponteiro</h4>
+                <p>Um dos erros mais comuns de quem está aprendendo a usar planilhas é não prestar atenção no modelo do cursor antes de iniciar algum comando. Selecionar, mover ou preencher são funcionalidades ativadas por modelos de cursor diferentes.</p>
+                <p>Além disso, a depender do editor de planilhas que você escolher, outros símbolos visuais podem ser adotados para realizar a mesma tarefa. No Google Planilhas <img src="assets/img/icons/google_sheets_icon.png" alt="Ícone do Google Planilhas" class="icone">, por exemplo, em vez de exibir o cursor de quatro setas <img src="assets/img/icons/cursor-mover-celulas.svg" alt="Desenho de quatro setas apontando para os lados ou uma mãozinha" class="icone">, o sistema exibe o ícone de uma mão <img src="assets/img/icons/cursor-mao-fechada.png" alt="Ícone de mão fechada" class="icone">, que abre ou fecha simulando agarrar o bloco de dados.</p>
+            </div>
+
+            <div class="btn-group">
+                <div class="btn-group-left">
+                    <a href="selecao.html" class="btn btn-secondary">Retornar</a>
+                </div>
+                <div class="btn-group-right">
+                    <a href="temas.html" class="btn btn-primary">Avançar</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Material desenvolvido por 
+            <a href="https://github.com/luan-moura" target="_blank" rel="noopener noreferrer">Luan Moura</a> e 
+            <a href="https://github.com/tenemosvhs" target="_blank" rel="noopener noreferrer">Gabriel Medeiros</a>.
+        </p>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+:root {
+    --primary-green: #107c41;
+    --bg-dark-accessible: #0a331a;
+    --bg-light: #f4f9f5;
+    --text-main: #111111;
+    --text-muted: #555555;
+    --disabled-gray: #767676;
+    --disabled-bg: #e0e0e0;
+    --white: #ffffff;
+    --focus-outline: #005a9c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+/* Layout Base Flexbox */
+.container-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Botão Menu Hambúrguer Acessível */
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2.5rem;
+    height: 2rem;
+    background: var(--primary-green);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+.menu-toggle .bar {
+    width: 1.7rem;
+    height: 3px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+/* Estilização da Sidebar Retrátil */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Escondido por padrão */
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    border-right: 3px solid var(--primary-green);
+    padding: 4.5rem 1.5rem 2rem 1.5rem;
+    overflow-y: auto;
+    z-index: 999;
+    transition: left 0.3s ease;
+}
+
+.sidebar.open {
+    left: 0; /* Desliza para dentro da tela */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 0.5rem;
+}
+
+#navigation-menu {
+    list-style: none;
+}
+
+#navigation-menu li {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.menu-item-accessible {
+    color: var(--primary-green);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu-item-accessible:hover {
+    background-color: #e8f5e9;
+}
+
+.menu-item-disabled {
+    color: var(--disabled-gray);
+    background-color: var(--disabled-bg);
+    cursor: not-allowed;
+}
+
+/* Área de Conteúdo Flexbox de Alta Performance */
+#app {
+    flex: 1;
+    padding: 5rem 2rem 2rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Título Espacialmente Fixo */
+h1 {
+    font-size: 2.25rem;
+    color: var(--bg-dark-accessible);
+    margin-bottom: 2rem; /* Distância fixa e idêntica entre o título e o texto em TODAS as telas */
+    text-align: left;
+    min-height: auto; /* Permite que títulos longos quebrem linha naturalmente sem empurrar o layout */
+}
+
+/* Bloco de Texto Estável */
+.story-text {
+    margin-bottom: auto; /* Garante que os botões sejam empurrados estritamente para o rodapé */
+    font-size: 1.3rem;
+    display: block; /* Remove qualquer comportamento flexível de centralização */
+}
+
+/* O contêiner de botões permanece firme no rodapé */
+.btn-group {
+    margin-top: 2.5rem;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Alinhamentos conforme quantidade de botões */
+.btn-group.botoes-1 { justify-content: flex-end; }
+.btn-group.botoes-2 { justify-content: space-between; }
+.btn-group.botoes-3 { justify-content: space-between; }
+
+button.story-btn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem;
+    border: 2px solid var(--primary-green);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:focus { outline: 4px solid var(--focus-outline); }
+.btn-primary { background-color: var(--primary-green); color: var(--white); }
+.btn-primary:hover { background-color: var(--bg-dark-accessible); }
+.btn-secondary { background-color: var(--white); color: var(--primary-green); }
+.btn-secondary:hover { background-color: #e8f5e9; }
+
+/* --- Ajustes de Layout e Alinhamento de Cores --- */
+
+.tabela-ferramentas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.linha-ferramenta {
+    display: flex;
+    background-color: var(--white);
+    border: 1px solid var(--disabled-bg);
+    border-radius: 6px;
+    padding: 1rem;
+    gap: 1.2rem;
+    align-items: center; /* Centraliza o logo verticalmente com o parágrafo */
+}
+
+.col-logo {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none !important; /* Remove qualquer fundo residual */
+    border: none !important;     /* Remove qualquer borda residual */
+}
+
+.col-conteudo {
+    flex: 1;
+}
+
+.texto-unico-app {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* Nova Caixa "Você Sabia?" integrada à paleta verde (Estilo Excel) */
+.caixa-voce-sabia.verde-excel {
+    background-color: #f1f8e9; /* Verde bem claro e suave de fundo */
+    border-left: 4px solid #2e7d32; /* Barra lateral verde escura */
+    padding: 1.25rem;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+.caixa-voce-sabia.verde-excel h4 {
+    color: #1b5e20; /* Título verde escuro */
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.caixa-voce-sabia.verde-excel p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #212121;
+}
+
+.pergunta-direcionada {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+}
+
+.icone {
+    width: auto;
+    height: 1.1em;             /* Um pouquinho maior que 1em para dar melhor visibilidade */
+    vertical-align: middle;    /* Alinha perfeitamente pelo meio da linha do texto */
+    margin-left: 4px;          /* Pequeno espaçamento à esquerda para não colar na palavra */
+    margin-right: 4px;         /* Pequeno espaçamento à direita */
+}
+
+.tecla {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    
+    display: inline-block;
+    padding: 0.2rem 0.9rem;
+    margin: 0 0.2rem;
+    vertical-align: middle;
+    
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    
+    /* Sombra cinza embaixo que imita a profundidade da tecla plástica */
+    box-shadow: 0 3px 0 #b5b5b5, 0 3px 3px rgba(0, 0, 0, 0.1); 
+    
+    position: relative;
+    top: -2px;
+}
+
+/* Janela/Container da Planilha */
+.simulador-planilha {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid #c0c0c0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    background-color: #ffffff;
+}
+
+.grade-onlyoffice {
+    width: 100%;
+    border-collapse: collapse;
+    color: #333333;
+}
+
+/* MODELO 1: Cabeçalhos de Identificação (Cinza do OnlyOffice) */
+.grade-onlyoffice th, 
+.grade-onlyoffice td:first-child {
+    background-color: #f2f2f2;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+    font-weight: normal;
+    color: #555555;
+    height: 24px;
+    user-select: none;
+}
+
+/* Ajuste específico para a largura da coluna de números da linha */
+.grade-onlyoffice td:first-child {
+    width: 40px;
+}
+
+/* MODELO 2: Células da Grade Comum (Alinhamento de Texto à Esquerda) */
+.grade-onlyoffice td {
+    border: 1px solid #e0e0e0;
+    padding: 4px 6px;
+    height: 22px;
+    vertical-align: middle;
+    text-align: left; /* Padrão Texto */
+}
+
+/* MODELO 3: Variação para Células Numéricas (Alinhamento à Direita) */
+.grade-onlyoffice td.num {
+    text-align: right;
+    font-family: monospace; /* Garante alinhamento vertical dos algarismos */
+    font-size: 13.5px;
+}
+
+/* Ícone do canto superior esquerdo */
+.grade-onlyoffice .img-canto {
+    height: 1.6em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Nova Estética para Tabelas Conceituais de Alto Contraste */
+.tabela-conceitual {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    color: var(--text-main);
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra sutil para destacar a tabela do fundo da página */
+    border-radius: 4px;
+    overflow: hidden; /* Garante que os cantos arredondados funcionem com o fundo do th */
+}
+
+.tabela-conceitual th {
+    background-color: var(--bg-dark-accessible); /* Tom mais escuro para máximo contraste com o texto branco */
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.85rem 1.2rem;
+    text-align: left;
+}
+
+.tabela-conceitual td {
+    padding: 0.85rem 1.2rem;
+    border-bottom: 1px solid var(--disabled-bg); /* Linha horizontal clara que delimita cada linha */
+}
+
+/* Remove a borda da última linha para um acabamento mais limpo */
+.tabela-conceitual tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Realce sutil ao passar o mouse para guiar o foco visual do aluno */
+.tabela-conceitual tbody tr:hover {
+    background-color: #f1f8e9; /* Um verde extremamente suave apenas no hover */
+}
+
+/* --- Suporte a Vídeos Responsivos (YouTube/Vimeo) --- */
+
+.video-responsivo {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Impede o vídeo de esticar demais em telas de desktop */
+    margin: 2rem auto; /* Centraliza e mantém o espaçamento padrão do seu projeto */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Força o iframe a herdar o comportamento responsivo e manter a proporção 16:9 */
+.video-responsivo iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+}
+
+/* Bloco de avaliação de reação */
+.avaliacao-reacao {
+    background-color: #f9f9f9;
+    border-left: 4px solid #444444;
+    border-radius: 0 4px 4px 0;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+/* Bloco do texto descritivo */
+.avaliacao-reacao div {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Bloco lateral do QR Code */
+.avaliacao-reacao aside {
+    text-align: center;
+    width: 140px;
+}
+
+.avaliacao-reacao aside a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.avaliacao-reacao img {
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 0 auto 0.25rem auto;
+    border: 1px solid #dddddd;
+    padding: 4px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito sutil ao passar o mouse no QR Code linkável */
+.avaliacao-reacao aside a:hover img {
+    transform: scale(1.03);
+    border-color: #0066cc;
+}
+
+/* Responsividade - Celulares e Tablets em Modo Retrato */
+@media (max-width: 768px) {
+    body { font-size: 1.15rem; }
+    #app { padding: 4.5rem 1.2rem 1.5rem 1.2rem; }
+    h1 { font-size: 1.8rem; }
+    
+    .btn-group {
+        flex-direction: column-reverse; /* Inverte para o botão principal ficar no topo no celular */
+        gap: 0.75rem;
+    }
+    
+    button.story-btn {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .linha-ferramenta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+    .col-logo {
+        align-self: center;
+    }
+}

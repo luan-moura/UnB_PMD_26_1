@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de dados em editores de planilhas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page-id="5">
+
+    <div id="sidebar-overlay"></div>
+
+    <header>
+        <button id="mobile-menu-btn" aria-label="Abrir menu de navegação">☰ Menu</button>
+        <div class="accessibility-controls">
+            <button id="btn-contrast">◐ Contraste</button>
+            <button id="btn-font-decrease">A-</button>
+            <button id="btn-font-increase">A+</button>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <aside id="sidebar">
+            <nav id="sidebar-nav" aria-label="Menu de Navegação Principal"></nav>
+        </aside>
+
+        <main>
+            <h1>Tipos de dados em editores de planilhas</h1>
+            
+            <p>Antes de iniciar a digitação de sua primeira tabela, é fundamental compreender que os editores de planilhas eletrônicas tratam as informações de maneiras diferentes a depender do seu conteúdo. Configurar o tipo de dado correto garante que o programa possa realizar cálculos matemáticos e organizar as informações de forma precisa.</p>
+            
+            <p>Abaixo, estão listados os principais tipos de dados, os quais utilizaremos em nossos exemplos:</p>
+
+            <div class="explicacoes">
+                <div class="item-explicacao">
+                    <span class="icone-emoji">Abc</span>
+                    <p><strong>Texto:</strong> Compreende letras, palavras, códigos ou combinações de caracteres. É utilizado para identificar nomes, categorias, observações ou rótulos de colunas, e seus valores não são processados em cálculos aritméticos.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <span class="icone-emoji">123</span>
+                    <p><strong>Inteiro:</strong> Destinado ao registro de números exatos, ou seja, valores sem frações ou casas decimais. É o formato ideal para representar contagens absolutas, quantidades de itens e unidades inteiras.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <span class="icone-emoji">1,23</span>
+                    <p><strong>Decimal:</strong> Utilizado para números que possuem valores fracionados após a vírgula. É o padrão indicado para medições precisas, notas, pesos e, principalmente, para a representação de valores financeiros (moedas).</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <span class="icone-emoji">%</span>
+                    <p><strong>Percentual:</strong> Representa a proporção de uma parte em relação a um todo com base em cem. Embora o editor processe essa informação internamente como um número decimal, a tela exibe o valor formatado com o símbolo de porcentagem.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <span class="icone-emoji">📅</span>
+                    <p><strong>Data:</strong> Armazena informações cronológicas estruturadas em formatos padronizados (como dia, mês e ano). Este tipo permite ao software calcular intervalos de tempo, prazos e datas de vencimento.</p>
+                </div>
+            </div>
+
+            <div class="destaque">
+                <h4>Atenção ao alinhamento visual</h4>
+                <p>Por padrão, os editores de planilhas alinham automaticamente os dados do tipo <strong>Texto</strong> à esquerda da célula, enquanto os dados numéricos (como <strong>Inteiro, Decimal e Percentual</strong>) são alinhados à direita. Essa é uma dica visual útil para identificar se o programa reconheceu corretamente o número digitado ou se o interpretou erroneamente como texto.</p>
+                <p>Alguns editores de planilha podem apresentar erros nos cálculos matemáticos quando você tentar calcular valores utilizando uma célula que está configurada como texto. Outros editores conseguirão efetuar o cálculo, mas a recomendação é sempre configurar a célula com o tipo de dado correto.</p>
+            </div>
+
+            <p>Após compreender a diferença dessas informações, seguiremos para as instruções de montagem da sua primeira tabela no editor de planilhas. Esta sequência didática usará as instruções seguindo a interface do OnlyOffice, mas as orientações dadas servirão para qualquer editor de planilhas; o símbolo dos ícones e o caminho das ferramentas podem sofrer variações.</p>
+
+            <hr style="margin: 3rem 0; border: none; border-top: 2px solid var(--border-color);">
+
+            <h2>Atividade Prática</h2>
+            
+            <p><strong>Contexto da atividade:</strong><br>
+            Imagine que você trabalha na área administrativa de um posto de saúde do bairro. Ao final de cada mês, a coordenação da unidade solicita um relatório sobre a quantidade total de doses que foram aplicadas na população. Este relatório deverá apresentar a quantidade de doses aplicadas por lote de vacinação, indicar o prazo de validade do lote, o custo unitário da dose e o percentual de doses que ainda restam daquele lote.</p>
+            
+            <p>As informações sobre o lote, custo e estoque são obtidas pelo setor que controla o almoxarifado de vacinas, enquanto os números de doses aplicadas são obtidos com o setor de aplicação de vacinas.</p>
+
+            <h3>Inclusão de dados:</h3>
+            <ol>
+                <li>Abra o seu editor de planilhas.</li>
+                <li>Crie uma nova planilha.</li>
+                <li>Escreva as informações a seguir nas células correspondentes:</li>
+            </ol>
+
+            <div class="simulador-planilha">
+                <table class="grade-onlyoffice">
+                    <thead>
+                        <tr>
+                            <th><img src="assets/img/icons/canto-planilha.svg" alt="Selecionar tudo" class="img-canto"></th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Vacina</td>
+                            <td>Lote</td>
+                            <td>Validade</td>
+                            <td>Doses aplicadas</td>
+                            <td>Custo unitário</td>
+                            <td>Em estoque</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Influenza</td>
+                            <td>L15F</td>
+                            <td>06/08/27</td>
+                            <td class="num">1250</td>
+                            <td class="num">125,78</td>
+                            <td class="num">0%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Influenza</td>
+                            <td>L29S</td>
+                            <td>12/12/27</td>
+                            <td class="num">237</td>
+                            <td class="num">130,45</td>
+                            <td class="num">76,3%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Febre Amarela</td>
+                            <td>L34X</td>
+                            <td>12/12/27</td>
+                            <td class="num">96</td>
+                            <td class="num">249,2</td>
+                            <td class="num">54%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tríplice viral</td>
+                            <td>L95M</td>
+                            <td>05/07/27</td>
+                            <td class="num">149</td>
+                            <td class="num">150</td>
+                            <td class="num">36%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>HPV</td>
+                            <td>L37Q</td>
+                            <td>06/07/27</td>
+                            <td class="num">47</td>
+                            <td class="num">1150,12</td>
+                            <td class="num">76,4%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Instruções de formatação:</h3>
+            <ol>
+                <li>Selecione as células de <code>A1:B6</code>, vá até a guia <strong>Página Inicial</strong>, procure pela ferramenta <strong>Formato de Número</strong>, e aplique a opção <strong>Texto</strong> aos tipos de dados selecionados.</li>
+                <li>Selecione as células de <code>C1:F1</code> e aplique a mesma opção de <strong>Texto</strong> aos tipos de dados selecionados.</li>
+                <li>Selecione as células de <code>C2:C6</code> e aplique a opção de <strong>Data Curta</strong> aos tipos de dados selecionados.</li>
+                <li>Selecione as células de <code>D2:D6</code> e aplique a opção de <strong>Número</strong> aos tipos de dados selecionados.</li>
+                <li>No mesmo intervalo de <code>D2:D6</code>, vá até a guia <strong>Página Inicial</strong>, procure pela ferramenta <strong>Estilo vírgula</strong> <img src="assets/img/icons/estilo-virgula.svg" alt="Estilo vírgula" class="icone"> e aplique sobre o intervalo selecionado. Esta ferramenta é utilizada para incluir os pontos de milhares.</li>
+                <li>Ainda no mesmo intervalo de <code>D2:D6</code>, na guia <strong>Página Inicial</strong>, procure pela ferramenta <strong>Diminuir casas decimais</strong> <img src="assets/img/icons/decimal-diminuir.svg" alt="Diminuir casas decimais" class="icone"> e ajuste o número de casas decimais para nenhuma.</li>
+                <li>Selecione as células de <code>E2:E6</code>, vá até a guia <strong>Página Inicial</strong> e aplique a opção de <strong>Moeda</strong> aos tipos de dados selecionados.</li>
+                <li>Selecione as células de <code>F2:F6</code>, na guia <strong>Página Inicial</strong>, procure pela ferramenta <strong>Aumentar casas decimais</strong> <img src="assets/img/icons/decimal-aumentar.svg" alt="Aumentar casas decimais" class="icone"> e ajuste o número de casas decimais para duas.</li>
+            </ol>
+
+            <h3>Resultado Esperado:</h3>
+            <p>Após aplicar as configurações de tipo de dado descritas nas instruções, sua tabela deverá apresentar a formatação visualizada no exemplo abaixo:</p>
+            
+            <div class="simulador-planilha">
+                <table class="grade-onlyoffice">
+                    <thead>
+                        <tr>
+                            <th><img src="assets/img/icons/canto-planilha.svg" alt="Selecionar tudo" class="img-canto"></th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Vacina</td>
+                            <td>Lote</td>
+                            <td>Validade</td>
+                            <td>Doses aplicadas</td>
+                            <td>Custo unitário</td>
+                            <td>Em estoque</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Influenza</td>
+                            <td>L15F</td>
+                            <td>06/08/27</td>
+                            <td class="num">1.250</td>
+                            <td class="num">R$ 125,78</td>
+                            <td class="num">0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Influenza</td>
+                            <td>L29S</td>
+                            <td>12/12/27</td>
+                            <td class="num">237</td>
+                            <td class="num">R$ 130,45</td>
+                            <td class="num">76,30%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Febre Amarela</td>
+                            <td>L34X</td>
+                            <td>12/12/27</td>
+                            <td class="num">96</td>
+                            <td class="num">R$ 249,20</td>
+                            <td class="num">54,00%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tríplice viral</td>
+                            <td>L95M</td>
+                            <td>05/07/27</td>
+                            <td class="num">149</td>
+                            <td class="num">R$ 150,00</td>
+                            <td class="num">36,00%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>HPV</td>
+                            <td>L37Q</td>
+                            <td>06/07/27</td>
+                            <td class="num">47</td>
+                            <td class="num">R$ 1.150,12</td>
+                            <td class="num">76,40%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Salve o arquivo:</h3>
+            <p>Não se esqueça de salvar o seu arquivo clicando na ferramenta <strong>Salvar</strong> <img src="assets/img/icons/salvar.svg" alt="Salvar" class="icone"> ou o atalho <span class="tecla">ctrl</span> + <span class="tecla">S</span>. Se for a primeira vez salvando o arquivo, uma janela aparecerá para que você escolha o local e o nome do arquivo.</p>
+
+            <div class="destaque">
+                <h4>Vacinas obrigatórias</h4>
+                <p>Você sabe quais são as vacinas obrigatórias para a sua faixa etária ou se a sua caderneta de vacinação pessoal está atualizada? O Ministério da Saúde disponibiliza o calendário nacional completo e informações sobre a proteção de cada imunizante. Para consultar as orientações oficiais, acesse a cartilha de vacinação através do endereço eletrônico: <a href="https://www.gov.br/saude/pt-br/vacinacao" target="_blank" rel="noopener noreferrer">www.gov.br/saude/pt-br/vacinacao</a>.</p>
+            </div>
+
+            <p>Nesta atividade você aprendeu a configurar as informações das células em texto, número e data; a diferenciar variações numéricas como inteiros, decimais, moedas e percentagens; e a aplicar máscaras de formatação para garantir a integridade e a correta visualização dos dados inseridos. Caso queira aprofundar seus conhecimentos, teste outros formatos de números como: científico, contabilidade, data completa, hora e fração. Os editores de planilha dão suporte a muitos formatos de dados. No próximo exercício aprenderemos sobre os elementos de formatação.</p>
+
+            <section class="avaliacao-reacao">
+                <div>
+                    <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+                </div>
+                <aside>
+                    <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                        <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                    </a>
+                </aside>
+            </section>
+
+            <div class="btn-group">
+                <div class="btn-group-left">
+                    <a href="temas.html" class="btn btn-secondary">Retornar</a>
+                </div>
+                <div class="btn-group-right">
+                    <a href="formatacao_saude.html" class="btn btn-primary">Avançar</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Material desenvolvido por 
+            <a href="https://github.com/luan-moura" target="_blank" rel="noopener noreferrer">Luan Moura</a> e 
+            <a href="https://github.com/tenemosvhs" target="_blank" rel="noopener noreferrer">Gabriel Medeiros</a>.
+        </p>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
