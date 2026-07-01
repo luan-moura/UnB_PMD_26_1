@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores matemáticos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page-id="13">
+
+    <div id="sidebar-overlay"></div>
+
+    <header>
+        <button id="mobile-menu-btn" aria-label="Abrir menu de navegação">☰ Menu</button>
+        <div class="accessibility-controls">
+            <button id="btn-contrast">◐ Contraste</button>
+            <button id="btn-font-decrease">A-</button>
+            <button id="btn-font-increase">A+</button>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <aside id="sidebar">
+            <nav id="sidebar-nav" aria-label="Menu de Navegação Principal"></nav>
+        </aside>
+
+        <main>
+
+            <h1>13. Operadores matemáticos</h1>
+
+            <p>No ambiente das planilhas eletrônicas, a execução de qualquer cálculo automatizado exige a construção de <strong>fórmulas</strong>. O principal símbolo para que o editor compreenda que um texto inserido em uma célula representa uma operação matemática é o sinal de igual (<code>=</code>). <b>Toda e qualquer fórmula deve, obrigatoriamente, ser iniciada com esse caractere.</b></p>
+
+            <p>Uma fórmula pode ser definida como uma instrução lógica ou uma equação matemática que processa dados existentes para gerar um novo resultado automático. Em vez de utilizar valores fixos e estáticos, as fórmulas operam por meio de referências (como <code>A2</code> ou <code>B2</code>). Isso significa que, caso o dado de origem seja modificado ou atualizado na planilha, o editor recalcula o resultado final instantaneamente, eliminando a necessidade de refazer manualmente.</p>
+            
+            <p>Para estruturar as instruções lógicas dentro das células, utilizamos os operadores aritméticos padrão. A tabela abaixo apresenta a sintaxe exata utilizada pelos principais editores de mercado:</p>
+
+            <div class="tabela-container">
+                <table class="tabela-padrao">
+                    <thead>
+                        <tr>
+                            <th>Operação</th>
+                            <th>Símbolo</th>
+                            <th>Exemplo Prático</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Adição</strong></td>
+                            <td>+</td>
+                            <td><code>=A2+B2</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subtração</strong></td>
+                            <td>-</td>
+                            <td><code>=A2-B2</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Multiplicação</strong></td>
+                            <td>*</td>
+                            <td><code>=A2*B2</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Divisão</strong></td>
+                            <td>/</td>
+                            <td><code>=A2/B2</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Exponenciação</strong></td>
+                            <td>^</td>
+                            <td><code>=A2^2</code> <small class="menu-item-disabled">(Elevado ao quadrado)</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Outro ponto importante na construção de fórmulas é a <strong>ordem de precedência matemática</strong>. O editor de planilhas não realiza os cálculos simplesmente da esquerda para a direita; ele obedece a regras universais de prioridade aritmética.</p>
+
+            <p>Dessa forma, as operações de <strong>exponenciação</strong> são processadas em primeiro lugar. Na sequência, executam-se as <strong>multiplicações e divisões</strong> e, por fim, as <strong>adições e subtrações</strong>. Quando houver a necessidade de alterar essa ordem natural de resolução — forçando o somatório de dois valores antes de sua respectiva divisão, por exemplo —, deve-se isolar a operação prioritária utilizando os <strong>parênteses <code>()</code></strong>.</p>
+
+            <p>Para compreender como o editor interpreta essas prioridades e de que maneira os parênteses modificam completamente o comportamento de um cálculo, analise os exemplos comparativos a seguir:</p>
+
+            <div class="tabela-container">
+                <table class="tabela-padrao">
+                    <thead>
+                        <tr>
+                            <th>Fórmula</th>
+                            <th>Ordem de resolução</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>=10+5/5</code></td>
+                            <td>Primeiro divide-se <code>5/5</code> (1) e depois soma-se <code>10+1</code></td>
+                            <td><strong>11</strong></td>
+                        </tr>
+                        <tr>
+                            <td><code>=(10+5)/5</code></td>
+                            <td>Os parênteses forçam a soma <code>10+5</code> (15) antes da divisão por 5</td>
+                            <td><strong>3</strong></td>
+                        </tr>
+                        <tr>
+                            <td><code>=3*2^2</code></td>
+                            <td>Primeiro resolve-se a potência <code>2^2</code> (4) e depois multiplica-se <code>3*4</code></td>
+                            <td><strong>12</strong></td>
+                        </tr>
+                        <tr>
+                            <td><code>=(3*2)^2</code></td>
+                            <td>Os parênteses forçam a multiplicação <code>3*2</code> (6) antes de elevar ao quadrado</td>
+                            <td><strong>36</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Abra o editor de planilha e reproduza as equações acima. Altere os números e observe se os novos resultados apresentados. Eles correspondem aos resultados que você esperava? Se não, tente descobrir qual foi o problema.</p>
+            
+            <h2>Atividade Prática</h2>
+
+            <p>Na etapa anterior, você auxiliou a equipe do posto de saúde organizando visualmente a tabela com técnicas de formatação. Agora que o layout está padronizado e limpo, a coordenação admiistrativa solicitou o fechamento da planilha e pediu que você incluí-se o custo total das aplicações no mês.</p>
+                    
+            <p>A partir de agora, utilizaremos fórmulas para executar e automatizar qualquer tipo de cálculo ou instrução. Neste exercício usaremos alguns dos operadores aritiméticos aprendidos.</p>
+
+            <h3>Modificação e Inclusão de dados:</h3>
+            
+            <ol>
+                <li>Abra a planilha desenvolvida na atividade anterior.</li>
+
+                <li>Insira um novo cabeçalho na célula <code>I2</code> com o título: <code>Custo Total</code>.</li>
+
+                <li>Selecione o título principal na linha 1 (que atualmente está mesclado de <code>A1:H1</code>), desfaça a mesclagem e selecione o novo intervalo de <code>A1:I1</code>. Clique novamente em <b>Mesclar e Centralizar</b> para reajustar o título ao novo tamanho do relatório. Reative a borda geral de <code>A1:I27</code> se necessário.</li>
+
+                <li>Calcule o Estoque Final. Selecione a célula <code>F3</code> (Estoque Final da vacina Influenza). Insira o sinal de igualdade e monte a fórmula subtraindo as <b>Doses aplicadas</b> (<code>E3</code>) do <b>Estoque inicial</b> (<code>D3</code>). <br><small>Fórmula: <code>=D3-E3</code></small></li>
+
+                <li>Use a alça de preenchimento automático para arrastar a fórmula da célula <code>F3</code> até a célula <code>F26</code>.Lembre-se que para usar a alça de preenchimento corretamente, você deve posicionar o cursor do mouse exatamente sobre o quadrado que marca o canto inferior esquerdo da célula até que o cursor fique com aparencia de <b>Cruz Preta e Fina</b><img src="assets/img/icons/cursor-arrastar-celulas.svg" alt="Desenho de uma cruz preta e fina" class="icone" style="height: 1em;">.</li>
+
+                <li>Calcule a Capacidade em Estoque. A coordenação informou que a capacidade máxima padrão de armazenamento para cada lote é de 1.500 unidades. Na célula <code>G3</code> (Em estoque), calcularemos a proporção atual do estoque dividindo o <b>Estoque final</b> (<code>F3</code>) por <code>1500</code>. <br><small>Fórmula: <code>=F3/1500</code></small></li>
+
+                <li>Arraste a fórmula de <code>G3</code> até <code>G26</code>. Formate o intervalo resultante com o estilo de <b>Porcentagem (%)</b>.</li>
+                
+                <li>Calcule o Custo Total Consumido. Na célula <code>I3</code> (Custo Total), calcularemos o valor financeiro total que já foi aplicado na população. Monte a fórmula multiplicando as <b>Doses aplicadas</b> (<code>E3</code>) pelo seu respectivo <b>Custo unitário</b> (<code>H3</code>). <br><small>Fórmula: <code>=E3*H3</code></small></li>
+                <li>Arraste a fórmula de <code>I3</code> até a célula <code>I26</code>. Formate o intervalo como <b>Moeda</b>.</li>
+                
+                <li>Calcule o somatório do Estoque Inicial. Na célula <code>D27</code>, monte a fórmula somando todas as células daquela coluna, desde a linha 3 até a linha 26. <br><small>Fórmula: <code>=D3+D4+D5+D6+D7+D8+D9+D10+D11+D12+D13+D14+D15+D16+D17+D18+D19+D20+D21+D22+D23+D24+D25+D26</code></small></li>
+            </ol>
+            
+            <p>Se você realmente digitou a fórmula acima, deve ter achado exaustivo escrever uma fórmula que some 24 células usando apenas o operador de adição (<code>+</code>).</p>
+
+            <p>Usar esse mesmo método para calcular os totais das células <code>E27</code> (Doses aplicadas), <code>F27</code> (Estoque final) e <code>I27</code> (Custo Total) é completamente ineficiente. Imagine se posto de saúde controlasse 500 lotes de vacinas, essa tarefa seria inviável. Adiante descobrirmos como resolver esse problema em segundos.</p>
+
+            <h3>Salve o arquivo:</h3>
+
+            <p>Mantenha suas alterações seguras salvando o progresso da planilha. Clique no ícone de <b>Salvar</b> <img src="assets/img/icons/salvar.svg" alt="Ícone Salvar"> ou utilize o atalho de teclado padrão <code>[ctrl+S]</code>.</p>
+
+            <h3>Resultado Esperado:</h3>
+
+            <p>Após executar os passos de inserção estrutural, alinhamentos e aplicação de estilos estéticos, seu relatório técnico deverá apresentar exatamente o seguinte aspecto visual:</p>
+
+            <div class="simulador-planilha">
+                <table class="grade-onlyoffice">
+                    <thead>
+                        <tr>
+                            <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                            <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td colspan="9" style="text-align: center; font-weight: bold; background-color: #444444; color: #ffffff; font-size: 14px;">CONTROLE DE IMUNIZANTES APLICADOS NO MÊS</td>
+                        </tr>
+                        <tr style="font-weight: bold; background-color: #f2f2f2; text-align: center;">
+                            <td>2</td>
+                            <td style="text-align: left;">Vacina</td><td>Lote</td><td>Validade</td><td class="num">Estoque inicial</td><td class="num">Doses aplicadas</td><td class="num">Estoque final</td><td class="num">Em estoque</td><td class="num">Custo unitário</td><td class="num">Custo Total</td>
+                        </tr>
+                        <tr><td>3</td><td>Influenza</td><td style="font-style: italic; text-align: center;">L15F</td><td style="text-align: center;">06/08/27</td><td class="num">1.250</td><td class="num">1.250</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 125,78</td><td class="num">R$ 157.225,00</td></tr>
+                        <tr><td>4</td><td>Influenza</td><td style="font-style: italic; text-align: center;">L29S</td><td style="text-align: center;">12/12/27</td><td class="num">1.000</td><td class="num">237</td><td class="num">763</td><td class="num">51%</td><td class="num">R$ 130,45</td><td class="num">R$ 30.916,65</td></tr>
+                        <tr><td>5</td><td>Febre Amarela</td><td style="font-style: italic; text-align: center;">L34X</td><td style="text-align: center;">12/12/27</td><td class="num">200</td><td class="num">96</td><td class="num">104</td><td class="num">7%</td><td class="num">R$ 249,20</td><td class="num">R$ 23.923,20</td></tr>
+                        <tr><td>6</td><td>Tríplice viral</td><td style="font-style: italic; text-align: center;">L95M</td><td style="text-align: center;">05/07/27</td><td class="num">400</td><td class="num">149</td><td class="num">251</td><td class="num">17%</td><td class="num">R$ 150,00</td><td class="num">R$ 22.350,00</td></tr>
+                        <tr><td>7</td><td>HPV</td><td style="font-style: italic; text-align: center;">L37Q</td><td style="text-align: center;">06/07/27</td><td class="num">200</td><td class="num">47</td><td class="num">153</td><td class="num">10%</td><td class="num">R$ 1.150,12</td><td class="num">R$ 54.055,64</td></tr>
+                        <tr><td>8</td><td>BCG</td><td style="font-style: italic; text-align: center;">B01K</td><td style="text-align: center;">20/10/27</td><td class="num">795</td><td class="num">795</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 95,30</td><td class="num">R$ 75.763,50</td></tr>
+                        <tr><td>9</td><td>BCG</td><td style="font-style: italic; text-align: center;">B02J</td><td style="text-align: center;">15/11/27</td><td class="num">500</td><td class="num">0</td><td class="num">500</td><td class="num">33%</td><td class="num">R$ 95,30</td><td class="num">R$ 0,00</td></tr>
+                        <tr><td>10</td><td>Covid-19</td><td style="font-style: italic; text-align: center;">C42P</td><td style="text-align: center;">18/09/27</td><td class="num">1.269</td><td class="num">1.269</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 45,00</td><td class="num">R$ 57.105,00</td></tr>
+                        <tr><td>11</td><td>Covid-19</td><td style="font-style: italic; text-align: center;">C43P</td><td style="text-align: center;">22/10/27</td><td class="num">2.000</td><td class="num">540</td><td class="num">1.460</td><td class="num">97%</td><td class="num">R$ 45,00</td><td class="num">R$ 24.300,00</td></tr>
+                        <tr><td>12</td><td>Dengue</td><td style="font-style: italic; text-align: center;">D11V</td><td style="text-align: center;">30/06/27</td><td class="num">1.114</td><td class="num">1.114</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 180,50</td><td class="num">R$ 201.077,00</td></tr>
+                        <tr><td>13</td><td>Dengue</td><td style="font-style: italic; text-align: center;">D12V</td><td style="text-align: center;">15/08/27</td><td class="num">1.500</td><td class="num">320</td><td class="num">1.180</td><td class="num">79%</td><td class="num">R$ 180,50</td><td class="num">R$ 57.760,00</td></tr>
+                        <tr><td>14</td><td>dT</td><td style="font-style: italic; text-align: center;">T04R</td><td style="text-align: center;">11/04/27</td><td class="num">1.220</td><td class="num">1.220</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 32,15</td><td class="num">R$ 39.223,00</td></tr>
+                        <tr><td>15</td><td>dT</td><td style="font-style: italic; text-align: center;">T05R</td><td style="text-align: center;">19/05/27</td><td class="num">800</td><td class="num">150</td><td class="num">650</td><td class="num">43%</td><td class="num">R$ 32,15</td><td class="num">R$ 4.822,50</td></tr>
+                        <tr><td>16</td><td>DTP</td><td style="font-style: italic; text-align: center;">D08N</td><td style="text-align: center;">04/02/27</td><td class="num">350</td><td class="num">88</td><td class="num">262</td><td class="num">17%</td><td class="num">R$ 74,20</td><td class="num">R$ 6.529,60</td></tr>
+                        <tr><td>17</td><td>Hepatite A</td><td style="font-style: italic; text-align: center;">HA01</td><td style="text-align: center;">14/03/27</td><td class="num">450</td><td class="num">112</td><td class="num">338</td><td class="num">23%</td><td class="num">R$ 110,00</td><td class="num">R$ 12.320,00</td></tr>
+                        <tr><td>18</td><td>Hepatite B</td><td style="font-style: italic; text-align: center;">HB07</td><td style="text-align: center;">09/01/27</td><td class="num">853</td><td class="num">853</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 55,40</td><td class="num">R$ 47.256,20</td></tr>
+                        <tr><td>19</td><td>Hepatite B</td><td style="font-style: italic; text-align: center;">HB08</td><td style="text-align: center;">22/03/27</td><td class="num">1.000</td><td class="num">210</td><td class="num">790</td><td class="num">53%</td><td class="num">R$ 55,40</td><td class="num">R$ 11.634,00</td></tr>
+                        <tr><td>20</td><td>Meningocócica</td><td style="font-style: italic; text-align: center;">M22W</td><td style="text-align: center;">17/07/27</td><td class="num">600</td><td class="num">415</td><td class="num">185</td><td class="num">12%</td><td class="num">R$ 210,30</td><td class="num">R$ 87.274,50</td></tr>
+                        <tr><td>21</td><td>Penta</td><td style="font-style: italic; text-align: center;">P03Y</td><td style="text-align: center;">19/08/27</td><td class="num">400</td><td class="num">305</td><td class="num">95</td><td class="num">6%</td><td class="num">R$ 165,80</td><td class="num">R$ 50.569,00</td></tr>
+                        <tr><td>22</td><td>Pneumocócica</td><td style="font-style: italic; text-align: center;">PN10</td><td style="text-align: center;">11/11/27</td><td class="num">300</td><td class="num">198</td><td class="num">102</td><td class="num">7%</td><td class="num">R$ 190,00</td><td class="num">R$ 37.620,00</td></tr>
+                        <tr><td>23</td><td>Poliomielite</td><td style="font-style: italic; text-align: center;">VIP5</td><td style="text-align: center;">25/10/27</td><td class="num">450</td><td class="num">240</td><td class="num">210</td><td class="num">14%</td><td class="num">R$ 82,00</td><td class="num">R$ 19.680,00</td></tr>
+                        <tr><td>24</td><td>Rotavírus</td><td style="font-style: italic; text-align: center;">VR02</td><td style="text-align: center;">08/04/27</td><td class="num">500</td><td class="num">390</td><td class="num">110</td><td class="num">7%</td><td class="num">R$ 92,45</td><td class="num">R$ 36.055,50</td></tr>
+                        <tr><td>25</td><td>Tríplice viral</td><td style="font-style: italic; text-align: center;">TV09</td><td style="text-align: center;">30/05/27</td><td class="num">350</td><td class="num">120</td><td class="num">230</td><td class="num">15%</td><td class="num">R$ 150,00</td><td class="num">R$ 18.000,00</td></tr>
+                        <tr><td>26</td><td>Varicela</td><td style="font-style: italic; text-align: center;">VZ04</td><td style="text-align: center;">14/06/27</td><td class="num">250</td><td class="num">85</td><td class="num">165</td><td class="num">11%</td><td class="num">R$ 225,10</td><td class="num">R$ 19.133,50</td></tr>
+                        <tr style="font-weight: bold;">
+                            <td>27</td>
+                            <td style="text-decoration: underline;">Total</td><td></td><td></td><td class="num">19.351</td><td class="num"></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="destaque">
+                <h4>O que é Imunidade de Rebanho?</h4>
+
+                <p>Quando uma grande parte de uma população é vacinada contra uma doença, ela cria uma espécie de "escudo de proteção" que impede o vírus de se espalhar. Isso é chamado de <strong>Imunidade de Rebanho</strong>. Esse fenômeno protege indiretamente as pessoas que não podem ser vacinadas, como bebês recém-nascidos ou pacientes em tratamentos graves de saúde. Na planilha que você está calculando, cada lote distribuído e cada dose aplicada representam uma engrenagem matemática real para alcançar a porcentagem ideal de segurança e salvar vidas na comunidade.</p>
+                
+                <p>Assista ao vídeo abaixo para entender como funciona essa barreira de proteção coletiva:</p>
+
+                <iframe 
+                    src="https://www.youtube.com/embed/ruQ0rLeSeVo?si=kbnp_-jqLVja4iDy" 
+                    title="Vídeo explicativo sobre Imunidade de Rebanho"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p>Nesta etapa, você aprendeu a transformar dados estáticos em informações dinâmicas construindo fórmulas com os operadores de adição, subtração, multiplicação e divisão, além de definir a ordem de precedência aritmética com o uso dos parênteses. Contudo, ao digitar a exaustiva soma de 24 linhas para consolidar o total do Estoque Inicial, você se deparou com o limite das fórmulas que usam operadores aritméticos para grandes intervalos.</p>
+
+            <p>Na próxima etapa, você compreenderá o conceito e a sintaxe de estruturas pré-definidas como as funções <code>SOMA</code>, <code>MÉDIA</code>, <code>MÁXIMO</code>, <code>MÍNIMO</code> e <code>CONT.NÚM</code>, projetadas para processar grandes volumes de dados instantaneamente.</p>
+
+            <section class="avaliacao-reacao">
+                <div>
+                    <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+                </div>
+
+                <aside>
+                    <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                        <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                    </a>
+                </aside>
+            </section>
+
+            <div class="btn-group">
+                <div class="btn-group-left"><a href="12_formatacao_saude.html" class="btn btn-secondary">Retornar</a></div>
+                <div class="btn-group-right"><a href="14_funcoes_saude.html" class="btn btn-primary">Avançar</a></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Material desenvolvido por <a href="https://github.com/luan-moura" target="_blank">Luan Moura</a> e <a href="https://github.com/tenemosvhs" target="_blank">Gabriel Medeiros</a>.</p>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>

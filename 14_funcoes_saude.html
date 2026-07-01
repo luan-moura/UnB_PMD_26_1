@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções iniciais</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page-id="14">
+
+    <div id="sidebar-overlay"></div>
+
+    <header>
+        <button id="mobile-menu-btn" aria-label="Abrir menu de navegação">☰ Menu</button>
+        <div class="accessibility-controls">
+            <button id="btn-contrast">◐ Contraste</button>
+            <button id="btn-font-decrease">A-</button>
+            <button id="btn-font-increase">A+</button>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <aside id="sidebar">
+            <nav id="sidebar-nav" aria-label="Menu de Navegação Principal"></nav>
+        </aside>
+
+        <main>
+
+            <h1>14. Funções iniciais</h1>
+
+            <p>Até o momento, você construiu fórmulas instruindo o editor célula por célula (como <code>=A1+A2+A3</code>). Esta maneira é útil para situações que dependem de poucas células, mas se torna inviável na maioria das situações. Para resolver isso, as planilhas eletrônicas utilizam <strong>Funções</strong>: estruturas lógicas pré-definidas que realizam operações complexas instantaneamente sobre intervalos de células.</p>
+
+            <p>Uma função é composta por três elementos obrigatórios que ditam sua <strong>sintaxe</strong>:</p>
+
+            <ol>
+                <li><strong>O sinal de igualdade (<code>=</code>):</strong> Indica ao editor que uma operação será realizada.</li>
+                <li><strong>O nome da função:</strong> O comando específico em letras maiúsculas (ex: <code>SOMA</code>).</li>
+                <li><strong>Os argumentos entre parênteses <code>()</code>:</strong> Os dados ou intervalos de células que a função irá processar.</li>
+            </ol>
+
+            <h2>A lógica para entender qualquer função</h2>
+
+            <p>Existem algumas dicas importantes que funcionam para qualquer função nos editores de planilha:</p>
+            <ul>
+                <li>Se a função possui mais de um argumento, cada argumento é separado por ponto-e-vírgula (<code>;</code>). <small><code>=NOMEFUNCAO(ARGUMENTO1;ARGUMENTO2;ARGUMENTO...)</code></small></li>
+                <li>Cada função exige que os argumentos sejam informados em uma ordem específica; se você não obedecer a essa ordem, a função apresentará um erro.</li>
+                <li>Não se preocupe em memorizar a ordem dos argumentos, porque a maioria dos editores de planilha nos dá uma "cola" sobre a ordem deles:</li>
+                <ul>
+                    <li>Quando você estiver digitando uma função, note que o editor de planilhas vai exibir uma caixa flutuante com algumas informações; lá estão as dicas da ordem dos argumentos.</li>
+                    <li>Por exemplo, se você digita <code>=soma(</code>, o seu editor de planilha exibirá uma caixa flutuante com <code>=soma(<b>arg1</b>;[arg2];...)</code>.</li>
+                    <li>O argumento que estiver em negrito é exatamente aquele que você precisa inserir no momento.</li>
+                    <li>Se houver argumentos entre colchetes, estes são opcionais.</li>
+                </ul>
+            </ul>
+
+            <h2>Conheça algumas funções</h2>
+
+            <p>Separamos algumas funções iniciais que são muito utilizadas e exigem apenas um intervalo como argumento, por padrão:</p>
+
+            <div class="tabela-container">
+                <table class="tabela-padrao">
+                    <thead>
+                        <tr>
+                            <th>Função</th>
+                            <th>O que ela faz?</th>
+                            <th>Exemplo de Sintaxe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>SOMA</code></td>
+                            <td>Soma todos os valores numéricos presentes no intervalo selecionado.</td>
+                            <td><code>=SOMA(D3:D26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>CONT.NÚM</code></td>
+                            <td>Conta quantas células no intervalo possuem números cadastrados (ignora textos ou células vazias).</td>
+                            <td><code>=CONT.NÚM(E3:E26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>CONT.VALORES</code></td>
+                            <td>Conta quantas células no intervalo não estão vazias, independente de conterem textos ou números.</td>
+                            <td><code>=CONT.VALORES(A3:A26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>CONTAR.VAZIO</code></td>
+                            <td>Conta a quantidade de células totalmente vazias dentro do intervalo selecionado.</td>
+                            <td><code>=CONTAR.VAZIO(C3:C26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>MÁXIMO</code></td>
+                            <td>Identifica e retorna o maior valor numérico encontrado dentro do intervalo.</td>
+                            <td><code>=MÁXIMO(H3:H26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>MÍNIMO</code></td>
+                            <td>Identifica e retorna o menor valor numérico encontrado dentro do intervalo.</td>
+                            <td><code>=MÍNIMO(H3:H26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>MÉDIA</code></td>
+                            <td>Calcula a média aritmética simples (soma todos os valores e divide pela quantidade de elementos).</td>
+                            <td><code>=MÉDIA(I3:I26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>MED</code></td>
+                            <td>Retorna a mediana do intervalo (o número que está exatamente no centro de um conjunto de dados ordenados).</td>
+                            <td><code>=MED(I3:I26)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>MODO</code></td>
+                            <td>Identifica e retorna o valor que se repete com maior frequência dentro do intervalo.</td>
+                            <td><code>=MODO(B3:B26)</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Existem dezenas de funções disponíveis para as mais diversas finalidades. Não é nosso objetivo ensinar todas as funções, até porque algumas possuem uso muito específico. O mais importante é saber como construir a função (sintaxe) e onde consultar o catálogo de opções disponíveis.</p>
+
+            <p>Se você clicar no ícone <strong>f<sub>x</sub></strong>, ao lado esquerdo da barra de fórmulas, uma janela de inserção de função categorizará as opções por: Texto e dados, Estatística, Data e hora, Engenharia, Base de dados, Financeiro, Matemática e trigonometria, Pesquisa e referência, Informação, Lógico, entre outras. Escolha uma categoria, clique nas funções e leia a descrição de cada uma delas. Com o tempo, você aprenderá a separar as funções que são úteis para os seus projetos.</p>
+
+            <h2>Atividade Prática</h2>
+
+            <p>Agora que aprendemos algumas funções funções iniciais poderemos concluir a linha 27 da tabela "CONTROLE DE IMUNIZANTES APLICADOS NO MÊS". Porém a admintração do posto solicitou que a mesma tabela indicasse na parte inferior quantos lotes foram usado no mês, qual é a data de vencimento mais próxima e qual a mais distante.</p>
+
+            <h3>Modificação e Inclusão de dados:</h3>
+            <ol>
+                <li>Abra a sua planilha de controle de imunizantes na linha **27**.</li>
+                <li>Apague a fórmula manual da célula <code>D27</code>. Substitua-a pela função de intervalo: <code>=SOMA(D3:D26)</code>. Pressione Enter e observe o mesmo resultado surgir.</li>
+                <li>Adicione as fórmulas de totais nas células <code>E27</code>, <code>F27</code> e <code>I27</code> utilizando a função <code>=SOMA()</code> adaptada para cada coluna.</li>
+                <li>Na célula <code>A29</code> digite "Número de lotes usados:". Mescle o intervalo <code>A29:D29</code> e alinhe o texto à direita.</li>
+                <li>Na célula <code>A30</code> digite "Data de vencimento mais próxima:". Mescle o intervalo <code>A30:D30</code> e alinhe o texto à direita.</li>
+                <li>Na célula <code>A31</code> digite "Data de vencimento mais distante:". Mescle o intervalo <code>A31:D31</code> e alinhe o texto à direita.</li>
+                <li>Selecione o intervalo <code>A29:E31</code> e aplique a formatação todas as bordas</li>
+                <li>Selacione o intervalo <code>A29:D31</code> e formate a cor de fundo igual a cor usada no cabeçalho da linha 2.</li>
+                <li>Em <code>E29</code> use a função <code>CONT.NÚM</code> para contar as doses aplicadas (<code>E3:E26</code>).</li>
+                <li>Em <code>E30</code> use a função <code>MÍNIMO</code> para descobrir qual a menor data de vencimento (<code>C3:C26</code>)</li>
+                <li>Em <code>E31</code> use a função <code>MÁXIMO</code> para descobrir qual a maior data de vencimento (<code>C3:C26</code>)</li>
+                <li>Formate as células <code>E29</code>, <code>E30</code> e <code>E31</code> conforme seus respectivos tipos de dados e alinhamento à esquerda.</li>
+            </ol>
+
+            <h3>Resultado Esperado:</h3>
+
+            <p>Após executar os passos de inserção estrutural, alinhamentos e aplicação de estilos estéticos, seu relatório técnico deverá apresentar exatamente o seguinte aspecto visual:</p>
+
+            <div class="simulador-planilha">
+                <table class="grade-onlyoffice">
+                    <thead>
+                        <tr>
+                            <th><img src="assets/img/icons/canto-planilha.svg" alt="Ícone de canto da grade." class="img-canto"></th>
+                            <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td colspan="9" style="text-align: center; font-weight: bold; background-color: #444444; color: #ffffff; font-size: 14px;">CONTROLE DE IMUNIZANTES APLICADOS NO MÊS</td>
+                        </tr>
+                        <tr style="font-weight: bold; background-color: #f2f2f2; text-align: center;">
+                            <td>2</td>
+                            <td style="text-align: left;">Vacina</td><td>Lote</td><td>Validade</td><td class="num">Estoque inicial</td><td class="num">Doses aplicadas</td><td class="num">Estoque final</td><td class="num">Em estoque</td><td class="num">Custo unitário</td><td class="num">Custo Total</td>
+                        </tr>
+                        <tr><td>3</td><td>Influenza</td><td style="font-style: italic; text-align: center;">L15F</td><td style="text-align: center;">06/08/2027</td><td class="num">1.250</td><td class="num">1.250</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 125,78</td><td class="num">R$ 157.225,00</td></tr>
+                        <tr><td>4</td><td>Influenza</td><td style="font-style: italic; text-align: center;">L29S</td><td style="text-align: center;">12/12/2027</td><td class="num">1.000</td><td class="num">237</td><td class="num">763</td><td class="num">51%</td><td class="num">R$ 130,45</td><td class="num">R$ 30.916,65</td></tr>
+                        <tr><td>5</td><td>Febre Amarela</td><td style="font-style: italic; text-align: center;">L34X</td><td style="text-align: center;">12/12/2027</td><td class="num">200</td><td class="num">96</td><td class="num">104</td><td class="num">7%</td><td class="num">R$ 249,20</td><td class="num">R$ 23.923,20</td></tr>
+                        <tr><td>6</td><td>Tríplice viral</td><td style="font-style: italic; text-align: center;">L95M</td><td style="text-align: center;">05/07/2027</td><td class="num">400</td><td class="num">149</td><td class="num">251</td><td class="num">17%</td><td class="num">R$ 150,00</td><td class="num">R$ 22.350,00</td></tr>
+                        <tr><td>7</td><td>HPV</td><td style="font-style: italic; text-align: center;">L37Q</td><td style="text-align: center;">06/07/2027</td><td class="num">200</td><td class="num">47</td><td class="num">153</td><td class="num">10%</td><td class="num">R$ 1.150,12</td><td class="num">R$ 54.055,64</td></tr>
+                        <tr><td>8</td><td>BCG</td><td style="font-style: italic; text-align: center;">B01K</td><td style="text-align: center;">20/10/2027</td><td class="num">795</td><td class="num">795</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 95,30</td><td class="num">R$ 75.763,50</td></tr>
+                        <tr><td>9</td><td>BCG</td><td style="font-style: italic; text-align: center;">B02J</td><td style="text-align: center;">15/11/2027</td><td class="num">500</td><td class="num">0</td><td class="num">500</td><td class="num">33%</td><td class="num">R$ 95,30</td><td class="num">R$ 0,00</td></tr>
+                        <tr><td>10</td><td>Covid-19</td><td style="font-style: italic; text-align: center;">C42P</td><td style="text-align: center;">18/09/2027</td><td class="num">1.269</td><td class="num">1.269</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 45,00</td><td class="num">R$ 57.105,00</td></tr>
+                        <tr><td>11</td><td>Covid-19</td><td style="font-style: italic; text-align: center;">C43P</td><td style="text-align: center;">22/10/2027</td><td class="num">2.000</td><td class="num">540</td><td class="num">1.460</td><td class="num">97%</td><td class="num">R$ 45,00</td><td class="num">R$ 24.300,00</td></tr>
+                        <tr><td>12</td><td>Dengue</td><td style="font-style: italic; text-align: center;">D11V</td><td style="text-align: center;">30/06/2027</td><td class="num">1.114</td><td class="num">1.114</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 180,50</td><td class="num">R$ 201.077,00</td></tr>
+                        <tr><td>13</td><td>Dengue</td><td style="font-style: italic; text-align: center;">D12V</td><td style="text-align: center;">15/08/2027</td><td class="num">1.500</td><td class="num">320</td><td class="num">1.180</td><td class="num">79%</td><td class="num">R$ 180,50</td><td class="num">R$ 57.760,00</td></tr>
+                        <tr><td>14</td><td>dT</td><td style="font-style: italic; text-align: center;">T04R</td><td style="text-align: center;">11/04/2027</td><td class="num">1.220</td><td class="num">1.220</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 32,15</td><td class="num">R$ 39.223,00</td></tr>
+                        <tr><td>15</td><td>dT</td><td style="font-style: italic; text-align: center;">T05R</td><td style="text-align: center;">19/05/2027</td><td class="num">800</td><td class="num">150</td><td class="num">650</td><td class="num">43%</td><td class="num">R$ 32,15</td><td class="num">R$ 4.822,50</td></tr>
+                        <tr><td>16</td><td>DTP</td><td style="font-style: italic; text-align: center;">D08N</td><td style="text-align: center;">04/02/2027</td><td class="num">350</td><td class="num">88</td><td class="num">262</td><td class="num">17%</td><td class="num">R$ 74,20</td><td class="num">R$ 6.529,60</td></tr>
+                        <tr><td>17</td><td>Hepatite A</td><td style="font-style: italic; text-align: center;">HA01</td><td style="text-align: center;">14/03/2027</td><td class="num">450</td><td class="num">112</td><td class="num">338</td><td class="num">23%</td><td class="num">R$ 110,00</td><td class="num">R$ 12.320,00</td></tr>
+                        <tr><td>18</td><td>Hepatite B</td><td style="font-style: italic; text-align: center;">HB07</td><td style="text-align: center;">09/01/2027</td><td class="num">853</td><td class="num">853</td><td class="num">0</td><td class="num">0%</td><td class="num">R$ 55,40</td><td class="num">R$ 47.256,20</td></tr>
+                        <tr><td>19</td><td>Hepatite B</td><td style="font-style: italic; text-align: center;">HB08</td><td style="text-align: center;">22/03/2027</td><td class="num">1.000</td><td class="num">210</td><td class="num">790</td><td class="num">53%</td><td class="num">R$ 55,40</td><td class="num">R$ 11.634,00</td></tr>
+                        <tr><td>20</td><td>Meningocócica</td><td style="font-style: italic; text-align: center;">M22W</td><td style="text-align: center;">17/07/2027</td><td class="num">600</td><td class="num">415</td><td class="num">185</td><td class="num">12%</td><td class="num">R$ 210,30</td><td class="num">R$ 87.274,50</td></tr>
+                        <tr><td>21</td><td>Penta</td><td style="font-style: italic; text-align: center;">P03Y</td><td style="text-align: center;">19/08/2027</td><td class="num">400</td><td class="num">305</td><td class="num">95</td><td class="num">6%</td><td class="num">R$ 165,80</td><td class="num">R$ 50.569,00</td></tr>
+                        <tr><td>22</td><td>Pneumocócica</td><td style="font-style: italic; text-align: center;">PN10</td><td style="text-align: center;">11/11/2027</td><td class="num">300</td><td class="num">198</td><td class="num">102</td><td class="num">7%</td><td class="num">R$ 190,00</td><td class="num">R$ 37.620,00</td></tr>
+                        <tr><td>23</td><td>Poliomielite</td><td style="font-style: italic; text-align: center;">VIP5</td><td style="text-align: center;">25/10/2027</td><td class="num">450</td><td class="num">240</td><td class="num">210</td><td class="num">14%</td><td class="num">R$ 82,00</td><td class="num">R$ 19.680,00</td></tr>
+                        <tr><td>24</td><td>Rotavírus</td><td style="font-style: italic; text-align: center;">VR02</td><td style="text-align: center;">08/04/2027</td><td class="num">500</td><td class="num">390</td><td class="num">110</td><td class="num">7%</td><td class="num">R$ 92,45</td><td class="num">R$ 36.055,50</td></tr>
+                        <tr><td>25</td><td>Tríplice viral</td><td style="font-style: italic; text-align: center;">TV09</td><td style="text-align: center;">30/05/2027</td><td class="num">350</td><td class="num">120</td><td class="num">230</td><td class="num">15%</td><td class="num">R$ 150,00</td><td class="num">R$ 18.000,00</td></tr>
+                        <tr><td>26</td><td>Varicela</td><td style="font-style: italic; text-align: center;">VZ04</td><td style="text-align: center;">14/06/2027</td><td class="num">250</td><td class="num">85</td><td class="num">165</td><td class="num">11%</td><td class="num">R$ 225,10</td><td class="num">R$ 19.133,50</td></tr>
+                        <tr style="font-weight: bold;">
+                            <td>27</td>
+                            <td style="text-decoration: underline;">Total</td><td></td><td></td><td class="num">19.351</td><td class="num">11.191</td><td class="num">8.160</td><td></td><td></td><td class="num">R$ 1.250.772,98</td></tr>
+                        <tr><td>28</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr>
+                            <td>29</td>
+                            <td colspan="4" style="background-color: #f2f2f2; font-weight: bold; text-align: right;">Número de lotes usados:</td>
+                            <td style="text-align: right; font-weight: bold; text-align: left">24</td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td colspan="4" style="background-color: #f2f2f2; font-weight: bold; text-align: right;">Data de vencimento mais próxima:</td>
+                            <td style="text-align: center; font-weight: bold; text-align: left">09/01/2027</td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td colspan="4" style="background-color: #f2f2f2; font-weight: bold; text-align: right;">Data de vencimento mais distante:</td>
+                            <td style="text-align: center; font-weight: bold; text-align: left">12/12/2027</td><td></td><td></td><td></td><td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="destaque">
+                <h4>Você sabe onde descartar medicamentos vencidos?</h4>
+
+                <p>É muito comum termos na nossa casa uma caixa ou lugar onde guardamos vários medicamentos que sobram de algum tratamento ou que são usados em alguma emergência. Quando esses medicamentos estragem ou passam do prazo de validade, o que você faz?</p>
+
+                <p> O descarte inadequado de remédios vencidos ou que sobraram de tratamentos antigos no lixo comum ou na descarga do banheiro gera sérios riscos ambientais, contaminando o solo e a água, além de representar um perigo para a saúde pública. Pessoas em situação de rua que vaculharem o seu lixo e encontrarem os medicamento, podem fazer uso deles, mesmo estragados ou vencidos.</p>
+                
+                <p>Existem pontos de coleta específicos, como farmácias e postos de saúde, que garantem uma destinação final correta e segura. Assista ao vídeo abaixo e entenda o impacto desse gesto no nosso dia a dia:</p>
+
+                <iframe 
+                    src="https://www.youtube.com/embed/rgNo4IAogj4" 
+                    title="Descarte Adequado de Medicamentos Domésticos Vencidos ou em Desuso" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p>Nesta etapa, você aprendeu a utilizar funções essenciais para extrair informações e estatísticas básicas de um intervalo de dados. Na próxima seção, entraremos no conteúdo de <strong>Análise Condicional</strong> e vamos aplicar algumas outras funções aprendidas aqui. Vamos entender como utilizar a função <code>SE</code> e suas variações para fazer a planilha tomar decisões automáticas a partir de condições lógicas.</p>
+
+            <section class="avaliacao-reacao">
+                <div>
+                    <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+                </div>
+
+                <aside>
+                    <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                        <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                    </a>
+                </aside>
+            </section>
+
+            <div class="btn-group">
+                <div class="btn-group-left"><a href="13_operadores_saude.html" class="btn btn-secondary">Retornar</a></div>
+                <div class="btn-group-right"><a href="15_condicionais_saude.html" class="btn btn-primary">Avançar</a></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Material desenvolvido por <a href="https://github.com/luan-moura" target="_blank">Luan Moura</a> e <a href="https://github.com/tenemosvhs" target="_blank">Gabriel Medeiros</a>.</p>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>

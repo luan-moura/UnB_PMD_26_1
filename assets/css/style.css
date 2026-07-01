@@ -445,7 +445,10 @@ code {
     line-height: 1;
 }
 
-/* --- SIMULADOR DE PLANILHA --- */
+/* ------------------------------------- */
+/* ------- SIMULADOR DE PLANILHA ------- */
+/* ------------------------------------- */
+
 .simulador-planilha {
     overflow-x: auto;
     margin: 2rem 0;
@@ -496,7 +499,64 @@ code {
     height: auto;
 }
 
-/* --- AVALIAÇÃO DE REAÇÃO --- */
+/* -------------------------------------- */
+/* ------- TABELA PADRÃO DE DADOS ------- */
+/* -------------------------------------- */
+
+.tabela-padrao {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    background-color: var(--bg-white);
+    border: 2px solid var(--border-color); /* Borda externa principal */
+    border-radius: 6px;
+    overflow: hidden; /* Garante que o border-radius funcione */
+}
+
+.tabela-padrao th,
+.tabela-padrao td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+.tabela-padrao thead th {
+    background-color: var(--primary-green);
+    color: var(--text-on-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+}
+
+/* Efeito Zebra para melhor leitura */
+.tabela-padrao tbody tr:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+/* Ajuste de responsividade */
+.tabela-container {
+    overflow-x: auto; /* Permite scroll horizontal em telas muito pequenas */
+    margin: 1.5rem 0;
+}
+
+/* Alto Contraste */
+body.high-contrast .tabela-padrao {
+    border: 2px solid var(--border-color);
+}
+body.high-contrast .tabela-padrao thead th {
+    background-color: var(--text-main);
+    color: var(--bg-light);
+}
+body.high-contrast .tabela-padrao tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+/* ----------------------------------- */
+/* ------- AVALIAÇÃO DE REAÇÃO ------- */
+/* ----------------------------------- */
+
 .avaliacao-reacao {
     display: flex;
     align-items: center;

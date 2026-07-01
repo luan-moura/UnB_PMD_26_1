@@ -1,73 +1,61 @@
 // Menu
 const menuData = [
-    { id: 1, title: "1. Início", options: [
-        { label: "Apresentação", url: "index.html" },
-        { label: "Ementa", url: "ementa.html" }
+    { id: 1, title: "01. Apresentação", url: "01_apresentacao.html" },
+    { id: 2, title: "02. Conteúdo", url: "02_ementa.html" },
+    { id: 3, title: "03. Planilhas no nosso cotidiano", url: "03_cotidiano.html" },
+    { id: 4, title: "04. Principais editores", url: "04_editores.html" },
+    { id: 5, title: "05. Aparência dos editores", options: [
+        { label: "Excel", url: "05_tela_excel.html" },
+        { label: "Google", url: "05_tela_google.html" },
+        { label: "Onlyoffice", url: "05_tela_onlyoffice.html" }
     ]},
-    { id: 2, title: "2. Cotidiano", url: "cotidiano.html" },
-    { id: 3, title: "3. Editores", options: [
-        { label: "Visão Geral", url: "editores.html" },
-        { label: "Tela", 
-            suboptions: [
-                { label: "Excel", url: "tela_excel.html" },
-                { label: "Google", url: "tela_google.html" },
-                { label: "OnlyOffice", url: "tela_onlyoffice.html" }
-            ]
-        },
-        { label: "Navegação", 
-            suboptions: [
-                { label: "Excel", url: "navegacao_excel.html" },
-                { label: "Google", url: "navegacao_google.html" },
-                { label: "OnlyOffice", url: "navegacao_onlyoffice.html" }
-            ]
-        }
+    { id: 6, title: "06. Navegação pelo teclado", options: [
+        { label: "Excel", url: "06_navegacao_excel.html" },
+        { label: "Google", url: "06_navegacao_google.html" },
+        { label: "Onlyoffice", url: "06_navegacao_onlyoffice.html" }
     ]},
-    { id: 4, title: "4. Interfaces", options: [
-        { label: "Intervalos", url: "intervalos.html" }, // Ajustado para não repetir a label "Seleção"
-        { label: "Seleção", url: "selecao.html" },
-        { label: "Ponteiros", url: "ponteiros.html" },
-        { label: "Temas", url: "temas.html" }
+    { id: 7, title: "07. Estrutura da planilha", url: "07_intervalos.html" },
+    { id: 8, title: "08. Seleção pelo teclado", url: "08_selecao.html" },
+    { id: 9, title: "09. Ponteiros do mouse", url: "09_ponteiros.html" },
+    { id: 10, title: "10. Tema das atividades", url: "10_temas.html" },
+    { id: 11, title: "11. Tipos de dados", options: [
+        { label: "Água", url: "11_dados_agua.html" },
+        { label: "Clima", url: "11_dados_clima.html" },
+        { label: "Saúde", url: "11_dados_saude.html" }
     ]},
-    { id: 5, title: "5. Tipos de Dados", options: [
-        { label: "Saúde", url: "dados_saude.html" },
-        { label: "Água", url: "dados_agua.html" },
-        { label: "Clima", url: "dados_clima.html" }
+    { id: 12, title: "12. Formatação de tabelas", options: [
+        { label: "Água", url: "12_formatacao_agua.html" },
+        { label: "Clima", url: "12_formatacao_clima.html" },
+        { label: "Saúde", url: "12_formatacao_saude.html" }
     ]},
-    { id: 6, title: "6. Formatações", options: [
-        { label: "Saúde", url: "formatacao_saude.html" },
-        { label: "Água", url: "formatacao_agua.html" },
-        { label: "Clima", url: "formatacao_clima.html" }
+    { id: 13, title: "13. Operadores matemáticos", options: [
+        { label: "Água", url: "13_operadores_agua.html" },
+        { label: "Clima", url: "13_operadores_clima.html" },
+        { label: "Saúde", url: "13_operadores_saude.html" }
     ]},
-    { id: 7, title: "7. Operadores", options: [
-        { label: "Saúde", url: "operadores_saude.html" },
-        { label: "Água", url: "operadores_agua.html" },
-        { label: "Clima", url: "operadores_clima.html" }
+    { id: 14, title: "14. Funções iniciais", options: [
+        { label: "Água", url: "14_funcoes_agua.html" },
+        { label: "Clima", url: "14_funcoes_clima.html" },
+        { label: "Saúde", url: "14_funcoes_saude.html" }
     ]},
-    { id: 8, title: "8. Funções Iniciais", options: [
-        { label: "Saúde", url: "funcoes_saude.html" },
-        { label: "Água", url: "funcoes_agua.html" },
-        { label: "Clima", url: "funcoes_clima.html" }
+    { id: 15, title: "15. Funções Condicionais", options: [
+        { label: "Água", url: "15_condicionais_agua.html" },
+        { label: "Clima", url: "15_condicionais_clima.html" },
+        { label: "Saúde", url: "15_condicionais_saude.html" }
     ]},
-    { id: 9, title: "9. Condicionais", options: [
-        { label: "Saúde", url: "condicionais_saude.html" },
-        { label: "Água", url: "condicionais_agua.html" },
-        { label: "Clima", url: "condicionais_clima.html" }
+    { id: 16, title: "16. Gráficos", options: [
+        { label: "Água", url: "16_graficos_agua.html" },
+        { label: "Clima", url: "16_graficos_clima.html" },
+        { label: "Saúde", url: "16_graficos_saude.html" }
     ]},
-    { id: 10, title: "10. Gráficos", options: [
-        { label: "Saúde", url: "graficos_saude.html" },
-        { label: "Água", url: "graficos_agua.html" },
-        { label: "Clima", url: "graficos_clima.html" }
+    { id: 17, title: "17. Impressão e exportação", options: [
+        { label: "Água", url: "17_impressao_agua.html" },
+        { label: "Clima", url: "17_impressao_clima.html" },
+        { label: "Saúde", url: "17_impressao_saude.html" }
     ]},
-    { id: 11, title: "11. Impressão", options: [
-        { label: "Saúde", url: "impressao_saude.html" },
-        { label: "Água", url: "impressao_agua.html" },
-        { label: "Clima", url: "impressao_clima.html" }
-    ]},
-    { id: 12, title: "12. Conclusão", options: [
-        { label: "Encerramento", url: "Campamento.html" },
-        { label: "Referências", url: "referencias.html" },
-        { label: "Créditos", url: "creditos.html" }
-    ]}
+    { id: 18, title: "18. Encerramento", url: "18_encerramento.html" },
+    { id: 19, title: "19. Referências", url: "19_referencias.html" },
+    { id: 20, title: "20. Créditos", url: "20_creditos.html" }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
