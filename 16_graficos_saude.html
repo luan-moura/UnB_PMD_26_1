@@ -27,10 +27,146 @@
         <main>
 
             <h1>16. Gráficos</h1>
-            
-            <div class="destaque">
-                <h4>Em desenvolvimento</h4>
+
+            <p>Os gráficos são representações visuais de dados quantitativos. Eles transformam tabelas em imagens fáceis compreensão. Quando temos uma tabela pequena o nosso cérebro consegue interpretar as informações muito rapidamente. Porém, se a quantidade de linhas ou de colunas aumenta muito, fica mais difícil para o nosso cérebro identificar os padrões e identificar informações rapidamente. Neste momento, as formas, cores e comprimentos usados nos gráfico guiam nosso cérebro a interpretar as informações de forma rápida e intuitiva.</p>
+
+            <p>No entanto, para que um gráfico cumpra o seu papel de forma eficiente, é preciso escolher o modelo correto. Existem diversos tipos de gráficos disponíveis nos editores de planilhas, e cada um deles foi desenhado para comunicar um tipo específico de informação, dependendo se o seu objetivo é comparar categorias, mostrar partes de um todo ou identificar tendências históricas.</p>
+
+            <h2>Principais Tipos de Gráficos e Suas Aplicações</h2>
+
+            <p>Conheça os modelos mais utilizados e as situações ideais para aplicar cada um deles:</p>
+
+            <div class="explicacoes">
+                
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-coluna.svg" alt="Gráfico de Colunas">
+                    <p><strong>Gráfico de Colunas:</strong> Ideal para comparar valores entre diferentes categorias em um momento específico. As categorias ficam dispostas no eixo horizontal (ex: o total de imunizados por posto de saúde ou por faixa etária).</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-linha.svg" alt="Gráfico de Linhas">
+                    <p><strong>Gráfico de Linhas:</strong> Perfeito para mostrar tendências e variações de dados ao longo de um período contínuo. Usamos esse modelo para monitorar o aumento ou a queda nos casos de gripe mês a mês ao longo do ano.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-pizza.svg" alt="Gráfico de Pizza">
+                    <p><strong>Gráfico de Pizza:</strong> Utilizado para exibir a composição proporcional de um todo, dividindo os dados em fatias percentuais. Funciona melhor com poucas categorias, como a distribuição de imunizados por gênero.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-barra.svg" alt="Gráfico de Barras">
+                    <p><strong>Gráfico de Barras:</strong> Semelhante ao de colunas, mas com os dados na horizontal e as categorias no eixo vertical. É excelente para exibir relatórios quando os nomes dos grupos são muito longos.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-area.svg" alt="Gráfico de Área">
+                    <p><strong>Gráfico de Área:</strong> Baseia-se no gráfico de linhas, mas possui o espaço abaixo da linha preenchido com cor. Serve para enfatizar a magnitude das alterações e o volume total acumulado no período.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-pontos.svg" alt="Gráfico de Dispersão">
+                    <p><strong>Gráfico de Dispersão (Pontos X,Y):</strong> Mostra a relação ou correlação entre duas variáveis numéricas simultâneas. Na saúde, ajuda a avaliar se a idade do paciente possui relação direta com o tempo de recuperação da infecção.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-radar.svg" alt="Gráfico de Radar">
+                    <p><strong>Gráfico de Radar:</strong> Útil para comparar múltiplas variáveis quantitativas ao mesmo tempo a partir de um ponto central, criando uma forma geométrica para analisar perfis multifatoriais de atendimento.</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-boxplot.svg" alt="Gráfico Boxplot">
+                    <p><strong>Gráfico de Boxplot (Diagrama de Caixa):</strong> Representa a distribuição estatística dos dados através de quartis. Ele destaca graficamente a mediana, a dispersão das idades dos pacientes e os valores discrepantes (<em>outliers</em>).</p>
+                </div>
+
+                <div class="item-explicacao">
+                    <img src="assets/img/icons/grafico-combinados.svg" alt="Gráficos Combinados">
+                    <p><strong>Gráficos Combinados:</strong> Realiza a fusão de dois modelos visuais diferentes no mesmo espaço (como coluna e linha sobrepostas). É ideal para cruzar duas métricas de naturezas distintas, exibindo o total de doses aplicadas (coluna) junto com a taxa de cobertura vacinal atingida (linha).</p>
+                </div>
+
             </div>
+
+            <h2>Atividade Prática</h2>
+
+            <p>Após importar o arquivo <code>imunizacao_influenza.csv</code> e estruturar as tabelas de resumo epidemiológico, precisaremos construir elementos visuais para que a equipe gestora consiga observar o relatório e compreender instantaneamente o perfil do público atendido. Para isso, criaremos representações gráficas específicas para cada uma das tabelas consolidadas (gênero, faixa etária e subgrupos de risco).</p>
+
+            <p>Antes de inserir qualquer gráfico no seu editor de planilhas, você deve <strong>selecionar corretamente o intervalo de células</strong> que contém as categorias e os valores correspondentes. Deixar os cabeçalhos de fora ou incluir as linhas de "Total" por engano fará com que o gráfico exiba informações distorcidas ou barras redundantes.</p>
+
+            <p>O roteiro a seguir utilizou o ONLYOFFICE para criar os gráficos da atividade anterior:</p>
+
+            <h3>Gráfico de Pizza para a Distribuição por Gênero</h3>
+
+            <ol>
+                <li>Clique e arraste o mouse do intervalo <code>A8</code> até <code>B10</code> (Não inclua a linha 11 do Total).</li>
+                <li>Acesse a guia superior <strong>Inserir</strong> &gt; clique no botão <strong>Gráfico</strong> &gt; escolha a categoria <strong>Pizza</strong>.</li>
+                <li>Altere o título para: <strong>Doses Aplicadas por Gênero</strong>. Na barra lateral de configurações, ative a opção <strong>Rótulos de Dados</strong>.</li>
+            </ol>
+
+            <h3>Gráfico de Colunas para Doses por Grupo Epidemiológico</h3>
+
+            <ol>
+                <li>Selecione o intervalo de <code>A13</code> até <code>B18</code> (Deixe a linha 19 do Total de fora).</li>
+                <li>Vá em <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; escolha o modelo de <strong>Colunas</strong>.</li>
+                <li>Altere o título para: <strong>Adesão à Campanha por Faixa Etária</strong>. Adicione os <strong>Rótulos de Dados</strong> no topo de cada coluna.</li>
+            </ol>
+
+            <h3>Gráfico de Barras Aninhadas em 100% para Subgrupo de Gestantes</h3>
+            
+            <ol>
+                <li>Selecione de <code>A21</code> até <code>B23</code> (Não inclua a linha 24).</li>
+                <li>Clique em <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; escolha o modelo <strong>Barras</strong> &gt; <strong>Barras Aninhadas 100%</strong>.</li>
+                <li>Altere o título para: <strong>Proporção de Gestantes e Puérperas Atendidas</strong>. Ative os rótulos internos.</li>
+            </ol>
+
+            <h3>Gráfico de Barras Agrupadas para Matriz Cruzada de Grupo e Gênero</h3>
+            
+            <ol>
+                <li>Selecione o intervalo de <code>A27</code> até <code>C32</code> (Ignore a coluna "Total" e a linha final de "Total geral").</li>
+                <li>Vá em <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; escolha o modelo de <strong>Barras Agrupadas</strong>.</li>
+                <li>Altere o título para: <strong>Distribuição de Gênero por Grupo Epidemiológico</strong>. Garanta que a legenda esteja visível.</li>
+            </ol>
+
+            <h3>Gráfico de Rosca para Perfil Etário das Gestantes e Puérperas</h3>
+            
+            <ol>
+                <li>Marque o intervalo de <code>A35</code> até <code>B38</code> (Não selecione a linha 39 do Total).</li>
+                <li>Acesse <strong>Inserir</strong> &gt; <strong>Gráfico</strong> &gt; escolha o modelo <strong>Pizza</strong> &gt; <strong>Rosca</strong>.</li>
+                <li>Altere o título para: <strong>Faixa Etária de Grávidas e Puérperas Imunizadas</strong>. Ative os <strong>Rótulos de Dados</strong>.</li>
+            </ol>
+
+            <p>Após inserir os gráficos, eles serão gerados empilhados no centro da tela. Clique sobre eles e arraste-os para as áreas em branco localizadas ao lado ou logo abaixo de suas respectivas tabelas, mantendo o seu relatório limpo, organizado e legível.</p>
+
+            <div class="destaque">
+                <h4>Como a higiene protege a nossa saúde no dia a dia?</h4>
+                <p>Os hábitos de higiene, como tomar banho, escovar os dentes e lavar o rosto, embora simples, são barreiras importantíssimas contra germes e bactérias. Na Grécia Antiga, esses cuidados já eram tão valorizados que inspiraram a palavra "higiene", usada para definir as práticas que nos mantêm limpos e livres de infecções transmissíveis.</p>
+                
+                <p>A lavagem correta das mãos, especialmente após voltar da rua, ir ao banheiro ou antes das refeições, é uma das medidas mais eficazes para prevenir problemas de saúde frequentes, como a diarreia e as gripes. Pequenas mudanças de atitude na nossa rotina nos dão bem-estar e ajudam a interromper cadeias de transmissão de doenças na comunidade.</p>
+                
+                <p>Para conhecer curiosidades históricas sobre a evolução da limpeza em diferentes culturas e aprender a técnica certa para eliminar a sujeira das mãos, assista ao vídeo a srguir:</p>
+
+                <iframe 
+                    src="https://www.youtube.com/embed/iUkh8J9sNyQ" 
+                    title="A Higiene no dia a dia" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p>Nesta tela, você aprendeu que os gráficos são excelentes ferramentas de comunicação dos dados; praticou a conversão de dados tabulares em representações visuais como gráficos de colunas, linhas e pizza; foi alertado de que é necessário selecionar o modelo de gráfico mais adequado para cada tipo de situação; e foi capaz de configurar títulos, legendas e rótulos para facilitar a interpretação das informações.</p>
+
+            <p>Na próxima etapa fecharemos esta sequência didática com as características de configuração de página para uma boa impressão ou exportação das tabelas em arquivos paginados.</p>
+
+            <section class="avaliacao-reacao">
+                <div>
+                    <p>Antes de avançar para a próxima atividade, por gentileza, utilize o QR Code ao lado para acessar e preencher o nosso formulário de Avaliação de Reação e o Portfólio desta etapa.</p>
+                </div>
+
+                <aside>
+                    <a href="https://forms.gle/h3D3qsuEKtATWvar6" target="_blank" rel="noopener noreferrer" title="Escaneie para abrir o formulário">
+                        <img src="assets/img/qrcode.png" alt="QR Code para o formulário da avaliação de reação">
+                    </a>
+                </aside>
+            </section>
 
             <div class="btn-group">
                 <div class="btn-group-left"><a href="15_condicionais_saude.html" class="btn btn-secondary">Retornar</a></div>
