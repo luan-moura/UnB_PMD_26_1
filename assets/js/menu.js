@@ -68,44 +68,51 @@ function renderMenu() {
     const sidebarNav = document.getElementById("sidebar-nav");
     if (!sidebarNav) return;
     
-    // Pega o nome do arquivo atual (ex: "index.html")
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     
     let navHTML = '<ul class="menu-list">';
 
     menuData.forEach(item => {
-        // Verifica se algum filho está ativo para manter o pai expandido (sem colorir o pai)
-        const isChildActive = item.options && item.options.some(opt => 
-            opt.url === currentPage || (opt.suboptions && opt.suboptions.some(sub => sub.url === currentPage))
-        );
-
-        const isActive = (item.url === currentPage) ? 'active' : '';
-
         if (item.options) {
-            navHTML += `<li class="menu-item has-submenu">
-                <button class="submenu-toggle ${isChildActive ? 'active-parent' : ''}">${item.title}</button>
-                <ul class="submenu-list" style="${isChildActive ? 'max-height: 2000px;' : ''}">`;
+            
+            const isChildActive = item.options.some(opt => opt.url === currentPage);
+            
+            navHTML += `
+                <li class="menu-item has-submenu">
+                    <button class="submenu-toggle ${isChildActive ? 'active' : ''}">
+                        ${item.title}
+                    </button>
+                    <ul class="submenu-list" style="${isChildActive ? `max-height: ${item.options.length * 60}px;` : ''}">
+            `;
             
             item.options.forEach(opt => {
-                if (opt.suboptions) {
-                    navHTML += `<li class="has-submenu">
-                        <button class="submenu-toggle sub-toggle">${opt.label}</button>
-                        <ul class="submenu-list">${opt.suboptions.map(sub => 
-                            `<li><a href="${sub.url}" class="${sub.url === currentPage ? 'active' : ''}">${sub.label}</a></li>`
-                        ).join('')}</ul>
-                    </li>`;
-                } else {
-                    navHTML += `<li><a href="${opt.url}" class="${opt.url === currentPage ? 'active' : ''}">${opt.label}</a></li>`;
-                }
+                const isOptActive = (opt.url === currentPage) ? 'active' : '';
+                navHTML += `
+                    <li>
+                        <a href="${opt.url}" class="${isOptActive}">
+                            ${opt.label}
+                        </a>
+                    </li>
+                `;
             });
+            
             navHTML += '</ul></li>';
+
         } else {
-            navHTML += `<li class="menu-item"><a href="${item.url}" class="${isActive}">${item.title}</a></li>`;
+            const isActive = (item.url === currentPage) ? 'active' : '';
+            navHTML += `
+                <li class="menu-item">
+                    <a href="${item.url}" class="${isActive}">
+                        ${item.title}
+                    </a>
+                </li>
+            `;
         }
     });
 
     navHTML += '</ul>';
     sidebarNav.innerHTML = navHTML;
+    
     attachAccordionEvents();
 }
 
@@ -114,24 +121,17 @@ function attachAccordionEvents() {
     
     toggles.forEach(toggle => {
         toggle.addEventListener("click", function() {
-            // Alterna a classe ativa do botão
+            
             this.classList.toggle("active");
             
             const submenu = this.nextElementSibling;
             
-            // Lógica de abertura/fechamento
+            
             if (submenu.style.maxHeight) {
                 submenu.style.maxHeight = null;
             } else {
-                // Calcula a altura real de todo o conteúdo interno
-                submenu.style.maxHeight = submenu.scrollHeight + "px";
                 
-                // IMPORTANTE: Se este submenu estiver dentro de outro submenu,
-                // precisamos avisar o pai para recalcular a altura dele também
-                let parentSubmenu = this.closest('.submenu-list');
-                if (parentSubmenu && parentSubmenu !== submenu) {
-                    parentSubmenu.style.maxHeight = (parentSubmenu.scrollHeight + submenu.scrollHeight) + "px";
-                }
+                submenu.style.maxHeight = submenu.scrollHeight + "px";
             }
         });
     });
@@ -145,7 +145,7 @@ function setupMenuToggle() {
     const toggleMenu = () => {
         const isOpen = sidebar.classList.toggle("open");
         overlay.classList.toggle("open");
-        menuBtn.setAttribute("aria-expanded", isOpen);
+        if (menuBtn) menuBtn.setAttribute("aria-expanded", isOpen);
     };
 
     if (menuBtn && overlay) {
@@ -158,17 +158,27 @@ function setupAccessibility() {
     let currentFontSize = 100;
     const root = document.documentElement;
 
-    document.getElementById("btn-font-increase").addEventListener("click", () => {
-        if (currentFontSize < 150) currentFontSize += 10;
-        root.style.fontSize = currentFontSize + "%";
-    });
+    const increaseBtn = document.getElementById("btn-font-increase");
+    const decreaseBtn = document.getElementById("btn-font-decrease");
+    const contrastBtn = document.getElementById("btn-contrast");
 
-    document.getElementById("btn-font-decrease").addEventListener("click", () => {
-        if (currentFontSize > 80) currentFontSize -= 10;
-        root.style.fontSize = currentFontSize + "%";
-    });
+    if (increaseBtn) {
+        increaseBtn.addEventListener("click", () => {
+            if (currentFontSize < 150) currentFontSize += 10;
+            root.style.fontSize = currentFontSize + "%";
+        });
+    }
 
-    document.getElementById("btn-contrast").addEventListener("click", () => {
-        document.body.classList.toggle("high-contrast");
-    });
+    if (decreaseBtn) {
+        decreaseBtn.addEventListener("click", () => {
+            if (currentFontSize > 80) currentFontSize -= 10;
+            root.style.fontSize = currentFontSize + "%";
+        });
+    }
+
+    if (contrastBtn) {
+        contrastBtn.addEventListener("click", () => {
+            document.body.classList.toggle("high-contrast");
+        });
+    }
 }
